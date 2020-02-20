@@ -50,6 +50,12 @@ const ap = new APlayer({
         artist: 'n-buna/初音ミク',
         url: 'http://music.163.com/song/media/outer/url?id=412902325.mp3',
         cover: 'http://p1.music.126.net/Dev8qwDRGjIxAtopFG0uxg==/3263350512830591.jpg',
+      },
+      {
+        name: 'Lemon',
+        artist: '米津玄師',
+        url: 'http://music.163.com/song/media/outer/url?id=536622304.mp3',
+        cover: 'http://p1.music.126.net/6IeZ9MiSSDXifj74nzH6ww==/109951163561494000.jpg',
       }
     ]
 });
