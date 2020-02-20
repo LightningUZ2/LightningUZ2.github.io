@@ -451,3 +451,13 @@ AC_list
 	https://loj.ac/problem/135
 	https://loj.ac/problem/133
 	(*blog)
+	2020-02-20
+	sol: https://www.cnblogs.com/Never-mind/
+	http://noi.ac/problem/344
+	http://noi.ac/problem/306
+	http://noi.ac/problem/39
+	https://vjudge.net/problem/CodeForces-486E
+	https://www.luogu.com.cn/problem/P1136
+	http://www.51nod.com/Challenge/Problem.html#problemId=2895
+	http://www.51nod.com/Challenge/Problem.html#problemId=1213
+	
