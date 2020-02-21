@@ -461,4 +461,4 @@ AC_list
 	http://www.51nod.com/Challenge/Problem.html#problemId=1495 (blog!!!)
 	2020-02-20
 	https://vjudge.net/problem/CodeForces-711D
-	
+	https://www.luogu.com.cn/problem/P1730
