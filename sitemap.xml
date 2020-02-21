@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lightninguz2.github.io/about/index.html</loc>
+    
+    <lastmod>2020-02-21T07:40:33.222Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lightninguz2.github.io/2020/02/21/Codeforces-1304E-1-Trees-and-Queries-%E9%A2%98%E8%A7%A3/</loc>
     
-    <lastmod>2020-02-21T01:23:55.660Z</lastmod>
+    <lastmod>2020-02-21T07:38:01.785Z</lastmod>
     
   </url>
   
@@ -208,13 +215,6 @@
     <loc>https://lightninguz2.github.io/addons/Aclists/index.html</loc>
     
     <lastmod>2020-02-12T16:11:09.585Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lightninguz2.github.io/about/index.html</loc>
-    
-    <lastmod>2020-02-12T16:06:54.026Z</lastmod>
     
   </url>
   

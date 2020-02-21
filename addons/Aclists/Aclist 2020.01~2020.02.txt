@@ -459,6 +459,15 @@ AC_list
 	https://www.luogu.com.cn/problem/P1136 (blog!!!)
 	http://www.51nod.com/Challenge/Problem.html#problemId=2895
 	http://www.51nod.com/Challenge/Problem.html#problemId=1495 (blog!!!)
-	2020-02-20
+	2020-02-21
+	http://noi.ac/problem/23
+	http://noi.ac/problem/655
+	http://noi.ac/problem/654
 	https://vjudge.net/problem/CodeForces-711D
 	https://www.luogu.com.cn/problem/P1730
+	https://www.luogu.com.cn/problem/P1948
+	https://www.lydsy.com/JudgeOnline/problem.php?id=1614
+	2020-02-22
+	http://noi.ac/problem/130
+	http://noi.ac/problem/123
+	http://noi.ac/problem/112
