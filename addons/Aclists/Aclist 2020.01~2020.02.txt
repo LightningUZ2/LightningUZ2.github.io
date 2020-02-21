@@ -459,3 +459,6 @@ AC_list
 	https://www.luogu.com.cn/problem/P1136 (blog!!!)
 	http://www.51nod.com/Challenge/Problem.html#problemId=2895
 	http://www.51nod.com/Challenge/Problem.html#problemId=1495 (blog!!!)
+	2020-02-20
+	https://vjudge.net/problem/CodeForces-711D
+	
