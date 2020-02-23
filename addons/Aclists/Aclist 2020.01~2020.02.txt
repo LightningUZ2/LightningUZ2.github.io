@@ -467,7 +467,18 @@ AC_list
 	https://www.luogu.com.cn/problem/P1730
 	https://www.luogu.com.cn/problem/P1948
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1614
-	2020-02-22
+	2020-02-22 6 (打USACO,做不动题)
+	USACO 3
 	http://noi.ac/problem/130
 	http://noi.ac/problem/123
 	http://noi.ac/problem/112
+	2020-02-23 9
+	http://noi.ac/problem/560 (blog!!!)
+	http://noi.ac/problem/405 (blog!!!)
+	https://www.lydsy.com/JudgeOnline/problem.php?id=4403
+	http://noi.ac/problem/716 (blog!!!)
+	https://vjudge.net/problem/CodeForces-1084D 
+	https://www.lydsy.com/JudgeOnline/problem.php?id=1101
+	https://www.lydsy.com/JudgeOnline/problem.php?id=1003
+	https://www.luogu.com.cn/problem/P1772
+	http://www.51nod.com/Challenge/Problem.html#problemId=1677
