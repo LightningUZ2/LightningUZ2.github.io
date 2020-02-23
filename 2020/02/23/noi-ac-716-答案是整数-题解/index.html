@@ -109,18 +109,18 @@
 
 
 
-  <meta name="description" content="题意简述求$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。 对 $998244353$ 取模。$n&amp;lt;=10^7,m&amp;lt;=10^14$。 注：空间限制只有64MB，只够开 $10^7$ 的int型数组。 思路基础操作设 $nn$ 时，$s(n/dq)=0$，也就不会有贡献了。那么我们珂以缩小 $d$ 的范">
+  <meta name="description" content="题意简述求$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。 对 $998244353$ 取模。$n&amp;lt;=10^7,m&amp;lt;=10^{14}$。 注：空间限制只有64MB，只够开 $10^7$ 的int型数组。 思路基础操作设 $n\le m$，因为 $n,m$ 对称。设 $g=\gcd(i,j)$ （简写）">
 <meta name="keywords" content="毒瘤,莫比乌斯反演">
 <meta property="og:type" content="article">
 <meta property="og:title" content="noi.ac 716 答案是整数 题解">
 <meta property="og:url" content="https://lightninguz2.github.io/2020/02/23/noi-ac-716-答案是整数-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet的小屋(LUZのblog)">
-<meta property="og:description" content="题意简述求$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。 对 $998244353$ 取模。$n&amp;lt;=10^7,m&amp;lt;=10^14$。 注：空间限制只有64MB，只够开 $10^7$ 的int型数组。 思路基础操作设 $nn$ 时，$s(n/dq)=0$，也就不会有贡献了。那么我们珂以缩小 $d$ 的范">
+<meta property="og:description" content="题意简述求$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。 对 $998244353$ 取模。$n&amp;lt;=10^7,m&amp;lt;=10^{14}$。 注：空间限制只有64MB，只够开 $10^7$ 的int型数组。 思路基础操作设 $n\le m$，因为 $n,m$ 对称。设 $g=\gcd(i,j)$ （简写）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-23T13:31:00.169Z">
+<meta property="og:updated_time" content="2020-02-23T13:37:17.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="noi.ac 716 答案是整数 题解">
-<meta name="twitter:description" content="题意简述求$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。 对 $998244353$ 取模。$n&amp;lt;=10^7,m&amp;lt;=10^14$。 注：空间限制只有64MB，只够开 $10^7$ 的int型数组。 思路基础操作设 $nn$ 时，$s(n/dq)=0$，也就不会有贡献了。那么我们珂以缩小 $d$ 的范">
+<meta name="twitter:description" content="题意简述求$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。 对 $998244353$ 取模。$n&amp;lt;=10^7,m&amp;lt;=10^{14}$。 注：空间限制只有64MB，只够开 $10^7$ 的int型数组。 思路基础操作设 $n\le m$，因为 $n,m$ 对称。设 $g=\gcd(i,j)$ （简写）">
 
 
 
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-02-23 21:27:33 / 修改时间：21:31:00" itemprop="dateCreated datePublished" datetime="2020-02-23T21:27:33+08:00">2020-02-23</time>
+              <time title="创建时间：2020-02-23 21:27:33 / 修改时间：21:37:17" itemprop="dateCreated datePublished" datetime="2020-02-23T21:27:33+08:00">2020-02-23</time>
             
 
             
@@ -531,7 +531,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 1.3k 字</span>
+                  <span class="post-meta-item-text">本文字数： 1.5k 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -545,7 +545,7 @@ $(window).load(function(){
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长  &asymp; 6 分钟</span>
+                  <span class="post-meta-item-text">阅读时长  &asymp; 7 分钟</span>
                 
                 <span title="阅读时长"></span>
               
@@ -568,9 +568,9 @@ $(window).load(function(){
 
       
         <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>求<br>$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}\dfrac{ij}{\gcd (i,j)}$。</p>
-<p>对 $998244353$ 取模。$n&lt;=10^7,m&lt;=10^14$。</p>
+<p>对 $998244353$ 取模。$n&lt;=10^7,m&lt;=10^{14}$。</p>
 <p>注：空间限制只有64MB，只够开 $10^7$ 的<code>int</code>型数组。</p>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><h4 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h4><p>设 $n<m$，因为 $n,m$ 对称。 设 $g="\gcd(i,j)$" （简写） $\sum\limits_{i="1}^{n}\sum\limits_{j=1}^{m}" \dfrac{ij}{g^2}$ $\sum\limits_{d="1}^{n}\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}[g=1]ij$" （枚举$\gcd$） $\sum\limits_{q="1}^{n}\mu(q)\sum\limits_{d=1}^{n}\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}[q|g]ij$" jq$ $s(x)="\sum\limits_{i=1}^x" i$ 原式化为： 我们发现， $dq>n$ 时，$s(n/dq)=0$，也就不会有贡献了。那么我们珂以缩小 $d$ 的范围：<br>$\sum\limits_{q=1}^{n}\mu(q)q^2\sum\limits_{d=1}^{n/q}s(n/dq)s(m/dq)$</m$，因为></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><h4 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h4><p>设 $n\le m$，因为 $n,m$ 对称。<br>设 $g=\gcd(i,j)$ （简写）<br>$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m} \dfrac{ij}{g^2}$<br>$\sum\limits_{d=1}^{n}\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}[g=1]ij$ （枚举$\gcd$）<br>$\sum\limits_{q=1}^{n}\mu(q)\sum\limits_{d=1}^{n}\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}[q|g]ij$<br>$\sum\limits_{q=1}^{n}\mu(q)\sum\limits_{d=1}^{n}\sum\limits_{i=1}^{n/dq}\sum\limits_{j=1}^{m/dq}iq\times jq$<br>$\sum\limits_{q=1}^{n}\mu(q)q^2\sum\limits_{d=1}^{n}\sum\limits_{i=1}^{n/dq}\sum\limits_{j=1}^{m/dq}ij$<br>设 $s(x)=\sum\limits_{i=1}^x i$<br>原式化为：<br>$\sum\limits_{q=1}^n\mu(q)q^2\sum\limits_{d=1}^{n}s(n/dq)s(m/dq)$<br>我们发现， $dq&gt;n$ 时，$s(n/dq)=0$，也就不会有贡献了。那么我们珂以缩小 $d$ 的范围：<br>$\sum\limits_{q=1}^{n}\mu(q)q^2\sum\limits_{d=1}^{n/q}s(n/dq)s(m/dq)$</p>
 <p>整除分块两次，是 $O(n)$ 的（？）。</p>
 <p>但是似乎这个复杂度还和 $m$ 有点关系，我不是很清楚…总之，它TLE了，只有 $80$ 分。（亲测）</p>
 <p>那么我们考虑枚举 $q\times d$，设为 $T$。它的贡献就是 $s(n/T)s(m/T)$ 。而它被算到的此时，显然， $T=dq$ 是 $q$ 的倍数，所以 $q$ 是 $T=dq$ 的因数。那 $dq=T$ 被算到的次数就是 $\sum\limits_{q|T} \mu(q)q^2$。将这个值设为 $f(T)$。</p>
