@@ -109,25 +109,18 @@
 
 
 
-  <meta name="description" content="说道斜率优化，我就想起今年下半年 湖南2008年的一个题。相信大家也不陌生（如果您是第一次学斜率优化，那估计挺陌生的）。题目叫：HNOI2008 玩具装箱TOY。题意大概是这个样子： 题意简述给你一个序列a_{[1,n]}和一个常数k。请你把这个序列分成若干段。定义：一个段[l,r]需要占用的空间X就等于r-l+\sum\limits_{i=l}^{r} a_i，然后需要的花费就是(X-k)^2。">
-<meta name="keywords" content="DP,斜率优化">
+  <meta name="description" content="题意简述noi.ac再次蒯题，实锤了… 请你求长度在 $[1,n]$ 范围内，值域在 $[l,r]$ 范围内的序列中，不下降序列有多少个。答案对  $1000003$（是质数）取膜。 多组数据，数组组数 $T\le 100$ ，每组数据 $n,l,r\le 1e9$ ，并且保证$l\le r$ 思路框架首先，在 $[l,r]$ 范围内，和在 $[1,r-l+1]$ 范围内，没有本质上的区别。设 $">
+<meta name="keywords" content="思维,组合数学,毒瘤">
 <meta property="og:type" content="article">
-<meta property="og:title" content="斜率优化 笔记">
-<meta property="og:url" content="https://lightninguz2.github.io/2020/02/10/斜率优化-笔记/index.html">
+<meta property="og:title" content="noi.ac 405 bzoj 4403 序列统计 题解">
+<meta property="og:url" content="https://lightninguz2.github.io/2020/02/24/noi-ac-405-bzoj-4403-序列统计-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
-<meta property="og:description" content="说道斜率优化，我就想起今年下半年 湖南2008年的一个题。相信大家也不陌生（如果您是第一次学斜率优化，那估计挺陌生的）。题目叫：HNOI2008 玩具装箱TOY。题意大概是这个样子： 题意简述给你一个序列a_{[1,n]}和一个常数k。请你把这个序列分成若干段。定义：一个段[l,r]需要占用的空间X就等于r-l+\sum\limits_{i=l}^{r} a_i，然后需要的花费就是(X-k)^2。">
+<meta property="og:description" content="题意简述noi.ac再次蒯题，实锤了… 请你求长度在 $[1,n]$ 范围内，值域在 $[l,r]$ 范围内的序列中，不下降序列有多少个。答案对  $1000003$（是质数）取膜。 多组数据，数组组数 $T\le 100$ ，每组数据 $n,l,r\le 1e9$ ，并且保证$l\le r$ 思路框架首先，在 $[l,r]$ 范围内，和在 $[1,r-l+1]$ 范围内，没有本质上的区别。设 $">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/09/14/5d7ce0ad51a74.jpg">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/09/14/5d7cd35cbc6bb.jpg">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/09/14/5d7cd6e4e92e0.jpg">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/09/14/5d7cd77bba4f0.jpg">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/09/14/5d7cd8045a5d9.jpg">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/09/14/5d7ce689c90ef.jpg">
-<meta property="og:updated_time" content="2019-09-14T13:22:55.129Z">
+<meta property="og:updated_time" content="2020-02-24T06:53:26.794Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="斜率优化 笔记">
-<meta name="twitter:description" content="说道斜率优化，我就想起今年下半年 湖南2008年的一个题。相信大家也不陌生（如果您是第一次学斜率优化，那估计挺陌生的）。题目叫：HNOI2008 玩具装箱TOY。题意大概是这个样子： 题意简述给你一个序列a_{[1,n]}和一个常数k。请你把这个序列分成若干段。定义：一个段[l,r]需要占用的空间X就等于r-l+\sum\limits_{i=l}^{r} a_i，然后需要的花费就是(X-k)^2。">
-<meta name="twitter:image" content="https://img.langlangago.xyz/2019/09/14/5d7ce0ad51a74.jpg">
+<meta name="twitter:title" content="noi.ac 405 bzoj 4403 序列统计 题解">
+<meta name="twitter:description" content="题意简述noi.ac再次蒯题，实锤了… 请你求长度在 $[1,n]$ 范围内，值域在 $[l,r]$ 范围内的序列中，不下降序列有多少个。答案对  $1000003$（是质数）取膜。 多组数据，数组组数 $T\le 100$ ，每组数据 $n,l,r\le 1e9$ ，并且保证$l\le r$ 思路框架首先，在 $[l,r]$ 范围内，和在 $[1,r-l+1]$ 范围内，没有本质上的区别。设 $">
 
 
 
@@ -136,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://lightninguz2.github.io/2020/02/10/斜率优化-笔记/">
+  <link rel="canonical" href="https://lightninguz2.github.io/2020/02/24/noi-ac-405-bzoj-4403-序列统计-题解/">
 
 
 
@@ -146,7 +139,7 @@
   };
 </script>
 
-  <title>斜率优化 笔记 | Flandre Scarlet 的小屋</title>
+  <title>noi.ac 405 bzoj 4403 序列统计 题解 | Flandre Scarlet 的小屋</title>
   
 
 
@@ -458,7 +451,7 @@ $(window).load(function(){
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/02/10/斜率优化-笔记/">
+    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/02/24/noi-ac-405-bzoj-4403-序列统计-题解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LightningUZ">
@@ -475,7 +468,7 @@ $(window).load(function(){
 
         
         
-          <h1 class="post-title" itemprop="name headline">斜率优化 笔记
+          <h1 class="post-title" itemprop="name headline">noi.ac 405 bzoj 4403 序列统计 题解
 
               
             
@@ -501,24 +494,12 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-02-10 00:32:33" itemprop="dateCreated datePublished" datetime="2020-02-10T00:32:33+08:00">2020-02-10</time>
+              <time title="创建时间：2020-02-24 14:52:31 / 修改时间：14:53:26" itemprop="dateCreated datePublished" datetime="2020-02-24T14:52:31+08:00">2020-02-24</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-09-14 21:22:55" itemprop="dateModified" datetime="2019-09-14T21:22:55+08:00">2019-09-14</time>
               
             
           </span>
@@ -550,7 +531,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 1.6k 字</span>
+                  <span class="post-meta-item-text">本文字数： 1.1k 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -564,7 +545,7 @@ $(window).load(function(){
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长  &asymp; 6 分钟</span>
+                  <span class="post-meta-item-text">阅读时长  &asymp; 5 分钟</span>
                 
                 <span title="阅读时长"></span>
               
@@ -586,38 +567,23 @@ $(window).load(function(){
       
 
       
-        <p>说道斜率优化，我就想起<del>今年下半年</del> 湖南2008年的一个题。相信大家也不陌生（如果您是第一次学斜率优化，那估计挺陌生的）。题目叫：HNOI2008 玩具装箱TOY。题意大概是这个样子：</p>
-<h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给你一个序列<script type="math/tex">a_{[1,n]}</script>和一个常数<script type="math/tex">k</script>。请你把这个序列分成若干段。定义：一个段<script type="math/tex">[l,r]</script>需要占用的空间<script type="math/tex">X</script>就等于<script type="math/tex">r-l+\sum\limits_{i=l}^{r} a_i</script>，然后需要的花费就是<script type="math/tex">(X-k)^2</script>。其中这个<script type="math/tex">X</script>没有限制，珂以无限长（只不过不是最优就是了）。请求出所有段的花费的最小值。</p>
-<h3 id="暴力思路"><a href="#暴力思路" class="headerlink" title="暴力思路"></a>暴力思路</h3><p>如果您来看斜率优化的话，相信您也不难退出这个题的暴力<script type="math/tex">dp</script>。设<script type="math/tex">dp[i]</script>表示前<script type="math/tex">i</script>个数分成一些段使得总花费最小。那么，<script type="math/tex">dp[i]=min{dp[j]+cost(j+1,i)}</script>。其中<script type="math/tex">cost(j+1,i)</script>表示从<script type="math/tex">j+1</script>到<script type="math/tex">i</script>这些数在一段的花费。为了稍微快一点，设<script type="math/tex">sum</script>表示<script type="math/tex">a</script>的前缀和。那么<script type="math/tex">cost(j+1,i)</script>就等于<script type="math/tex">[(i-j-1+sum[i]-sum[j])-l]^2</script>。</p>
-<p>但是这个<script type="math/tex">dp</script>是<script type="math/tex">O(n^2)</script>的。能不能再快一点呢？（严格来讲，你<strong>必须</strong>要再快一点，要不然这个时间就卡不过去）</p>
-<h3 id="正片开始：斜率优化"><a href="#正片开始：斜率优化" class="headerlink" title="正片开始：斜率优化"></a>正片开始：斜率优化</h3><p>把关于<script type="math/tex">i</script>的项和关于<script type="math/tex">j</script>的项单独提出来。变成：<br><img src="https://img.langlangago.xyz/2019/09/14/5d7ce0ad51a74.jpg" alt></p>
-<p>设<script type="math/tex">a(x)=x+sum[x],b(x)=x+sum[x]+l+1</script>。那么原式等于$(a(i)-b(j))^2$。</p>
-<p>稍稍改变<script type="math/tex">j</script>的定义，令<script type="math/tex">j</script>是满足条件中最优的<script type="math/tex">j</script>。</p>
-<p>那么：（推式子警告）</p>
-<script type="math/tex; mode=display">
-dp[i]=dp[j]+(a(i)-b(j))^2\\
-dp[i]=dp[j]+a(i)^2-2a(i)b(j)+b(j)^2\\
-dp[i]+2a(i)b(j)-a(i)^2=dp[j]+b(j)^2</script><p>把这个式子放到平面直角坐标系上，以<script type="math/tex">b(j)</script>为<script type="math/tex">x</script>，<script type="math/tex">dp[j]+b(j)^2</script>为<script type="math/tex">y</script>。</p>
-<p>对于每个<script type="math/tex">j</script>来说，点<script type="math/tex">(b(j),dp[j]+b(j)^2)</script>就是一个决策点了。</p>
-<p>而且，显然这是一个直线的关系，它的斜率就是<script type="math/tex">2a(i)</script>，截距是<script type="math/tex">dp[i]-a(i)^2</script>。我们把直线向上平移<script type="math/tex">a(i)^2</script>，就是最小的<script type="math/tex">dp[i]</script>。由于<script type="math/tex">a(i)^2</script>的值是确定的（我们在找<script type="math/tex">j</script>的过程中，<script type="math/tex">i</script>是不会变的），所以<strong>在同一个<script type="math/tex">i</script>里面</strong>，我们相当于要让截距最小。</p>
-<p>这样，对于每个<script type="math/tex">i</script>（注意，和上面不一样，不在同一个<script type="math/tex">i</script>里面了），<strong>珂能</strong>作为最优点选择出来的点应该组成一个下凸包（因为<script type="math/tex">a(i)</script>是单调递增的，所以斜率单调递增，即组成下凸包）。</p>
-<p>（<script type="math/tex">a(i)</script>的单调递增性我就不讲了）</p>
-<p>为啥？考虑这种情况：<br><img src="https://img.langlangago.xyz/2019/09/14/5d7cd35cbc6bb.jpg" alt><br>（<script type="math/tex">A</script>，<script type="math/tex">B</script>，<script type="math/tex">C</script>是珂供选择的三个决策点）</p>
-<p>当前的话，如果<script type="math/tex">A</script>还没滚蛋，应该是<script type="math/tex">A</script>比<script type="math/tex">B</script>优的。如图<br><img src="https://img.langlangago.xyz/2019/09/14/5d7cd6e4e92e0.jpg" alt></p>
-<p>随着斜率的增加，也许会出现<script type="math/tex">C</script>比<script type="math/tex">A</script>和<script type="math/tex">B</script>都优的情况。如图：</p>
-<p><img src="https://img.langlangago.xyz/2019/09/14/5d7cd77bba4f0.jpg" alt="blog3.jpg"></p>
-<p>容易证明，<script type="math/tex">C</script>此时一枝独秀，<script type="math/tex">A</script>和<script type="math/tex">B</script>都珂以滚蛋了。这两种情况有一个共同点，就是<script type="math/tex">B</script>都不能再优了。anyway，滚蛋吧。</p>
-<p>还有一种情况（肯定还有，只有刚刚那一个是没法保证正确性的），就是最前面两个元素还要满足一个条件：第一个点和第二个点之间的斜率要<script type="math/tex">>=2a(i)</script>，否则第一个就再也不珂能作为最优解出现了，因为此时随着斜率的单调递增，后面的斜率肯定会更大，在当下的<script type="math/tex">2a(i)</script>的斜率中第二个都比第一个优，后面的话就不知道优到哪里去了。所以第一个就再起不能，滚了。</p>
-<p>如图：</p>
-<p><img src="https://img.langlangago.xyz/2019/09/14/5d7cd8045a5d9.jpg" alt="blog4.jpg"></p>
-<p>还是刚刚那张图，不过是另一种滚蛋方法。此时红色直线的斜率=<script type="math/tex">2a(i)</script>=<script type="math/tex">20</script>。当红色直线斜率为<script type="math/tex">20</script>的时候，<script type="math/tex">A</script>就没有<script type="math/tex">B</script>优了。如果再高一点，显然，还是没有<script type="math/tex">B</script>优。所以以后这个<script type="math/tex">A</script>都不珂能比<script type="math/tex">B</script>更优了。<script type="math/tex">A</script>就珂以滚蛋了。</p>
-<p>说道这里，我们发现，这个东西珂以用一个单调队列维护。维护完一个正确的队列之后，<script type="math/tex">Q[head]</script>就是最优解。</p>
-<p>设队列为<script type="math/tex">Q</script>，首尾分别叫<script type="math/tex">head,tail</script>。</p>
-<p>总结一下，就是要维护两个关系：<br><img src="https://img.langlangago.xyz/2019/09/14/5d7ce689c90ef.jpg" alt></p>
-<p>代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> N 112345</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> int long long </span></span><br><span class="line"></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u);~i;i=G.Next(i))</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">	<span class="keyword">int</span> n,l;</span><br><span class="line">	<span class="keyword">int</span> c[N];</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">	    x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">	    <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">	    <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">	    x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		R1(n),R1(l);</span><br><span class="line">		F(i,<span class="number">1</span>,n) R1(c[i]),c[i]+=c[i<span class="number">-1</span>];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> Q[N];</span><br><span class="line">	<span class="keyword">int</span> dp[N];</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">a</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> c[i]+i;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">b</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> c[i]+i+l+<span class="number">1</span>;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">x</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> b(i);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">y</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> dp[i]+b(i)*b(i);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">slope</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span><span class="comment">//计算斜率</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (y(i)-y(j))/(x(i)-x(j));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">int</span> head=<span class="number">1</span>,tail=<span class="number">1</span>;</span><br><span class="line">		F(i,<span class="number">1</span>,n)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">while</span>(head&lt;tail <span class="keyword">and</span> slope(Q[head],Q[head+<span class="number">1</span>])&lt;<span class="number">2</span>*a(i)) ++head;</span><br><span class="line">                        <span class="comment">//垃圾决策点出队列</span></span><br><span class="line">			dp[i]=dp[Q[head]]+(a(i)-b(Q[head]))* (a(i)-b(Q[head]));</span><br><span class="line">			<span class="comment">//Q[head]就是最优的决策点。</span></span><br><span class="line">			<span class="keyword">while</span>(head&lt;tail <span class="keyword">and</span> slope(i,Q[tail<span class="number">-1</span>])&lt;slope(Q[tail<span class="number">-1</span>],Q[tail])) --tail;</span><br><span class="line">			Q[++tail]=i;</span><br><span class="line">                        <span class="comment">//把i加入队列</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,dp[n]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		Input();</span><br><span class="line">		Soviet();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">undef</span> int <span class="comment">//long long </span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Flandre_Scarlet::IsMyWife();</span><br><span class="line">	getchar();getchar();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>还有一些答疑时间（根据作者自身出现的理解问题编写，以后支持评论功能之后珂能会根据评论区中的问题编写。）</p>
-<p>Q：既然<script type="math/tex">Q[head]</script>是最优的，为啥还要存着后面的点呢？<br>A：后面的点虽然现在不是最优的，但是它们很有潜力，等以后斜率上去之后，也许<script type="math/tex">Q[head]</script>就滚蛋了，后面那些点就变成了最优。注意上面，我们说的是<strong>珂能</strong>成为最优的点，而不是现在最优的点。要为未来着想。</p>
-
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>noi.ac再次蒯题，实锤了…</p>
+<p>请你求长度在 $[1,n]$ 范围内，值域在 $[l,r]$ 范围内的序列中，不下降序列有多少个。答案对  $1000003$（是质数）取膜。</p>
+<p>多组数据，数组组数 $T\le 100$ ，每组数据 $n,l,r\le 1e9$ ，并且保证$l\le r$</p>
+<h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>首先，在 $[l,r]$ 范围内，和在 $[1,r-l+1]$ 范围内，没有本质上的区别。<br>设 $m=r-l+1$，然后答案就是 $C_{n+m}^{m}-1$</p>
+<h3 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h3><p>我们先求长度固定为 $k$ 的时候，有多少满足条件的序列，然后取遍 $k=1,2\cdots n$ ，求和。</p>
+<h4 id="求有多少固定长度非严格上升子序列"><a href="#求有多少固定长度非严格上升子序列" class="headerlink" title="求有多少固定长度非严格上升子序列"></a>求有多少固定长度非严格上升子序列</h4><h5 id="严格上升怎么做"><a href="#严格上升怎么做" class="headerlink" title="严格上升怎么做"></a>严格上升怎么做</h5><p>长度为 $k$ 的时候，值域在 $[1,m]$ 内的<strong>严格上升</strong>序列的格式就是 $C_{m}^{k}$ 。因为我们只要在 $[1,m]$ 内选出来 $k$ 个数，然后把它排一下序，那就能得到一个长度为 $k$ ，值域在 $[1,m]$ 内的一个<strong>严格上升</strong>序列了。</p>
+<h5 id="如何转化成非严格上升"><a href="#如何转化成非严格上升" class="headerlink" title="如何转化成非严格上升"></a>如何转化成非严格上升</h5><p>我们在选严格上升序列的时候，假设我们当前选到的数为 $x$，那么下一个位置珂以是 $x+1,x+2…m$，有 $m-x$ 种选择。而选非严格上升序列的时候，却有 $m-x+1 $种选择。</p>
+<p>那这个时候，我们只要把 $m$ 变成 $m+1$ ，那答案就和严格上升的时候一样了！！</p>
+<p>序列的长度为 $k$ ，那么我们在选第 $[1,k-1]$这些位置的时候，都要把 $m$ 变成 $m+1$。那一共就是变成 $m+k-1$。</p>
+<p>总结一下，长度为 $k$ 值域在 $[1,m]$ 之间的非严格上升序列个数为 $C_{m+k-1}^{k}$</p>
+<h4 id="优化求和"><a href="#优化求和" class="headerlink" title="优化求和"></a>优化求和</h4><p>我们要求 $\sum\limits_{i=1}^{n} C_{m+i-1}^{i}=C_{m}^1+C_{m+1}^2+C_{m+2}^3…+C_{m+n-1}^{n}$</p>
+<p>显然，$C_{n}^{m}=C_{n-1}^{m}+C_{n-1}^{m-1}$</p>
+<p>那也就是说，我们珂以用两个相邻的 $C_{n}^{xxx}$ 得到一个 $C_{n+1}^{xxx}$。</p>
+<p>那么我们考虑给第一项加上一个 $C_{m}^{0}$，也就是 $1$，然后最后减掉一个 $C_{m}^{0}$。</p>
+<p>那我们开始推式子了，系好安全带（为了方便理解，我拆开$\Sigma$）：<br>原式<br>$=C_{m}^{0}+C_{m}^{1}+C_{m+1}^{2}+C_{m+2}^3…+C_{m+n-1}^n-1$<br>$=C_{m+1}^{1}+C_{m+1}^{2}+C_{m+2}^3+…+C_{m+n-1}^n-1$<br>$=C_{m+2}^{2}+C_{m+2}^{3}+….+C_{m+n-1}^n-1$<br>$=C_{m+n-1}^{n-1}+C_{m+n-1}^{n}-1$<br>$=C_{m+n}^{n}-1$</p>
+<p>所以答案就是 $C_{m+n}^{n}-1$。预处理阶乘（逆元）+Lucas定理。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> mod 1000003</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N (mod&lt;&lt;1)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> int long long </span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        va_list args;</span><br><span class="line">        va_start(args,cnt);</span><br><span class="line">        F(i,<span class="number">1</span>,cnt) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);R1(*x);</span><br><span class="line">        &#125;</span><br><span class="line">        va_end(args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> fac[N],ifac[N];</span><br><span class="line">    <span class="comment">//阶乘，和阶乘的逆元</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Init</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        fac[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">        F(i,<span class="number">1</span>,mod<span class="number">-1</span>) fac[i]=fac[i<span class="number">-1</span>]*i%mod;</span><br><span class="line">        ifac[mod<span class="number">-1</span>]=mod<span class="number">-1</span>;</span><br><span class="line">       <span class="comment">//mod是质数，那么(mod-1)! %mod=mod-1，这个是Wilson定理</span></span><br><span class="line">       <span class="comment">//然后mod-1的逆元，显然是mod-1</span></span><br><span class="line">        D(i,mod<span class="number">-2</span>,<span class="number">0</span>) ifac[i]=ifac[i+<span class="number">1</span>]*(i+<span class="number">1</span>)%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> n,l,r;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Rd(<span class="number">3</span>,&amp;n,&amp;l,&amp;r);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">C</span><span class="params">(<span class="keyword">int</span> n,<span class="keyword">int</span> m)</span> <span class="comment">//Lucas定理</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (m&gt;n) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (n&lt;mod <span class="keyword">and</span> m&lt;mod)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> fac[n]*ifac[m]%mod*ifac[n-m]%mod;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> C(n/mod,m/mod)*C(n%mod,m%mod)%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=r-l+<span class="number">1</span>; <span class="comment">//len就是m了</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,(C(n+len,len)+mod<span class="number">-1</span>)%mod);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Init();</span><br><span class="line">        <span class="keyword">int</span> t;R1(t);</span><br><span class="line">        F(i,<span class="number">1</span>,t)</span><br><span class="line">        &#123;</span><br><span class="line">            Input();</span><br><span class="line">            Soviet();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">undef</span> int <span class="comment">//long long </span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -640,9 +606,11 @@ dp[i]+2a(i)b(j)-a(i)^2=dp[j]+b(j)^2</script><p>把这个式子放到平面直角
       
         <div class="post-tags">
           
-            <a href="/tags/DP/" rel="tag"># DP</a>
+            <a href="/tags/思维/" rel="tag"># 思维</a>
           
-            <a href="/tags/斜率优化/" rel="tag"># 斜率优化</a>
+            <a href="/tags/组合数学/" rel="tag"># 组合数学</a>
+          
+            <a href="/tags/毒瘤/" rel="tag"># 毒瘤</a>
           
         </div>
       
@@ -675,8 +643,8 @@ dp[i]+2a(i)b(j)-a(i)^2=dp[j]+b(j)^2</script><p>把这个式子放到平面直角
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/10/斐波那契循环节-笔记/" rel="next" title="斐波那契循环节 笔记">
-                <i class="fa fa-chevron-left"></i> 斐波那契循环节 笔记
+              <a href="/2020/02/23/noi-ac-716-答案是整数-题解/" rel="next" title="noi.ac 716 答案是整数 题解">
+                <i class="fa fa-chevron-left"></i> noi.ac 716 答案是整数 题解
               </a>
             
           </div>
@@ -684,10 +652,6 @@ dp[i]+2a(i)b(j)-a(i)^2=dp[j]+b(j)^2</script><p>把这个式子放到平面直角
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/10/洛谷 1099 树网的核 题解/" rel="prev" title="洛谷 1099 树网的核 题解">
-                洛谷 1099 树网的核 题解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1072,7 +1036,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#暴力思路"><span class="nav-number">2.</span> <span class="nav-text">暴力思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正片开始：斜率优化"><span class="nav-number">3.</span> <span class="nav-text">正片开始：斜率优化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路框架"><span class="nav-number">2.</span> <span class="nav-text">思路框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体思路"><span class="nav-number">3.</span> <span class="nav-text">具体思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#求有多少固定长度非严格上升子序列"><span class="nav-number">3.1.</span> <span class="nav-text">求有多少固定长度非严格上升子序列</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#严格上升怎么做"><span class="nav-number">3.1.1.</span> <span class="nav-text">严格上升怎么做</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#如何转化成非严格上升"><span class="nav-number">3.1.2.</span> <span class="nav-text">如何转化成非严格上升</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优化求和"><span class="nav-number">3.2.</span> <span class="nav-text">优化求和</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
@@ -1260,7 +1224,7 @@ show_date_time();
   
     <script>
       window.livereOptions = {
-        refer: '2020/02/10/斜率优化-笔记/'
+        refer: '2020/02/24/noi-ac-405-bzoj-4403-序列统计-题解/'
       };
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];

@@ -476,9 +476,17 @@ AC_list
 	http://noi.ac/problem/560 (blog!!!)
 	http://noi.ac/problem/405 (blog!!!)
 	https://www.lydsy.com/JudgeOnline/problem.php?id=4403
-	http://noi.ac/problem/716 (blog!!!)
+	http://noi.ac/problem/716
 	https://vjudge.net/problem/CodeForces-1084D 
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1101
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1003
 	https://www.luogu.com.cn/problem/P1772
 	http://www.51nod.com/Challenge/Problem.html#problemId=1677
+	2020-2-23 7
+	https://vjudge.net/problem/CodeForces-1313A
+	https://vjudge.net/problem/CodeForces-1313B
+	https://vjudge.net/problem/CodeForces-1313C1
+	https://vjudge.net/problem/CodeForces-1313C2 (blog!!!)
+	http://noi.ac/problem/373
+	http://noi.ac/problem/407
+	http://noi.ac/problem/374
