@@ -512,4 +512,4 @@ AC_list
 	http://noi.ac/problem/796
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1041
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1121
-	https://www.luogu.com.cn/problem/P3073 (blog!!!)
+	https://www.luogu.com.cn/problem/P3073 

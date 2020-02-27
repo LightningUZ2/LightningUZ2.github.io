@@ -109,13 +109,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Flandre Scarlet 的小屋">
-<meta property="og:url" content="https://lightninguz2.github.io/tags/树链剖分/index.html">
+  <meta name="description" content="题意简述给你一个 $n$ 个点的边带权的树，还有 $m$ 个新增的修建计划，以及 $Q$ 个询问。每一个询问的格式是：给定 $s,t,l,r$ ，问你，如果动用 $[l,r]$ 之间的修建计划，从 $s$ 到 $t$ 的路径中，边权异或和最小是多少？   询问之间是独立的，在某一个询问里加入的修建计划，询问完就会拆掉。并且修建计划保证不是树上原来就有的边。 $n,m,q\le 3\times 10">
+<meta name="keywords" content="图论,毒瘤,线性基">
+<meta property="og:type" content="article">
+<meta property="og:title" content="noi.ac 41 最短路 题解">
+<meta property="og:url" content="https://lightninguz2.github.io/2020/02/27/noi-ac-41-最短路-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
+<meta property="og:description" content="题意简述给你一个 $n$ 个点的边带权的树，还有 $m$ 个新增的修建计划，以及 $Q$ 个询问。每一个询问的格式是：给定 $s,t,l,r$ ，问你，如果动用 $[l,r]$ 之间的修建计划，从 $s$ 到 $t$ 的路径中，边权异或和最小是多少？   询问之间是独立的，在某一个询问里加入的修建计划，询问完就会拆掉。并且修建计划保证不是树上原来就有的边。 $n,m,q\le 3\times 10">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-02-27T13:42:58.617Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Flandre Scarlet 的小屋">
+<meta name="twitter:title" content="noi.ac 41 最短路 题解">
+<meta name="twitter:description" content="题意简述给你一个 $n$ 个点的边带权的树，还有 $m$ 个新增的修建计划，以及 $Q$ 个询问。每一个询问的格式是：给定 $s,t,l,r$ ，问你，如果动用 $[l,r]$ 之间的修建计划，从 $s$ 到 $t$ 的路径中，边权异或和最小是多少？   询问之间是独立的，在某一个询问里加入的修建计划，询问完就会拆掉。并且修建计划保证不是树上原来就有的边。 $n,m,q\le 3\times 10">
 
 
 
@@ -124,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://lightninguz2.github.io/tags/树链剖分/">
+  <link rel="canonical" href="https://lightninguz2.github.io/2020/02/27/noi-ac-41-最短路-题解/">
 
 
 
@@ -134,7 +139,7 @@
   };
 </script>
 
-  <title>标签: 树链剖分 | Flandre Scarlet 的小屋</title>
+  <title>noi.ac 41 最短路 题解 | Flandre Scarlet 的小屋</title>
   
 
 
@@ -210,7 +215,7 @@ $(window).load(function(){
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -304,7 +309,7 @@ $(window).load(function(){
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -426,114 +431,246 @@ $(window).load(function(){
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>树链剖分
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/02/27/noi-ac-41-最短路-题解/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LightningUZ">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Flandre Scarlet 的小屋">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2020/02/10/洛谷-2680-运输计划-题解/" itemprop="url">
-            
-              <span itemprop="name">洛谷 2680 运输计划 题解</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">noi.ac 41 最短路 题解
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:33+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-02-27 21:42:32 / 修改时间：21:42:58" itemprop="dateCreated datePublished" datetime="2020-02-27T21:42:32+08:00">2020-02-27</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数： 1.2k 字</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长  &asymp; 5 分钟</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/10/bzoj-3626-LNOI2014-LCA-题解/" itemprop="url">
-            
-              <span itemprop="name">bzoj 3626 [LNOI2014] LCA 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:32+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给你一个 $n$ 个点的边带权的树，还有 $m$ 个新增的修建计划，以及 $Q$ 个询问。每一个询问的格式是：给定 $s,t,l,r$ ，问你，如果动用 $[l,r]$ 之间的修建计划，从 $s$ 到 $t$ 的路径中，边权异或和最小是多少？  </p>
+<p>询问之间是独立的，在某一个询问里加入的修建计划，询问完就会拆掉。并且修建计划保证不是树上原来就有的边。</p>
+<p>$n,m,q\le 3\times 10^5$，所有的边权（树上和修建计划） $\le 10^9$。对于每个询问，$1\le s,t\le n$，并且$1\le l\le r\le m$。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>由 <code>bzoj 2115</code> 的结论得，一张图上从 $s$ 到 $t$ 的路径的异或和，可以由另外一条路径的异或和，异或上几个环的异或和得到。</p>
+<p>然后我们珂以先取初始值为 $s$ 到 $t$ 树上路径的异或和，然后在把所有环的异或和放到线性基里，求最小异或和。</p>
+<p>本题还限制了只能动用 $[l,r]$ 之间的修建计划。那就按 $r$ 排个序，对于每个位置 $i$ ，记录所有 $r=i$ 的询问。然后在插入线性基的时候，顺便维护上修建计划的编号。对于每个询问，我们只考虑 $[1,r]$ 的修建计划，不用考虑动用 $&gt;r $的修建计划的问题，只要满足修建计划的编号 $\ge l$ 即珂。线性基求最小异或和的时候，顺便维护下即珂。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N 355555</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        va_list args;</span><br><span class="line">        va_start(args,cnt);</span><br><span class="line">        F(i,<span class="number">1</span>,cnt) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);R1(*x);</span><br><span class="line">        &#125;</span><br><span class="line">        va_end(args);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Graph</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">        <span class="keyword">public</span>:</span><br><span class="line">            <span class="keyword">int</span> head[N];</span><br><span class="line">            <span class="keyword">int</span> EdgeCount;</span><br><span class="line">            <span class="class"><span class="keyword">struct</span> <span class="title">Edge</span></span></span><br><span class="line"><span class="class">            &#123;</span></span><br><span class="line">                <span class="keyword">int</span> To,Label,Next;</span><br><span class="line">            &#125;Ed[N&lt;&lt;<span class="number">1</span>];</span><br><span class="line">            <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">(<span class="keyword">int</span> _V=N,<span class="keyword">int</span> _E=N&lt;&lt;<span class="number">1</span>)</span> </span></span><br><span class="line"><span class="function">            </span>&#123;</span><br><span class="line">                <span class="built_in">memset</span>(Ed,<span class="number">-1</span>,<span class="keyword">sizeof</span>(Edge)*(_E));</span><br><span class="line">                <span class="built_in">memset</span>(head,<span class="number">-1</span>,<span class="keyword">sizeof</span>(<span class="keyword">int</span>)*(_V));</span><br><span class="line">                EdgeCount=<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="function"><span class="keyword">void</span> <span class="title">AddEdge</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w=<span class="number">1</span>)</span></span></span><br><span class="line"><span class="function">            </span>&#123;</span><br><span class="line">                Ed[++EdgeCount]=(Edge)&#123;v,w,head[u]&#125;;</span><br><span class="line">                head[u]=EdgeCount;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="function"><span class="keyword">void</span> <span class="title">Add2</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v,<span class="keyword">int</span> w=<span class="number">1</span>)</span> </span>&#123;AddEdge(u,v,w);AddEdge(v,u,w);&#125;</span><br><span class="line">            <span class="function"><span class="keyword">int</span> <span class="title">Start</span><span class="params">(<span class="keyword">int</span> u)</span> </span>&#123;<span class="keyword">return</span> head[u];&#125;</span><br><span class="line">            <span class="function"><span class="keyword">int</span> <span class="title">To</span><span class="params">(<span class="keyword">int</span> u)</span></span>&#123;<span class="keyword">return</span> Ed[u].To;&#125;</span><br><span class="line">            <span class="function"><span class="keyword">int</span> <span class="title">Label</span><span class="params">(<span class="keyword">int</span> u)</span></span>&#123;<span class="keyword">return</span> Ed[u].Label;&#125;</span><br><span class="line">            <span class="function"><span class="keyword">int</span> <span class="title">Next</span><span class="params">(<span class="keyword">int</span> u)</span></span>&#123;<span class="keyword">return</span> Ed[u].Next;&#125;</span><br><span class="line">    &#125;G;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> n,m,q;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Rd(<span class="number">3</span>,&amp;n,&amp;m,&amp;q);</span><br><span class="line">        G.clear();</span><br><span class="line">        F(i,<span class="number">1</span>,n<span class="number">-1</span>) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> u,v,w;Rd(<span class="number">3</span>,&amp;u,&amp;v,&amp;w);</span><br><span class="line">            G.Add2(u,v,w);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> d[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> f)</span> <span class="comment">//先预处理出每个点到根的异或和：d[i]</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Tra(i,u)</span><br><span class="line">        &#123;<span class="keyword">int</span> v=__v;</span><br><span class="line">            <span class="keyword">if</span> (v!=f)</span><br><span class="line">            &#123;</span><br><span class="line">                d[v]=d[u]^G.Label(i);</span><br><span class="line">                DFS(v,u);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> w[N];</span><br><span class="line">    <span class="keyword">int</span> l[N],r[N];</span><br><span class="line">    <span class="keyword">int</span> p[<span class="number">32</span>],id[<span class="number">32</span>]; <span class="comment">//p是线性基，id是线性基顺便维护的修建计划编号</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pos[N];</span><br><span class="line">    <span class="keyword">int</span> ans[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        DFS(<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">        F(i,<span class="number">1</span>,m) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> u,v,len;Rd(<span class="number">3</span>,&amp;u,&amp;v,&amp;len);</span><br><span class="line">            w[i]=d[u]^d[v]^len; <span class="comment">//第i个修建计划从u到v，那就会产生一个环，这个环的异或和为：u到v树上路径的异或和，再以后上修建计划的边权</span></span><br><span class="line">        &#125;</span><br><span class="line">        F(i,<span class="number">1</span>,q) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> s,t;Rd(<span class="number">2</span>,&amp;s,&amp;t);</span><br><span class="line">            ans[i]=d[s]^d[t]; <span class="comment">//初始答案就是s到t的树上路径异或</span></span><br><span class="line">            Rd(<span class="number">2</span>,&amp;l[i],&amp;r[i]); </span><br><span class="line">            pos[r[i]].p_b(i); <span class="comment">//离线，按r排序，把r相同的询问一块考虑</span></span><br><span class="line">        &#125;</span><br><span class="line">        F(t,<span class="number">1</span>,m)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> x=w[t],r=t;</span><br><span class="line">            D(i,<span class="number">30</span>,<span class="number">0</span>) <span class="keyword">if</span> ((x&gt;&gt;i)&amp;<span class="number">1</span>) </span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (!p[i])&#123;p[i]=x;id[i]=r;<span class="keyword">break</span>;&#125;</span><br><span class="line">                <span class="keyword">if</span> (id[i]&lt;r) swap(p[i],x),swap(id[i],r);</span><br><span class="line">                x^=p[i];</span><br><span class="line">            &#125; <span class="comment">//插入线性基的时候顺便维护编号</span></span><br><span class="line">            F(k,<span class="number">0</span>,sz(pos[t])<span class="number">-1</span>)</span><br><span class="line">            &#123;<span class="keyword">int</span> v=pos[t][k];</span><br><span class="line">                D(i,<span class="number">30</span>,<span class="number">0</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span> (id[i]&gt;=l[v]) ans[v]=min(ans[v],ans[v]^p[i]);</span><br><span class="line">                 <span class="comment">//在考虑编号&gt;=l的情况下，求最小异或和</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        F(i,<span class="number">1</span>,q) <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Input();</span><br><span class="line">        Soviet();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/图论/" rel="tag"># 图论</a>
+          
+            <a href="/tags/毒瘤/" rel="tag"># 毒瘤</a>
+          
+            <a href="/tags/线性基/" rel="tag"># 线性基</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/27/洛谷-3073-USACO13FEB-Tractor-S-题解/" rel="next" title="洛谷 3073 [USACO13FEB]Tractor S 题解">
+                <i class="fa fa-chevron-left"></i> 洛谷 3073 [USACO13FEB]Tractor S 题解
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80Njc0Ni8yMzI0OA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -554,8 +691,17 @@ $(window).load(function(){
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -870,6 +1016,23 @@ show_date_time();
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1032,6 +1195,10 @@ show_date_time();
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -1044,6 +1211,20 @@ show_date_time();
 
 
 
+  
+    <script>
+      window.livereOptions = {
+        refer: '2020/02/27/noi-ac-41-最短路-题解/'
+      };
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
@@ -1483,7 +1664,7 @@ show_date_time();
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 
