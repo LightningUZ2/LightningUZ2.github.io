@@ -427,7 +427,7 @@ AC_list
 	http://noi.ac/problem/721
 	2020-02-17 5
 	寒假结束，开学了
-	https://www.luogu.com.cn/problem/P2572 (blog!!!)
+	https://www.luogu.com.cn/problem/P2572 
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1858
 	http://noi.ac/problem/75
 	http://noi.ac/problem/54
@@ -482,7 +482,7 @@ AC_list
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1003
 	https://www.luogu.com.cn/problem/P1772
 	http://www.51nod.com/Challenge/Problem.html#problemId=1677
-	2020-02-23 7
+	2020-02-24 7
 	https://vjudge.net/problem/CodeForces-1313A
 	https://vjudge.net/problem/CodeForces-1313B
 	https://vjudge.net/problem/CodeForces-1313C1
@@ -490,14 +490,14 @@ AC_list
 	http://noi.ac/problem/373
 	http://noi.ac/problem/407
 	http://noi.ac/problem/374
-	2020-02-24 7
+	2020-02-25 7
 	https://vjudge.net/problem/CodeForces-622F
 	https://www.luogu.com.cn/problem/P1943
 	https://www.luogu.com.cn/problem/P4028 (blog: BSGS)
 	http://acm.hdu.edu.cn/showproblem.php?pid=5289
 	http://noi.ac/problem/577 (blog!!!)
 	http://noi.ac/problem/380
-	2020-02-25 7
+	2020-02-26 7
 	http://noi.ac/problem/44
 	http://noi.ac/problem/41 (blog!!!)
 	http://noi.ac/problem/605
@@ -505,7 +505,7 @@ AC_list
 	https://vjudge.net/problem/SPOJ-DIVCNT2
 	https://vjudge.net/problem/CodeForces-509E
 	https://vjudge.net/problem/CodeForces-558E
-	2020-02-26 7
+	2020-02-27 7
 	https://vjudge.net/problem/CodeForces-1195E
 	http://noi.ac/problem/663
 	http://noi.ac/problem/802
@@ -513,3 +513,21 @@ AC_list
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1041
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1121
 	https://www.luogu.com.cn/problem/P3073 
+	2020-02-28 7
+	http://noi.ac/problem/138
+	http://noi.ac/problem/137
+	http://noi.ac/problem/109
+	https://www.lydsy.com/JudgeOnline/problem.php?id=1066
+	https://www.luogu.com.cn/problem/P2472 (blog!!!)
+	https://www.luogu.com.cn/problem/P4055
+	https://www.lydsy.com/JudgeOnline/status.php?user_id=LightningUZ
+	2020-02-29 9
+	http://noi.ac/problem/603
+	http://noi.ac/problem/139
+	http://noi.ac/problem/140
+	https://loj.ac/problem/2605
+	https://www.luogu.com.cn/problem/P5242 
+	https://www.luogu.com.cn/problem/P3092
+	https://www.luogu.com.cn/problem/P3842
+	https://www.luogu.com.cn/problem/P4484
+	(bzoj又爆了) https:// www.lydsy.com/JudgeOnline/problem.php?id=5161
