@@ -1,4 +1,5 @@
 AC_list
+	(*blog)
 	2020-03-01 9
 	http://noi.ac/problem/455
 	http://noi.ac/problem/244

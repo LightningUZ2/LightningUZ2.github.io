@@ -450,15 +450,14 @@ AC_list
 	https://loj.ac/problem/134
 	https://loj.ac/problem/135
 	https://loj.ac/problem/133
-	(*blog)
 	2020-02-20 7
 	http://noi.ac/problem/344
 	http://noi.ac/problem/32
 	http://noi.ac/problem/39
 	https://vjudge.net/problem/CodeForces-486E
-	https://www.luogu.com.cn/problem/P1136 (blog!!!)
+	https://www.luogu.com.cn/problem/P1136 
 	http://www.51nod.com/Challenge/Problem.html#problemId=2895
-	http://www.51nod.com/Challenge/Problem.html#problemId=1495 (blog!!!)
+	http://www.51nod.com/Challenge/Problem.html#problemId=1495
 	2020-02-21
 	http://noi.ac/problem/23
 	http://noi.ac/problem/655
@@ -473,8 +472,8 @@ AC_list
 	http://noi.ac/problem/123
 	http://noi.ac/problem/112
 	2020-02-23 9
-	http://noi.ac/problem/560 (blog!!!)
-	http://noi.ac/problem/405 (blog!!!)
+	http://noi.ac/problem/560
+	http://noi.ac/problem/405
 	https://www.lydsy.com/JudgeOnline/problem.php?id=4403
 	http://noi.ac/problem/716
 	https://vjudge.net/problem/CodeForces-1084D 
@@ -486,14 +485,14 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1313A
 	https://vjudge.net/problem/CodeForces-1313B
 	https://vjudge.net/problem/CodeForces-1313C1
-	https://vjudge.net/problem/CodeForces-1313C2 (blog!!!)
+	https://vjudge.net/problem/CodeForces-1313C2
 	http://noi.ac/problem/373
 	http://noi.ac/problem/407
 	http://noi.ac/problem/374
 	2020-02-25 7
 	https://vjudge.net/problem/CodeForces-622F
 	https://www.luogu.com.cn/problem/P1943
-	https://www.luogu.com.cn/problem/P4028 (blog: BSGS)
+	https://www.luogu.com.cn/problem/P4028 
 	http://acm.hdu.edu.cn/showproblem.php?pid=5289
 	http://noi.ac/problem/577
 	http://noi.ac/problem/380
