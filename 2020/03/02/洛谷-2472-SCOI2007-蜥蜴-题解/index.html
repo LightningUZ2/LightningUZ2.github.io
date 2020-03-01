@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
 <meta property="og:description" content="题意简述(这题超套路…)有一个 $n\times m$ 的矩阵，其中一些位置上有蜥蜴。每个位置上有一个石柱，给你他们初始的高度 $a_{i,j}$。一个蜥蜴可以从一个石柱，跳到直线距离 $\le k$ 的另一个石柱上。当一只蜥蜴从一个石柱上离开的时候，这个石柱的高度就会减少 $1$ 。如果蜥蜴跳到了矩阵外面，就是逃离了。请你求最少有多少只不能逃离（其实就是最多能逃离几只）。 $1&amp;lt;=n,m&amp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-01T16:31:35.666Z">
+<meta property="og:updated_time" content="2020-03-01T16:32:26.817Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷 2472 [SCOI2007]蜥蜴 题解">
 <meta name="twitter:description" content="题意简述(这题超套路…)有一个 $n\times m$ 的矩阵，其中一些位置上有蜥蜴。每个位置上有一个石柱，给你他们初始的高度 $a_{i,j}$。一个蜥蜴可以从一个石柱，跳到直线距离 $\le k$ 的另一个石柱上。当一只蜥蜴从一个石柱上离开的时候，这个石柱的高度就会减少 $1$ 。如果蜥蜴跳到了矩阵外面，就是逃离了。请你求最少有多少只不能逃离（其实就是最多能逃离几只）。 $1&amp;lt;=n,m&amp;">
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-03-02 00:30:59 / 修改时间：00:31:35" itemprop="dateCreated datePublished" datetime="2020-03-02T00:30:59+08:00">2020-03-02</time>
+              <time title="创建时间：2020-03-02 00:30:59 / 修改时间：00:32:26" itemprop="dateCreated datePublished" datetime="2020-03-02T00:30:59+08:00">2020-03-02</time>
             
 
             
@@ -573,7 +573,7 @@ $(window).load(function(){
 <h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>显然建网络流。首先我们把矩阵展开，就是把 $(i,j)$ 位置的点编号为 $(i-1)m+j$。</p>
 <p>每个石柱上只能通过定量的蜥蜴，这显然是一个点限流。套路拆点，每个位置变成 $In(i,j)$ 和 $Out(i,j)$。设源点为 $S$ ，汇点为 $T$。</p>
 <p>对于每个点 $(i,j)$：</p>
-<p>$In(i,j) \xrightarrow[a_{i,j}]{} Out(i,j)$ （一个石柱上只能通过 $a_{i,j$ 个蜥蜴）<br>$S \xrightarrow[1]{} In(i,j)$ （一个石柱上只能有一个蜥蜴）<br>$Out(i,j) \xrightarrow[inf]{} T$ （跳出终点就随便了）</p>
+<p>$In(i,j) \xrightarrow[a_{i,j}]{} Out(i,j)$ （一个石柱上只能通过 $a_{i,j}$ 个蜥蜴）<br>$S \xrightarrow[1]{} In(i,j)$ （一个石柱上只能有一个蜥蜴）<br>$Out(i,j) \xrightarrow[inf]{} T$ （跳出终点就随便了）</p>
 <p>对于点 $(i,j)$ 和点 $(u,v)$ 满足 $(i,j)$ 到 $(u,v)$ 直线距离 $\le k$：<br>$Out(i,j) \xrightarrow[inf]{} In(u,v)$ （点之间跳是不限的）<br>$Out(u,v) \xrightarrow[inf]{} In(i,j)$ </p>
 <p>这样跑一个最大流即珂。</p>
 <p>Q：为什么点到点，点到 $T$ 之间都是 $inf$ 的边呢？怎么就“随便”了？<br>A：其实并不是随便，我们知道，网络流上一个流能流过的值是其路径上的最小值。那么既然 $In(i,j)$ 到 $Out(i,j)$ 的时候，已经限过了一次 $a_{i,j}$ ，那我们从 $Out(i,j)$ 到 $In(u,v)$ 的时候，再限一次也没有必要了。当然，你如果实在要限这条边流量为 $a_{i,j}$，没有任何问题。</p>

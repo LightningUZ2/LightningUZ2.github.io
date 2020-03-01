@@ -495,11 +495,11 @@ AC_list
 	https://www.luogu.com.cn/problem/P1943
 	https://www.luogu.com.cn/problem/P4028 (blog: BSGS)
 	http://acm.hdu.edu.cn/showproblem.php?pid=5289
-	http://noi.ac/problem/577 (blog!!!)
+	http://noi.ac/problem/577
 	http://noi.ac/problem/380
 	2020-02-26 7
 	http://noi.ac/problem/44
-	http://noi.ac/problem/41 (blog!!!)
+	http://noi.ac/problem/41
 	http://noi.ac/problem/605
 	https://vjudge.net/problem/CodeForces-718C
 	https://vjudge.net/problem/SPOJ-DIVCNT2
@@ -518,7 +518,7 @@ AC_list
 	http://noi.ac/problem/137
 	http://noi.ac/problem/109
 	https://www.lydsy.com/JudgeOnline/problem.php?id=1066
-	https://www.luogu.com.cn/problem/P2472 (blog!!!)
+	https://www.luogu.com.cn/problem/P2472 
 	https://www.luogu.com.cn/problem/P4055
 	https://www.lydsy.com/JudgeOnline/status.php?user_id=LightningUZ
 	2020-02-29 9
