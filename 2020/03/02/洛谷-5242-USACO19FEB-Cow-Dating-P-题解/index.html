@@ -109,18 +109,14 @@
 
 
 
-  <meta name="description" content="题意简述Bessie要找 $n$ 头奶牛约会，第 $i$ 头奶牛同意的概率是 $\dfrac{p_i}{10^6}$。Bessie 会对一个连续区间的所有奶牛邀请约会，但是她只希望恰好一个同意来约会。请求出所有区间中，恰好只有一个奶牛同意约会的概率的最大值。输出这个最大的概率乘以 $10^6$ 后下取整的结果。 $n&amp;lt;=10^6$，$0&amp;lt;=p_i&amp;lt;=10^6$。附：标题中的P指的">
-<meta name="keywords" content="数学,单调性">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="洛谷 5242 [USACO19FEB]Cow Dating P 题解">
 <meta property="og:url" content="https://lightninguz2.github.io/2020/03/02/洛谷-5242-USACO19FEB-Cow-Dating-P-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
-<meta property="og:description" content="题意简述Bessie要找 $n$ 头奶牛约会，第 $i$ 头奶牛同意的概率是 $\dfrac{p_i}{10^6}$。Bessie 会对一个连续区间的所有奶牛邀请约会，但是她只希望恰好一个同意来约会。请求出所有区间中，恰好只有一个奶牛同意约会的概率的最大值。输出这个最大的概率乘以 $10^6$ 后下取整的结果。 $n&amp;lt;=10^6$，$0&amp;lt;=p_i&amp;lt;=10^6$。附：标题中的P指的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-01T16:05:05.057Z">
+<meta property="og:updated_time" content="2020-03-01T16:03:35.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷 5242 [USACO19FEB]Cow Dating P 题解">
-<meta name="twitter:description" content="题意简述Bessie要找 $n$ 头奶牛约会，第 $i$ 头奶牛同意的概率是 $\dfrac{p_i}{10^6}$。Bessie 会对一个连续区间的所有奶牛邀请约会，但是她只希望恰好一个同意来约会。请求出所有区间中，恰好只有一个奶牛同意约会的概率的最大值。输出这个最大的概率乘以 $10^6$ 后下取整的结果。 $n&amp;lt;=10^6$，$0&amp;lt;=p_i&amp;lt;=10^6$。附：标题中的P指的">
 
 
 
@@ -494,13 +490,9 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-03-02 00:03:58 / 修改时间：00:05:05" itemprop="dateCreated datePublished" datetime="2020-03-02T00:03:58+08:00">2020-03-02</time>
+              <time title="创建时间：2020-03-02 00:03:35" itemprop="dateCreated datePublished" datetime="2020-03-02T00:03:35+08:00">2020-03-02</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -531,7 +523,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 860 字</span>
+                  <span class="post-meta-item-text">本文字数： 0 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -545,7 +537,7 @@ $(window).load(function(){
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长  &asymp; 4 分钟</span>
+                  <span class="post-meta-item-text">阅读时长  &asymp; 1 分钟</span>
                 
                 <span title="阅读时长"></span>
               
@@ -567,19 +559,7 @@ $(window).load(function(){
       
 
       
-        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>Bessie要找 $n$ 头奶牛约会，第 $i$ 头奶牛同意的概率是 $\dfrac{p_i}{10^6}$。Bessie 会对一个连续区间的所有奶牛邀请约会，但是她只希望<strong>恰好</strong>一个同意来约会。请求出所有区间中，<strong>恰好</strong>只有一个奶牛同意约会的概率的最大值。输出这个最大的概率乘以 $10^6$ 后下取整的结果。</p>
-<p>$n&lt;=10^6$，$0&lt;=p_i&lt;=10^6$。<br>附：标题中的P指的是白金组哦(Platinum)，这题很难的。</p>
-<h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>设 $a_i=1-p_i$，$b_i=\dfrac{p_i}{1-p_i}$。</p>
-<p>一段区间 $[l,r]$ 中只有<strong>恰好</strong>一个奶牛同意邀请的概率为： 设 $A=\prod\limits_{i=l}^{r} (1-p_i)=\prod\limits_{i=l}^{r} a_i$，那么这个概率为 $\sum\limits_{i=l}^{r}p_i\times \dfrac{A}{1-p_i}=A\times \sum\limits_{i=1}^{n} \dfrac{p_i}{1-p_i}=A\times B$<br>（设 $B=\sum\limits_{i=1}^{n} \dfrac{p_i}{1-p_i}$）</p>
-<p>证明一下单调性，就珂以 $O(n)$ 做了。</p>
-<h3 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h3><p>我们考虑从 $[l,r]$ 变成 $[l,r+1]$ 会怎么样。</p>
-<p>$[l,r]$ 的答案是 $A\times B$。</p>
-<p>而 $[l,r]$ 变成 $[l,r+1]$ 的时候，$A$ 新乘了一个 $a_{r+1}$ ，$B$ 新加了一个 $b_{r+1}$。答案变成：</p>
-<p>$A\times a_{r+1}\times (B+b_{r+1})=A\times (a_{r+1}B+a_{r+1}b_{r+1})=A\times (a_{r+1}B+p_{r+1})$</p>
-<p>假设这个答案比 $[l,r]$ 的答案优，那么 $a_{r+1}B+p_{r+1}&gt;B$</p>
-<p>简单移项发现： $B&lt;1$</p>
-<p>那么对于每个 $l$ ，我们找到一个最大的 $r$ 满足 $B_{l,r}=\sum\limits_{i=l}^{r} b_i&lt;1$，那么 $[l,r+1]$ 就是以 $l$ 为左端点的最优解了。而随着 $l$ 的增大，$B$ 值显然会减小，那么 $r$ 就会不断往右移（或者不变）。这就是单调性，利用这单调性，珂以轻松的 $O(n)$ 求解。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N 1666666</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> real double</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        va_list args;</span><br><span class="line">        va_start(args,cnt);</span><br><span class="line">        F(i,<span class="number">1</span>,cnt) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);R1(*x);</span><br><span class="line">        &#125;</span><br><span class="line">        va_end(args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    real p[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        R1(n);</span><br><span class="line">        F(i,<span class="number">1</span>,n) &#123;<span class="built_in">scanf</span>(<span class="string">"%lf"</span>,&amp;p[i]); p[i]/=<span class="number">1e6</span>;&#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    real a[N],b[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        F(i,<span class="number">1</span>,n) a[i]=<span class="number">1.0</span>-p[i],b[i]=p[i]/(<span class="number">1.0</span>-p[i]);</span><br><span class="line">       <span class="comment">//计算出a,b</span></span><br><span class="line">        <span class="keyword">int</span> p=<span class="number">0</span>;</span><br><span class="line">       <span class="comment">//p维护满足条件的最大的r值</span></span><br><span class="line">        real A=<span class="number">1.0</span>,B=<span class="number">0.0</span>;</span><br><span class="line">       <span class="comment">//一定注意！A的初始值为1！</span></span><br><span class="line">        real ans=<span class="number">0.0</span>;</span><br><span class="line">        F(i,<span class="number">1</span>,n)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(p&lt;n <span class="keyword">and</span> B&lt;<span class="number">1.0</span>) ++p,A*=a[p],B+=b[p];</span><br><span class="line">           <span class="comment">//此时p是最大的满足B&lt;1的值+1</span></span><br><span class="line">            ans=max(ans,A*B);</span><br><span class="line">          <span class="comment">//那么A*B就是以i为左端点的最优解了</span></span><br><span class="line">            </span><br><span class="line">            A/=a[i]; B-=b[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,(<span class="keyword">int</span>)(ans*<span class="number">1e6</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Input();</span><br><span class="line">        Soviet();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
       
     </div>
 
@@ -599,14 +579,6 @@ $(window).load(function(){
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/数学/" rel="tag"># 数学</a>
-          
-            <a href="/tags/单调性/" rel="tag"># 单调性</a>
-          
-        </div>
       
 
       
@@ -699,17 +671,8 @@ $(window).load(function(){
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -726,7 +689,7 @@ $(window).load(function(){
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">110</span>
+                    <span class="site-state-item-count">111</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -877,9 +840,7 @@ $(window).load(function(){
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">69</span>
+                    <span class="site-state-item-count">68</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1027,23 +988,6 @@ show_date_time();
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路框架"><span class="nav-number">2.</span> <span class="nav-text">思路框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体思路"><span class="nav-number">3.</span> <span class="nav-text">具体思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -1765,6 +1709,6 @@ show_date_time();
 <!-- 女儿 -->
   <script src="/live2d-widget/autoload.js"></script>
 <!-- 崩溃欺骗 -->
-  <script type="text/javascript" src="/js/src/custom.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+  <script type="text/javascript" src="/js/src/custom.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>

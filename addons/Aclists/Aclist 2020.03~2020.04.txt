@@ -10,3 +10,19 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1283E
 	https://vjudge.net/problem/CodeForces-1294F
 	https://www.luogu.com.cn/problem/P3022
+	2020-03-02 7
+	https://vjudge.net/problem/CodeForces-620E
+	https://www.luogu.com.cn/problem/P5937
+	https://loj.ac/problem/3266
+	https://loj.ac/problem/6029 (blog!!!)
+	http://noi.ac/problem/433
+	http://noi.ac/problem/757
+	https://loj.ac/problem/2125
+	2020-03-03 7
+	http://noi.ac/problem/64 
+	http://www.51nod.com/Challenge/Problem.html#problemId=1237
+	https://loj.ac/problem/10224
+	https://loj.ac/problem/125 (blog!!!)
+	https://loj.ac/problem/10234
+	https://loj.ac/problem/2038
+	https://www.luogu.com.cn/problem/P4345
