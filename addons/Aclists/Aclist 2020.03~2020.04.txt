@@ -1,15 +1,15 @@
 AC_list
-	(*blog)
 	2020-03-01 9
 	http://noi.ac/problem/455
 	http://noi.ac/problem/244
 	https://www.luogu.com.cn/problem/P2329
-	http://noi.ac/problem/357 (blog!!!)
+	http://noi.ac/problem/357
 	https://www.51nod.com/Challenge/Problem.html#problemId=1444
 	https://vjudge.net/problem/CodeForces-543B
 	https://vjudge.net/problem/CodeForces-1283E
 	https://vjudge.net/problem/CodeForces-1294F
 	https://www.luogu.com.cn/problem/P3022
+	(*blog)
 	2020-03-02 7
 	https://vjudge.net/problem/CodeForces-620E
 	https://www.luogu.com.cn/problem/P5937
