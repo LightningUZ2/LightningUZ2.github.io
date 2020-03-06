@@ -529,4 +529,4 @@ AC_list
 	https://www.luogu.com.cn/problem/P3092
 	https://www.luogu.com.cn/problem/P3842
 	https://www.luogu.com.cn/problem/P4484
-	(bzoj又爆了) https:// www.lydsy.com/JudgeOnline/problem.php?id=5161
+	* https://www.lydsy.com/JudgeOnline/problem.php?id=5161 (bzoj爆了)
