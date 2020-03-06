@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lightninguz2.github.io/"/>
-  <updated>2020-03-06T07:58:30.037Z</updated>
+  <updated>2020-03-06T08:07:46.865Z</updated>
   <id>https://lightninguz2.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lightninguz2.github.io/2020/03/03/libreoj-6029-%E3%80%8C%E9%9B%85%E7%A4%BC%E9%9B%86%E8%AE%AD-2017-Day1%E3%80%8D%E5%B8%82%E5%9C%BA-%E9%A2%98%E8%A7%A3/"/>
     <id>https://lightninguz2.github.io/2020/03/03/libreoj-6029-「雅礼集训-2017-Day1」市场-题解/</id>
     <published>2020-03-03T11:42:50.000Z</published>
-    <updated>2020-03-06T07:58:30.037Z</updated>
+    <updated>2020-03-06T08:07:46.865Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给定一个长度为 $n\le 10^5$ 的序列，初始值$\le 10^9$，支持：<br><code>1 l r x</code> 区间 $[l,r]$ 每个数加上 $x$ 。 $|x|&lt;=10^4,1\le l\le r\le n$<br><code>2 l r x</code> 区间 $[l,r]$ 每个数除以 $x$ （下取整），$2\le x\le 1e9,1\le l\le r\le n$<br><code>3 l r</code> 求 $[l,r]$ 中的最小值<br><code>4 l r</code> 求 $[l,r]$ 的和<br>询问数 $\le 10^5$</p><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>显然线段树。</p><p>我们把区间除法分解成区间内每个数都减去某个数。设 $d(a,x)$ 表示 $a$ 除以 $x$ 下取整的变化量，也就是 $a-a/x$。那么 $a\leftarrow a/x$ 的操作，就等价于 $a\leftarrow a-d(a,x)$。显然，当 $x$ 相同的时候， $d$ 函数单调不减。具体的说，如果 $a&lt;b$，则 $d(a,x)\le d(b,x)$ ，对于所有正整数 $x$。</p><p>那么对于一段区间，如果 $d(Max,x)=d(Min,x)$，那么这个区间中，所有数的变化量都一样了，直接上区间减法来解决。</p><p>否则我们继续把这个区间分成左右两个部分，直到这个区间满足上述条件即可。</p><h3 id="分析复杂度"><a href="#分析复杂度" class="headerlink" title="分析复杂度"></a>分析复杂度</h3><p>那么这个算法的复杂度是多少呢？看起来每次的最坏情况是暴力的 $O(r-l+1)$ ，但是我们注意到，加法操作中的 $x$ 最大才加 $10000$，但是一次除法操作每次至少除以 $2$。 </p><p>那比如我是毒瘤出题人，我要卡我的代码，那肯定是要尽量多的加法操作（因为会减慢除法操作），但是也不能少了除法操作（因为看起来很慢）。那假设数据里有 $5\times 10^4$ 个加法操作，还有 $5\times 10^4$ 个除法操作。然后每个数一开始都是 $10^9$ 的规模（不一定恰好是 $10^9$ ，全部相同反而会加快除法操作）。</p><p>那加完之后每个数都是 $1.5\times 10^9$ 左右。那么我们把它除个 $31$ 次就全部变成 $0$ 了，那肯定变化量相同，就是能用 $O(log)$ 的减法操作实现了。</p><p>那总共就相当于 $O(n \log n \log a)$ ，其中 $a$ 是初始的值域，$\log a$ 大约要到 $32$ 了。</p><h3 id="代码-今天测试一下展开功能"><a href="#代码-今天测试一下展开功能" class="headerlink" title="代码 (今天测试一下展开功能)"></a>代码 (今天测试一下展开功能)</h3><details><summary> 点击展开 </summary><pre><code>#include <bits stdc++.h>using namespace std;namespace Flandre_Scarlet{    #define N 155555    #define int long long     #define F(i,l,r) for(int i=l;i<=r;++i) #define d(i,r,l) for(int i="r;i">=l;--i)    #define Fs(i,l,r,c) for(int i=l;i<=r;c) #define ds(i,r,l,c) for(int i="r;i">=l;c)    #define MEM(x,a) memset(x,a,sizeof(x))    #define FK(x) MEM(x,0)    #define Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))    #define p_b push_back    #define sz(a) ((int)a.size())    #define iter(a,p) (a.begin()+p)    void R1(int &x)    {        x=0;char c=getchar();int f=1;        while(c<'0' or c>'9') f=(c=='-')?-1:1,c=getchar();        while(c>='0' and c<='9') x="(x<<1)+(x<<3)+(c^48),c=getchar();" } void rd(int cnt,...) { va_list args; va_start(args,cnt); f(i,1,cnt) int* va_end(args); class segmenttree public: struct node{int l,r,s,m,x,a;}tree[n<<2]; 区间左端点，右端点，区间和，区间最大值，区间最小值，加法lazytag #define ls index<<1 rs index<<1|1 l tree[index].l r tree[index].r s tree[index].s m tree[index].m tree[index].x a tree[index].a ll tree[ls].l lr tree[ls].r tree[ls].s lm tree[ls].m lx tree[ls].x la tree[ls].a rl tree[rs].l rr tree[rs].r tree[rs].s rm tree[rs].m rx tree[rs].x ra tree[rs].a update(int index="1)" build(int l,int r,int 建树 if (l="=r)" {r1(s);m="X=S;return;}" int mid="(l+r)">>1;            Build(l,mid,ls); Build(mid+1,r,rs);            Update(index);        }        void AddOne(int x,int index=1) //单区间加法操作        {            A+=x; M+=x; X+=x;            S+=(R-L+1)*x;        }        void PushDown(int index=1)        {            if (A)            {                AddOne(A,ls); AddOne(A,rs);                A=0;            }        }        void Add(int l,int r,int x,int index=1) //区间加法        {            if (l>R or L>r) return;            if (l<=l and r<="r)" return addone(x,index); pushdown(index); add(l,r,x,ls); add(l,r,x,rs); update(index); } int fld(int a,int b) 这题值域可能到负的，负数范围内的下取整和c++自带的除法不太一样...要自己写一个 { aa="abs(a),bb=abs(b);" if ((a>0)^(b>0)) return -(aa+bb-1)/bb;            else return aa/bb;        }        void Div(int l,int r,int d,int index=1)        {            if (l>R or L>r) return;            if (l<=l and r<="r)" { int dmax="X-fld(X,d),dmin=M-fld(M,d);" 最大差和最小差 if (dmax="=dmin)" addone(-dmax,index); return; } pushdown(index); div(l,r,d,ls); div(l,r,d,rs); update(index); querymin(int l,int r,int index="1)" 区间最小值 (l>R or L>r) return 0x3f3f3f3f3f3f3f3fll;            if (l<=l and r<="r)" return m; pushdown(index); min(querymin(l,r,ls),querymin(l,r,rs)); } int querysum(int l,int r,int index="1)" 区间和 { if (l>R or L>r) return 0;            if (l<=l and r<="r)" return s; pushdown(index); querysum(l,r,ls)+querysum(l,r,rs); } }t; int n,m; void input() { rd(2,&n,&m); t.build(1,n); soviet() f(i,1,m) o,l,r;rd(3,&o,&l,&r); ++l,++r; if (o="=1)" x;r1(x);t.add(l,r,x); d;r1(d);t.div(l,r,d); printf("%lld\n",t.querymin(l,r)); printf("%lld\n",t.querysum(l,r)); #define flan ismywife() input(); soviet(); #undef long main() flandre_scarlet::ismywife(); getchar();getchar(); 0; < code></=l></=l></=l></=l></='9')></'0'></=r;c)></=r;++i)></bits></code></pre></details>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给定一个长度为 $n\le 10^5$ 的序列，初始值$\le 10^9$，支持：<br><code>1 l r x</code> 区间 $[l,r]$ 每个数加上 $x$ 。 $|x|&lt;=10^4,1\le l\le r\le n$<br><code>2 l r x</code> 区间 $[l,r]$ 每个数除以 $x$ （下取整），$2\le x\le 1e9,1\le l\le r\le n$<br><code>3 l r</code> 求 $[l,r]$ 中的最小值<br><code>4 l r</code> 求 $[l,r]$ 的和<br>询问数 $\le 10^5$</p><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>显然线段树。</p><p>我们把区间除法分解成区间内每个数都减去某个数。设 $d(a,x)$ 表示 $a$ 除以 $x$ 下取整的变化量，也就是 $a-a/x$。那么 $a\leftarrow a/x$ 的操作，就等价于 $a\leftarrow a-d(a,x)$。显然，当 $x$ 相同的时候， $d$ 函数单调不减。具体的说，如果 $a&lt;b$，则 $d(a,x)\le d(b,x)$ ，对于所有正整数 $x$。</p><p>那么对于一段区间，如果 $d(Max,x)=d(Min,x)$，那么这个区间中，所有数的变化量都一样了，直接上区间减法来解决。</p><p>否则我们继续把这个区间分成左右两个部分，直到这个区间满足上述条件即可。</p><h3 id="分析复杂度"><a href="#分析复杂度" class="headerlink" title="分析复杂度"></a>分析复杂度</h3><p>那么这个算法的复杂度是多少呢？看起来每次的最坏情况是暴力的 $O(r-l+1)$ ，但是我们注意到，加法操作中的 $x$ 最大才加 $10000$，但是一次除法操作每次至少除以 $2$。 </p><p>那比如我是毒瘤出题人，我要卡我的代码，那肯定是要尽量多的加法操作（因为会减慢除法操作），但是也不能少了除法操作（因为看起来很慢）。那假设数据里有 $5\times 10^4$ 个加法操作，还有 $5\times 10^4$ 个除法操作。然后每个数一开始都是 $10^9$ 的规模（不一定恰好是 $10^9$ ，全部相同反而会加快除法操作）。</p><p>那加完之后每个数都是 $1.5\times 10^9$ 左右。那么我们把它除个 $31$ 次就全部变成 $0$ 了，那肯定变化量相同，就是能用 $O(log)$ 的减法操作实现了。</p><p>那总共就相当于 $O(n \log n \log a)$ ，其中 $a$ 是初始的值域，$\log a$ 大约要到 $32$ 了。</p><h3 id="代码-今天测试一下展开功能"><a href="#代码-今天测试一下展开功能" class="headerlink" title="代码 (今天测试一下展开功能)"></a>代码 (今天测试一下展开功能)</h3><details><summary> 点击展开 </summary><pre><code>#include &lt; bits/stdc++.h &gt;using namespace std;namespace Flandre_Scarlet{    #define N 155555    #define int long long     #define F(i,l,r) for(int i=l;i<=r;++i) #define d(i,r,l) for(int i="r;i">=l;--i)    #define Fs(i,l,r,c) for(int i=l;i<=r;c) #define ds(i,r,l,c) for(int i="r;i">=l;c)    #define MEM(x,a) memset(x,a,sizeof(x))    #define FK(x) MEM(x,0)    #define Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))    #define p_b push_back    #define sz(a) ((int)a.size())    #define iter(a,p) (a.begin()+p)    void R1(int &x)    {        x=0;char c=getchar();int f=1;        while(c&lt; '0' or c>'9') f=(c=='-')?-1:1,c=getchar();        while(c>='0' and c&lt; ='9') x=(x&lt; &lt; 1)+(x&lt; &lt; 3)+(c^48),c=getchar();        x=(f==1)?x:-x;    }    void Rd(int cnt,...)    {        va_list args;        va_start(args,cnt);        F(i,1,cnt)         {            int* x=va_arg(args,int*);R1(*x);        }        va_end(args);    }    class SegmentTree    {    public:        struct node{int l,r,s,m,x,a;}tree[N&lt; &lt; 2];        //区间左端点，右端点，区间和，区间最大值，区间最小值，加法lazytag        #define ls index&lt; &lt; 1        #define rs index&lt; &lt; 1|1        #define L tree[index].l        #define R tree[index].r        #define S tree[index].s        #define M tree[index].m        #define X tree[index].x        #define A tree[index].a        #define lL tree[ls].l        #define lR tree[ls].r        #define lS tree[ls].s        #define lM tree[ls].m        #define lX tree[ls].x        #define lA tree[ls].a        #define rL tree[rs].l        #define rR tree[rs].r        #define rS tree[rs].s        #define rM tree[rs].m        #define rX tree[rs].x        #define rA tree[rs].a        void Update(int index=1)        {            S=lS+rS;            M=min(lM,rM);            X=max(lX,rX);        }        void Build(int l,int r,int index=1) // 建树        {            L=l,R=r; A=0;            if (l==r) {R1(S);M=X=S;return;}            int mid=(l+r)>>1;            Build(l,mid,ls); Build(mid+1,r,rs);            Update(index);        }        void AddOne(int x,int index=1) //单区间加法操作        {            A+=x; M+=x; X+=x;            S+=(R-L+1)*x;        }        void PushDown(int index=1)        {            if (A)            {                AddOne(A,ls); AddOne(A,rs);                A=0;            }        }        void Add(int l,int r,int x,int index=1) //区间加法        {            if (l>R or L>r) return;            if (l&lt; =L and R&lt; =r) return AddOne(x,index);            PushDown(index);            Add(l,r,x,ls); Add(l,r,x,rs);            Update(index);        }        int fld(int a,int b) //这题值域可能到负的，负数范围内的下取整和C++自带的除法不太一样...要自己写一个        {            int aa=abs(a),bb=abs(b);            if ((a>0)^(b>0)) return -(aa+bb-1)/bb;            else return aa/bb;        }        void Div(int l,int r,int d,int index=1)        {            if (l>R or L>r) return;            if (l&lt; =L and R&lt; =r)            {                int dmax=X-fld(X,d),dmin=M-fld(M,d);              //最大差和最小差                if (dmax==dmin)                {                    AddOne(-dmax,index);                    return;                }            }            PushDown(index);            Div(l,r,d,ls); Div(l,r,d,rs);            Update(index);        }        int QueryMin(int l,int r,int index=1) //区间最小值        {            if (l>R or L>r) return 0x3f3f3f3f3f3f3f3fll;            if (l&lt; =L and R&lt; =r) return M;            PushDown(index);            return min(QueryMin(l,r,ls),QueryMin(l,r,rs));        }        int QuerySum(int l,int r,int index=1) //区间和        {            if (l>R or L>r) return 0;            if (l&lt; =L and R&lt; =r) return S;            PushDown(index);            return QuerySum(l,r,ls)+QuerySum(l,r,rs);        }    }T;    int n,m;    void Input()    {        Rd(2,&n,&m);        T.Build(1,n);    }    void Soviet()    {        F(i,1,m)        {            int o,l,r;Rd(3,&o,&l,&r);            ++l,++r;            if (o==1)            {                int x;R1(x);T.Add(l,r,x);            }            if (o==2)            {                int d;R1(d);T.Div(l,r,d);            }            if (o==3)            {                printf("%lld\n",T.QueryMin(l,r));            }            if (o==4)            {                printf("%lld\n",T.QuerySum(l,r));            }        }    }    #define Flan void    Flan IsMyWife()    {        Input();        Soviet();    }    #undef int //long long }int main(){    Flandre_Scarlet::IsMyWife();    getchar();getchar();    return 0;}</=r;c)></=r;++i)></code></pre></details>]]></content>
     
     <summary type="html">
     
@@ -60,9 +60,9 @@
     </summary>
     
     
-      <category term="二分答案" scheme="https://lightninguz2.github.io/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
-    
       <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+      <category term="二分答案" scheme="https://lightninguz2.github.io/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
     
       <category term="水题" scheme="https://lightninguz2.github.io/tags/%E6%B0%B4%E9%A2%98/"/>
     
@@ -216,9 +216,9 @@
     
       <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
-      <category term="毒瘤" scheme="https://lightninguz2.github.io/tags/%E6%AF%92%E7%98%A4/"/>
-    
       <category term="组合数学" scheme="https://lightninguz2.github.io/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="毒瘤" scheme="https://lightninguz2.github.io/tags/%E6%AF%92%E7%98%A4/"/>
     
   </entry>
   
@@ -420,9 +420,9 @@
     </summary>
     
     
-      <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
-    
       <category term="贪心" scheme="https://lightninguz2.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+      <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
   </entry>
   
@@ -501,9 +501,9 @@
     
       <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
-      <category term="期望" scheme="https://lightninguz2.github.io/tags/%E6%9C%9F%E6%9C%9B/"/>
-    
       <category term="线段树" scheme="https://lightninguz2.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="期望" scheme="https://lightninguz2.github.io/tags/%E6%9C%9F%E6%9C%9B/"/>
     
   </entry>
   
