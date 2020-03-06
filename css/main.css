@@ -1950,7 +1950,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #20712a;
+  background: #ff9a6e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3308,8 +3308,8 @@ body {
   cursor: pointer;
 }
 .close:after {
-  content: "▼";
+  content: "展开▼";
 }
 .open:after {
-  content: "▲";
+  content: "收起▲";
 }
