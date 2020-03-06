@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
 <meta property="og:description" content="题意简述给定一个长度为 $n\le 10^5$ 的序列，初始值$\le 10^9$，支持：1 l r x 区间 $[l,r]$ 每个数加上 $x$ 。 $|x|&amp;lt;=10^4,1\le l\le r\le n$2 l r x 区间 $[l,r]$ 每个数除以 $x$ （下取整），$2\le x\le 1e9,1\le l\le r\le n$3 l r 求 $[l,r]$ 中的最小值4 l r">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-06T08:07:46.865Z">
+<meta property="og:updated_time" content="2020-03-06T08:16:03.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="libreoj 6029 「雅礼集训 2017 Day1」市场  题解">
 <meta name="twitter:description" content="题意简述给定一个长度为 $n\le 10^5$ 的序列，初始值$\le 10^9$，支持：1 l r x 区间 $[l,r]$ 每个数加上 $x$ 。 $|x|&amp;lt;=10^4,1\le l\le r\le n$2 l r x 区间 $[l,r]$ 每个数除以 $x$ （下取整），$2\le x\le 1e9,1\le l\le r\le n$3 l r 求 $[l,r]$ 中的最小值4 l r">
@@ -511,7 +511,7 @@ $(window).load(function(){
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-03-06 16:07:46" itemprop="dateModified" datetime="2020-03-06T16:07:46+08:00">2020-03-06</time>
+                <time title="修改时间：2020-03-06 16:16:03" itemprop="dateModified" datetime="2020-03-06T16:16:03+08:00">2020-03-06</time>
               
             
           </span>
@@ -543,7 +543,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 1.4k 字</span>
+                  <span class="post-meta-item-text">本文字数： 616 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -557,7 +557,7 @@ $(window).load(function(){
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长  &asymp; 6 分钟</span>
+                  <span class="post-meta-item-text">阅读时长  &asymp; 2 分钟</span>
                 
                 <span title="阅读时长"></span>
               
@@ -591,182 +591,13 @@ $(window).load(function(){
 <h3 id="代码-今天测试一下展开功能"><a href="#代码-今天测试一下展开功能" class="headerlink" title="代码 (今天测试一下展开功能)"></a>代码 (今天测试一下展开功能)</h3><details>
 <summary> 点击展开 </summary>
 <pre><code>
-#include &lt; bits/stdc++.h &gt;
+#include &lt; bits &#47; stdc++.h &gt; 
 using namespace std;
 namespace Flandre_Scarlet
 {
     #define N 155555
     #define int long long 
-    #define F(i,l,r) for(int i=l;i<=r;++i) #define d(i,r,l) for(int i="r;i">=l;--i)
-    #define Fs(i,l,r,c) for(int i=l;i<=r;c) #define ds(i,r,l,c) for(int i="r;i">=l;c)
-    #define MEM(x,a) memset(x,a,sizeof(x))
-    #define FK(x) MEM(x,0)
-    #define Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))
-    #define p_b push_back
-    #define sz(a) ((int)a.size())
-    #define iter(a,p) (a.begin()+p)
-    void R1(int &x)
-    {
-        x=0;char c=getchar();int f=1;
-        while(c&lt; '0' or c>'9') f=(c=='-')?-1:1,c=getchar();
-        while(c>='0' and c&lt; ='9') x=(x&lt; &lt; 1)+(x&lt; &lt; 3)+(c^48),c=getchar();
-        x=(f==1)?x:-x;
-    }
-    void Rd(int cnt,...)
-    {
-        va_list args;
-        va_start(args,cnt);
-        F(i,1,cnt) 
-        {
-            int* x=va_arg(args,int*);R1(*x);
-        }
-        va_end(args);
-    }
-    class SegmentTree
-    {
-    public:
-        struct node{int l,r,s,m,x,a;}tree[N&lt; &lt; 2];
-        //区间左端点，右端点，区间和，区间最大值，区间最小值，加法lazytag
-        #define ls index&lt; &lt; 1
-        #define rs index&lt; &lt; 1|1
-
-        #define L tree[index].l
-        #define R tree[index].r
-        #define S tree[index].s
-        #define M tree[index].m
-        #define X tree[index].x
-        #define A tree[index].a
-        #define lL tree[ls].l
-        #define lR tree[ls].r
-        #define lS tree[ls].s
-        #define lM tree[ls].m
-        #define lX tree[ls].x
-        #define lA tree[ls].a
-        #define rL tree[rs].l
-        #define rR tree[rs].r
-        #define rS tree[rs].s
-        #define rM tree[rs].m
-        #define rX tree[rs].x
-        #define rA tree[rs].a
-        void Update(int index=1)
-        {
-            S=lS+rS;
-            M=min(lM,rM);
-            X=max(lX,rX);
-        }
-        void Build(int l,int r,int index=1) // 建树
-        {
-            L=l,R=r; A=0;
-            if (l==r) {R1(S);M=X=S;return;}
-            int mid=(l+r)>>1;
-            Build(l,mid,ls); Build(mid+1,r,rs);
-            Update(index);
-        }
-        void AddOne(int x,int index=1) //单区间加法操作
-        {
-            A+=x; M+=x; X+=x;
-            S+=(R-L+1)*x;
-        }
-        void PushDown(int index=1)
-        {
-            if (A)
-            {
-                AddOne(A,ls); AddOne(A,rs);
-                A=0;
-            }
-        }
-        void Add(int l,int r,int x,int index=1) //区间加法
-        {
-            if (l>R or L>r) return;
-            if (l&lt; =L and R&lt; =r) return AddOne(x,index);
-            PushDown(index);
-            Add(l,r,x,ls); Add(l,r,x,rs);
-            Update(index);
-        }
-        int fld(int a,int b) //这题值域可能到负的，负数范围内的下取整和C++自带的除法不太一样...要自己写一个
-        {
-            int aa=abs(a),bb=abs(b);
-            if ((a>0)^(b>0)) return -(aa+bb-1)/bb;
-            else return aa/bb;
-        }
-        void Div(int l,int r,int d,int index=1)
-        {
-            if (l>R or L>r) return;
-            if (l&lt; =L and R&lt; =r)
-            {
-                int dmax=X-fld(X,d),dmin=M-fld(M,d);
-              //最大差和最小差
-                if (dmax==dmin)
-                {
-                    AddOne(-dmax,index);
-                    return;
-                }
-            }
-            PushDown(index);
-            Div(l,r,d,ls); Div(l,r,d,rs);
-            Update(index);
-        }
-        int QueryMin(int l,int r,int index=1) //区间最小值
-        {
-            if (l>R or L>r) return 0x3f3f3f3f3f3f3f3fll;
-            if (l&lt; =L and R&lt; =r) return M;
-            PushDown(index);
-            return min(QueryMin(l,r,ls),QueryMin(l,r,rs));
-        }
-        int QuerySum(int l,int r,int index=1) //区间和
-        {
-            if (l>R or L>r) return 0;
-            if (l&lt; =L and R&lt; =r) return S;
-            PushDown(index);
-            return QuerySum(l,r,ls)+QuerySum(l,r,rs);
-        }
-    }T;
-    int n,m;
-    void Input()
-    {
-        Rd(2,&n,&m);
-        T.Build(1,n);
-    }
-    void Soviet()
-    {
-        F(i,1,m)
-        {
-            int o,l,r;Rd(3,&o,&l,&r);
-            ++l,++r;
-            if (o==1)
-            {
-                int x;R1(x);T.Add(l,r,x);
-            }
-            if (o==2)
-            {
-                int d;R1(d);T.Div(l,r,d);
-            }
-            if (o==3)
-            {
-                printf("%lld\n",T.QueryMin(l,r));
-            }
-            if (o==4)
-            {
-                printf("%lld\n",T.QuerySum(l,r));
-            }
-        }
-    }
-
-    #define Flan void
-    Flan IsMyWife()
-    {
-        Input();
-        Soviet();
-    }
-    #undef int //long long 
-}
-int main()
-{
-    Flandre_Scarlet::IsMyWife();
-    getchar();getchar();
-    return 0;
-}
-</=r;c)></=r;++i)></code></pre>
+    #define F(i,l,r) for(int i=l;i<=r;++i) 1 #define d(i,r,l) for(int i="r;i&gt;" =l;--i) fs(i,l,r,c) ds(i,r,l,c)="l;c)" mem(x,a) memset(x,a,sizeof(x)) fk(x) mem(x,0) tra(i,u) p_b push_back sz(a) ((int)a.size()) iter(a,p) (a.begin()+p) void r1(int &x) { x="0;char" c="getchar();int" f="1;" while(c&lt; '0' or c&gt; '9') while(c&gt;="0" and c&lt;="9" ) &lt; 1)+(x&lt; 3)+(c^48),c="getchar();" } rd(int cnt,...) va_list args; va_start(args,cnt); f(i,1,cnt) int* va_end(args); class segmenttree public: struct node{int l,r,s,m,x,a;}tree[n&lt; 2]; 区间左端点，右端点，区间和，区间最大值，区间最小值，加法lazytag ls index&lt; rs 1|1 l tree[index].l r tree[index].r s tree[index].s m tree[index].m tree[index].x a tree[index].a ll tree[ls].l lr tree[ls].r tree[ls].s lm tree[ls].m lx tree[ls].x la tree[ls].a rl tree[rs].l rr tree[rs].r tree[rs].s rm tree[rs].m rx tree[rs].x ra tree[rs].a update(int index="1)" build(int l,int r,int 建树 if (l="=r)" {r1(s);m="X=S;return;}" int mid="(l+r)&gt;" &gt; 1; build(l,mid,ls); build(mid+1,r,rs); update(index); addone(int x,int 单区间加法操作 a+="x;" m+="x;" x+="x;" s+="(R-L+1)*x;" pushdown(int (a) addone(a,ls); addone(a,rs); add(int 区间加法 (l&gt; l&gt; r) return; (l&lt;="L" r&lt;="r)" return addone(x,index); pushdown(index); add(l,r,x,ls); add(l,r,x,rs); fld(int a,int b) 这题值域可能到负的，负数范围内的下取整和c++自带的除法不太一样...要自己写一个 aa="abs(a),bb=abs(b);" ((a&gt; 0)^(b&gt; 0)) -(aa+bb-1) bb; else div(int d,int dmax="X-fld(X,d),dmin=M-fld(M,d);" 最大差和最小差 (dmax="=dmin)" addone(-dmax,index); div(l,r,d,ls); div(l,r,d,rs); querymin(int 区间最小值 0x3f3f3f3f3f3f3f3fll; m; min(querymin(l,r,ls),querymin(l,r,rs)); querysum(int 区间和 0; s; querysum(l,r,ls)+querysum(l,r,rs); }t; n,m; input() rd(2,&n,&m); t.build(1,n); soviet() f(i,1,m) o,l,r;rd(3,&o,&l,&r); ++l,++r; (o="=1)" x;r1(x);t.add(l,r,x); d;r1(d);t.div(l,r,d); printf("%lld\n",t.querymin(l,r)); printf("%lld\n",t.querysum(l,r)); flan ismywife() input(); soviet(); #undef long main() flandre_scarlet::ismywife(); getchar();getchar(); < code></=r;++i)></code></pre>
 </details>
       
     </div>
