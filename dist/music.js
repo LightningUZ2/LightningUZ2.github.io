@@ -16,12 +16,6 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/Li-XsFdYi7D00meK_2YCXQ==/5798824325014681.jpg',
       },
       {
-        name: '114514',
-        artist: 'Vicho',
-        url: 'http://music.163.com/song/media/outer/url?id=1305993204.mp3',
-        cover: 'http://p1.music.126.net/QMEby0oH57PgR94MkJG1Eg==/109951163522198846.jpg',
-      },
-      {
         name: 'Pure',
         artist: 'SCHAT10（影）',
         url: 'http://music.163.com/song/media/outer/url?id=1419931389.mp3',
@@ -56,6 +50,12 @@ const ap = new APlayer({
         artist: '米津玄師',
         url: 'http://music.163.com/song/media/outer/url?id=536622304.mp3',
         cover: 'http://p1.music.126.net/6IeZ9MiSSDXifj74nzH6ww==/109951163561494000.jpg',
+      },
+      {
+        name: '明けない夜、醒めない夢',
+        artist: 'Yunomi',
+        url: 'http://music.163.com/song/media/outer/url?id=414980995.mp3',
+        cover: 'http://p1.music.126.net/3TgiEFw3i9xSIUmi5kF1kw==/3444769931925345.jpg',
       }
     ]
 });
