@@ -56,6 +56,18 @@ const ap = new APlayer({
         artist: 'Yunomi',
         url: 'http://music.163.com/song/media/outer/url?id=414980995.mp3',
         cover: 'http://p1.music.126.net/3TgiEFw3i9xSIUmi5kF1kw==/3444769931925345.jpg',
+      },
+      {
+        name: 'ニゲラの花束',
+        artist: '鎖那',
+        url: 'http://music.163.com/song/media/outer/url?id=1323304789.mp3',
+        cover: 'http://p1.music.126.net/8ViZTIXKXWpr3ABmLXQtGA==/109951163665586544.jpg',
+      },
+      {
+        name: 'ひだまりの郷',
+        artist: '八乙女葦菜',
+        url: 'http://music.163.com/song/media/outer/url?id=1955459944.mp3',
+        cover: 'http://p1.music.126.net/Li-XsFdYi7D00meK_2YCXQ==/5798824325014681.jpg',
       }
     ]
 });
