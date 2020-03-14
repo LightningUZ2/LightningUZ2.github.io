@@ -41,7 +41,6 @@ AC_list
 	https://www.luogu.com.cn/problem/SP1043
 	https://www.luogu.com.cn/problem/SP6779
 	https://www.luogu.com.cn/problem/SP1716
-	(*blog)
 	2020-03-06 5
 	物理课上社会性死亡,不敢做题 (不算周六周日) (滑稽)
 	https://www.luogu.com.cn/problem/SP2713
@@ -50,15 +49,16 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1305B
 	https://vjudge.net/problem/CodeForces-1305C
 	2020-03-07 9
-	https://loj.ac/problem/10069 (blog!!!)
+	https://loj.ac/problem/10069
 	https://loj.ac/problem/6165
 	https://loj.ac/problem/10211
-	https://loj.ac/problem/10182s
+	https://loj.ac/problem/10182
 	https://loj.ac/problem/10178
 	https://loj.ac/problem/10176
 	https://vjudge.net/problem/CodeForces-1323A
-	https://www.luogu.com.cn/problem/P3704 (blog!!!)
+	https://www.luogu.com.cn/problem/P3704 
 	https://loj.ac/problem/2000
+	(*blog)
 	2020-03-08 9
 	https://vjudge.net/problem/CodeForces-1167B
 	https://vjudge.net/problem/CodeForces-1305D 
@@ -120,6 +120,8 @@ AC_list
 	https://loj.ac/problem/2161 (blog!!!)
 	* https://www.luogu.com.cn/problem/P2183
 	2020-03-15 9
+	https://www.luogu.com.cn/problem/P2619
+
 	https://loj.ac/problem/10228
 	http://poj.org/problem?id=2891
 	https://loj.ac/problem/10213
