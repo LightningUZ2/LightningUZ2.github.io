@@ -65,15 +65,15 @@ AC_list
 	https://loj.ac/problem/550
 	https://loj.ac/problem/2185
 	https://www.luogu.com.cn/problem/P2424
-	https://vjudge.net/problem/CodeForces-1252K (blog!!!)
-	https://vjudge.net/problem/CodeForces-1114F (blog!!!)
+	https://vjudge.net/problem/CodeForces-1252K
+	https://vjudge.net/problem/CodeForces-1114F
 	https://vjudge.net/problem/CodeForces-1323B
 	https://vjudge.net/problem/CodeForces-1323C
 	2020-03-09 7
 	https://www.luogu.com.cn/problem/P4281
 	https://www.luogu.com.cn/problem/P3038
 	https://www.luogu.com.cn/problem/P2700
-	https://loj.ac/problem/139 (blog!!!) 
+	https://loj.ac/problem/139 
 	https://loj.ac/problem/2001
 	https://www.luogu.com.cn/problem/P3703
 	https://vjudge.net/problem/CodeForces-635D
