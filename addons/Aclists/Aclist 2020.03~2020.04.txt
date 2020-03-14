@@ -25,24 +25,23 @@ AC_list
 	https://loj.ac/problem/10234
 	https://loj.ac/problem/2038
 	https://www.luogu.com.cn/problem/P4345
-	(*blog)
 	2020-03-04 7
 	https://loj.ac/problem/6
 	https://loj.ac/problem/10098
-	https://www.luogu.com.cn/problem/P3806 (blog: 点分治)
+	https://www.luogu.com.cn/problem/P3806 
 	https://loj.ac/problem/540
 	https://vjudge.net/problem/CodeForces-609E
-	https://vjudge.net/problem/CodeForces-916E (blog!!!)
-	https://vjudge.net/problem/CodeForces-1305C (vjudge爆了)
+	https://vjudge.net/problem/CodeForces-916E 
+	https://vjudge.net/problem/CodeForces-1305C 
 	2020-03-05 7
 	https://www.luogu.com.cn/problem/P6148
 	https://www.luogu.com.cn/problem/P6149 
 	https://www.luogu.com.cn/problem/P6143
 	https://www.luogu.com.cn/problem/P6146 
-	(blog: USACO20FEB 题目选讲)
 	https://www.luogu.com.cn/problem/SP1043
 	https://www.luogu.com.cn/problem/SP6779
 	https://www.luogu.com.cn/problem/SP1716
+	(*blog)
 	2020-03-06 5
 	物理课上社会性死亡,不敢做题 (不算周六周日) (滑稽)
 	https://www.luogu.com.cn/problem/SP2713
