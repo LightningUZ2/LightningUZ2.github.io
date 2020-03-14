@@ -58,7 +58,6 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1323A
 	https://www.luogu.com.cn/problem/P3704 
 	https://loj.ac/problem/2000
-	(*blog)
 	2020-03-08 9
 	https://vjudge.net/problem/CodeForces-1167B
 	https://vjudge.net/problem/CodeForces-1305D 
@@ -86,13 +85,14 @@ AC_list
 	https://www.luogu.com.cn/problem/P3599
 	https://www.luogu.com.cn/problem/P5308 
 	2020-03-11 7
-	https://loj.ac/problem/137 (blog!!!)
+	https://loj.ac/problem/137
 	https://loj.ac/problem/136
 	https://loj.ac/problem/10104
 	https://loj.ac/problem/2491
 	https://loj.ac/problem/10094
 	https://loj.ac/problem/2081
 	https://www.luogu.com.cn/problem/P5771
+	(*blog)
 	2020-03-12 7
 	https://vjudge.net/problem/CodeForces-858D
 	https://vjudge.net/problem/CodeForces-1200D
