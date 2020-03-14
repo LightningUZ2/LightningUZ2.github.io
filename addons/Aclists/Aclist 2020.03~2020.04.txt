@@ -84,7 +84,7 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1097D
 	https://loj.ac/problem/10222 
 	https://www.luogu.com.cn/problem/P3599
-	https://www.luogu.com.cn/problem/P5308 (blog!!!)
+	https://www.luogu.com.cn/problem/P5308 
 	2020-03-11 7
 	https://loj.ac/problem/137 (blog!!!)
 	https://loj.ac/problem/136
@@ -106,7 +106,7 @@ AC_list
 	https://www.luogu.com.cn/problem/P3295
 	https://loj.ac/problem/10056
 	http://poj.org/problem?id=3764
-	https://www.luogu.com.cn/problem/P4983 (blog!!!)
+	https://www.luogu.com.cn/problem/P4983 
 	https://loj.ac/problem/10051 (blog!!!)
 	https://loj.ac/problem/528
 	2020-03-14 9
