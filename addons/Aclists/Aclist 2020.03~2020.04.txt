@@ -9,12 +9,11 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1283E
 	https://vjudge.net/problem/CodeForces-1294F
 	https://www.luogu.com.cn/problem/P3022
-	(*blog)
 	2020-03-02 7
 	https://vjudge.net/problem/CodeForces-620E
 	https://www.luogu.com.cn/problem/P5937
 	https://loj.ac/problem/3266
-	https://loj.ac/problem/6029 (blog!!!)
+	https://loj.ac/problem/6029 
 	http://noi.ac/problem/433
 	http://noi.ac/problem/757
 	https://loj.ac/problem/2125
@@ -22,10 +21,11 @@ AC_list
 	http://noi.ac/problem/64 
 	http://www.51nod.com/Challenge/Problem.html#problemId=1237
 	https://loj.ac/problem/10224
-	https://loj.ac/problem/125 (blog!!!)
+	https://loj.ac/problem/125
 	https://loj.ac/problem/10234
 	https://loj.ac/problem/2038
 	https://www.luogu.com.cn/problem/P4345
+	(*blog)
 	2020-03-04 7
 	https://loj.ac/problem/6
 	https://loj.ac/problem/10098
@@ -100,13 +100,29 @@ AC_list
 	https://loj.ac/problem/6170
 	https://www.luogu.com.cn/problem/P6114
 	https://loj.ac/problem/129
-	https://www.luogu.com.cn/problem/P1117
+	https://www.luogu.com.cn/problem/P1117 (blog!!!)
 	https://loj.ac/problem/2083
 	2020-03-13 7
 	https://loj.ac/problem/2014
 	https://www.luogu.com.cn/problem/P3295
 	https://loj.ac/problem/10056
 	http://poj.org/problem?id=3764
-	https://www.luogu.com.cn/problem/P4983
-	https://loj.ac/problem/10051
+	https://www.luogu.com.cn/problem/P4983 (blog!!!)
+	https://loj.ac/problem/10051 (blog!!!)
 	https://loj.ac/problem/528
+	2020-03-14 9
+	https://vjudge.net/problem/CodeForces-289B
+	https://vjudge.net/problem/CodeForces-85D 
+	https://vjudge.net/problem/CodeForces-1053C
+	https://loj.ac/problem/2275
+	https://www.luogu.com.cn/problem/P4065
+	https://loj.ac/problem/2129
+	https://loj.ac/problem/2095
+	https://loj.ac/problem/2161 (blog!!!)
+	* https://www.luogu.com.cn/problem/P2183
+	2020-03-15 9
+	https://loj.ac/problem/10228
+	http://poj.org/problem?id=2891
+	https://loj.ac/problem/10213
+	https://loj.ac/problem/10212
+	https://www.luogu.com.cn/problem/P1495
