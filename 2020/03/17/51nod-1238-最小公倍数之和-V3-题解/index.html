@@ -109,18 +109,18 @@
 
 
 
-  <meta name="description" content="题意简述你有一个空调（承太郎），初始温度为$m$，有$n$个客人。第$i$个客人会在$t_i$的时间过来，适应的温度在$[l_i,r_i]$之间。每一个时刻，空调珂以让气温升高$1$（制热），减少$1$（制冷），或者不变（关掉空调）。 请问你能否满足所有顾客的适应温度？输出$YES/NO$。 $n&amp;lt;=1e6$，其余输入数据的绝对值都$&amp;lt;=1e9$。 （原来是$n&amp;lt;=100$，但是">
-<meta name="keywords" content="思维,贪心">
+  <meta name="description" content="题意简述$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n} \operatorname{lcm}(i,j)$ $n\le 10^{10}$ （简短题意，恶臭规模） 思路总的来说，就是先把式子变一变，然后巧妙的用欧拉函数 $\varphi$ 加上杜教筛和整除分块来算。 变形首先我们知道 $\operatorname{lcm}(a,b)=\operatorname{">
+<meta name="keywords" content="莫比乌斯反演,数论函数,毒瘤">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Codeforces 1304C Air Conditioner 题解">
-<meta property="og:url" content="https://lightninguz2.github.io/2020/02/16/Codeforces-1304C-Air-Conditioner-题解/index.html">
+<meta property="og:title" content="51nod 1238 最小公倍数之和 V3 题解">
+<meta property="og:url" content="https://lightninguz2.github.io/2020/03/17/51nod-1238-最小公倍数之和-V3-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
-<meta property="og:description" content="题意简述你有一个空调（承太郎），初始温度为$m$，有$n$个客人。第$i$个客人会在$t_i$的时间过来，适应的温度在$[l_i,r_i]$之间。每一个时刻，空调珂以让气温升高$1$（制热），减少$1$（制冷），或者不变（关掉空调）。 请问你能否满足所有顾客的适应温度？输出$YES/NO$。 $n&amp;lt;=1e6$，其余输入数据的绝对值都$&amp;lt;=1e9$。 （原来是$n&amp;lt;=100$，但是">
+<meta property="og:description" content="题意简述$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n} \operatorname{lcm}(i,j)$ $n\le 10^{10}$ （简短题意，恶臭规模） 思路总的来说，就是先把式子变一变，然后巧妙的用欧拉函数 $\varphi$ 加上杜教筛和整除分块来算。 变形首先我们知道 $\operatorname{lcm}(a,b)=\operatorname{">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-16T06:09:49.373Z">
+<meta property="og:updated_time" content="2020-03-17T12:44:46.027Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Codeforces 1304C Air Conditioner 题解">
-<meta name="twitter:description" content="题意简述你有一个空调（承太郎），初始温度为$m$，有$n$个客人。第$i$个客人会在$t_i$的时间过来，适应的温度在$[l_i,r_i]$之间。每一个时刻，空调珂以让气温升高$1$（制热），减少$1$（制冷），或者不变（关掉空调）。 请问你能否满足所有顾客的适应温度？输出$YES/NO$。 $n&amp;lt;=1e6$，其余输入数据的绝对值都$&amp;lt;=1e9$。 （原来是$n&amp;lt;=100$，但是">
+<meta name="twitter:title" content="51nod 1238 最小公倍数之和 V3 题解">
+<meta name="twitter:description" content="题意简述$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n} \operatorname{lcm}(i,j)$ $n\le 10^{10}$ （简短题意，恶臭规模） 思路总的来说，就是先把式子变一变，然后巧妙的用欧拉函数 $\varphi$ 加上杜教筛和整除分块来算。 变形首先我们知道 $\operatorname{lcm}(a,b)=\operatorname{">
 
 
 
@@ -129,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://lightninguz2.github.io/2020/02/16/Codeforces-1304C-Air-Conditioner-题解/">
+  <link rel="canonical" href="https://lightninguz2.github.io/2020/03/17/51nod-1238-最小公倍数之和-V3-题解/">
 
 
 
@@ -139,7 +139,7 @@
   };
 </script>
 
-  <title>Codeforces 1304C Air Conditioner 题解 | Flandre Scarlet 的小屋</title>
+  <title>51nod 1238 最小公倍数之和 V3 题解 | Flandre Scarlet 的小屋</title>
   
 
 
@@ -451,7 +451,7 @@ $(window).load(function(){
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/02/16/Codeforces-1304C-Air-Conditioner-题解/">
+    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/03/17/51nod-1238-最小公倍数之和-V3-题解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LightningUZ">
@@ -468,7 +468,7 @@ $(window).load(function(){
 
         
         
-          <h1 class="post-title" itemprop="name headline">Codeforces 1304C Air Conditioner 题解
+          <h1 class="post-title" itemprop="name headline">51nod 1238 最小公倍数之和 V3 题解
 
               
             
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-02-16 14:08:32 / 修改时间：14:09:49" itemprop="dateCreated datePublished" datetime="2020-02-16T14:08:32+08:00">2020-02-16</time>
+              <time title="创建时间：2020-03-17 20:38:54 / 修改时间：20:44:46" itemprop="dateCreated datePublished" datetime="2020-03-17T20:38:54+08:00">2020-03-17</time>
             
 
             
@@ -531,7 +531,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 913 字</span>
+                  <span class="post-meta-item-text">本文字数： 1.4k 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -545,7 +545,7 @@ $(window).load(function(){
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长  &asymp; 4 分钟</span>
+                  <span class="post-meta-item-text">阅读时长  &asymp; 7 分钟</span>
                 
                 <span title="阅读时长"></span>
               
@@ -567,21 +567,39 @@ $(window).load(function(){
       
 
       
-        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>你有一个空调（<del>承太郎</del>），初始温度为$m$，有$n$个客人。第$i$个客人会在$t_i$的时间过来，适应的温度在$[l_i,r_i]$之间。每一个时刻，空调珂以让气温升高$1$（制热），减少$1$（制冷），或者不变（关掉空调）。</p>
-<p>请问你能否满足所有顾客的适应温度？输出$YES/NO$。</p>
-<p>$n&lt;=1e6$，其余输入数据的<strong>绝对值</strong>都$&lt;=1e9$。 （原来是$n&lt;=100$，但是$n&lt;=1e6$也能做）</p>
-<h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>首先，将所有的顾客按$t_i$排序（显然）。</p>
-<p>定义两个数$l,r$。初始$l=r=m$。</p>
-<p>然后对于每个顾客，$[l,r]$两端都向外扩展$t_i-t_{i-1}$个长度（$l$减去这个数，$r$加上这个数）。然后和$[l_i,r_i]$取一下交集。看看最后$[l,r]$是否非空，如果非空，输出$YES$，否则$NO$。</p>
-<h3 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h3><h4 id="如何得到这个算法的"><a href="#如何得到这个算法的" class="headerlink" title="如何得到这个算法的"></a>如何得到这个算法的</h4><p>（排序肯定是第一个想到的）</p>
-<p>一开始我还以为这个是贪心之类的，然后我就在想，从第$i-1$个人到第$i$个人，到底该停留在哪个决策点呢？</p>
-<p>后来我就从能得到的区间开始考虑：初始温度为$x$，经过$t$时刻，能得到的区间是$[x-t,x+t]$。</p>
-<p>然后我就有了一个灵感：我们不用具体决策到哪一个点，我们只需要知道能到哪一个<strong>区间</strong>就珂以了！</p>
-<p>于是就有了下面这个算法。</p>
-<h4 id="算法的解释-amp-正确性"><a href="#算法的解释-amp-正确性" class="headerlink" title="算法的解释&amp;正确性"></a>算法的解释&amp;正确性</h4><p>$[l,r]$表示当前空调在满足所有顾客需求的情况下能调整到的温度范围。初始值为$[m,m]$是显然的（第$0$时刻，空调还没开）</p>
-<p>然后从第$i-1$个人到第$i$个人，经过了$t_i-t_{i-1}$个时刻。最小的情况显然是全开制冷，最大的情况显然是全开制热。而且，容易证明，在这段区间中所有的温度都能得到。当然，我们还要考虑上新进来的第$i$个顾客，所以扩展完这个区间还要和$[l_i,r_i]$取一下交集。</p>
-<p>然后到最后看看这个范围是否非空即珂。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N 155555</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        va_list args;</span><br><span class="line">        va_start(args,cnt);</span><br><span class="line">        F(i,<span class="number">1</span>,cnt) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);R1(*x);</span><br><span class="line">        &#125;</span><br><span class="line">        va_end(args);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span><span class="keyword">int</span> t,l,r;&#125; a[N]; <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(node a,node b)&#123;<span class="keyword">return</span> a.t&lt;b.t;&#125;</span><br><span class="line">    <span class="keyword">int</span> n,m;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Rd(<span class="number">2</span>,&amp;n,&amp;m);</span><br><span class="line">        F(i,<span class="number">1</span>,n) Rd(<span class="number">3</span>,&amp;a[i].t,&amp;a[i].l,&amp;a[i].r);</span><br><span class="line">        sort(a+<span class="number">1</span>,a+n+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> l=m,r=m;</span><br><span class="line">        F(i,<span class="number">1</span>,n)</span><br><span class="line">        &#123;</span><br><span class="line">            l-=(a[i].t-a[i<span class="number">-1</span>].t);</span><br><span class="line">            r+=(a[i].t-a[i<span class="number">-1</span>].t);</span><br><span class="line">            l=max(l,a[i].l);</span><br><span class="line">            r=min(r,a[i].r);</span><br><span class="line">            <span class="keyword">if</span> (l&gt;r) &#123;<span class="built_in">puts</span>(<span class="string">"NO"</span>);<span class="keyword">return</span>;&#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">"YES"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> t;R1(t);</span><br><span class="line">        F(i,<span class="number">1</span>,t)</span><br><span class="line">        &#123;</span><br><span class="line">            Input();</span><br><span class="line">            Soviet();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n} \operatorname{lcm}(i,j)$</p>
+<p>$n\le 10^{10}$ （简短题意，恶臭规模）</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>总的来说，就是先把式子变一变，然后巧妙的用欧拉函数 $\varphi$ 加上杜教筛和整除分块来算。</p>
+<h4 id="变形"><a href="#变形" class="headerlink" title="变形"></a>变形</h4><p>首先我们知道 $\operatorname{lcm}(a,b)=\operatorname{lcm}(b,a)$</p>
+<p>所以，当 $i\not=j$ 时候，我们计算 $j&lt;i$ 的情况，然后 $\times 2$ 即可</p>
+<p>对于 $i=j$ 的情况特判，这时候产生的贡献和为 $\dfrac{n(n+1)}{2}$ </p>
+<p>所以，答案化为</p>
+<p>$\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{i-1} \operatorname{lcm}(i,j) + \dfrac{n(n+1)}{2}$</p>
+<p>我们都知道 $\operatorname{lcm}(i,j)=\dfrac{ij}{\gcd(i,j)}$。这个再换一下即可。</p>
+<h4 id="开始硬♂上"><a href="#开始硬♂上" class="headerlink" title="开始硬♂上"></a>开始硬♂上</h4><p>开局一公式，结论全靠推。让我们开心的推倒式子吧~</p>
+<p>首先枚举 $gcd$，然后枚举互质的倍数 $i,j$。</p>
+<p>原式</p>
+<p>$=\sum\limits_{d=1}^{n}\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{i} [\gcd(i,j)=1] ijd$<br>$=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{i} [\gcd(i,j)=1] ij \sum\limits_{d=1}^{n/i} d$ （枚举一对互质的 $i,j$ ，计算有多少个 $d$ 算到了这对 $i,j$，加起来）<br>设 $S_k(n)=\sum\limits_{i=1}^{n} i^k$ 。显然， $k=1,2,3$ 时这个式子都能 $O(1)$ 算。<br>接下来变成<br>$=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{i}[\gcd(i,j)=1] ij S_1(n/i)$ （恭喜你少了一个 $d$）<br>考虑如何求 $\sum\limits_{j=1}^{i} [\gcd(i,j)=1]j$，也就是求 $i$ 以内和 $i$ 互质的数的和。</p>
+<div><div class="fold_hider"><div class="close hider_title">点击</div></div><div class="fold">
+<h5 id="如何求-i-以内和-i-互质的数的和（会的跳过）"><a href="#如何求-i-以内和-i-互质的数的和（会的跳过）" class="headerlink" title="如何求 i 以内和 i 互质的数的和（会的跳过）"></a>如何求 i 以内和 i 互质的数的和（会的跳过）</h5><p>首先数量一共有 $\varphi(i)$ 个。<br>然后我们打表发现，这东西和等差数列有一个很类似的性质：我们把 $[1,i]$ 中和 $i$ 互质的 $j$ 从小到大排一排，换一行，再从大到小排一排，对应位置和相等（都是 $i$）！<br>根据高斯当年想出来的办法，和就是（每个对应位置的和）乘以（一共有多少项），然后除二。<br>换到这题来，这个和就是 $\dfrac{1}{2}i\times \varphi(i)$</p>
+
+</div></div>
+<p>它等于 $\dfrac{1}{2}i\times \varphi(i)$。带入原式：</p>
+<p>$=\sum\limits_{i=1}^{n} i\times S_1(n/i) \times \dfrac{i\times \varphi(i)}{2}$ （恭喜你又少了一个 $j$，它现在是一维了）<br>$=\dfrac{1}{2}\sum\limits_{i=1}^{n} i^2\varphi(i)\times S_1(n/i)$</p>
+<p>$S_1(n/i)$ 显然可以整除分块，但是整除分块我们要考虑一个东西： 如何求 $i^2\varphi(i)$ 的前缀和？显然，用杜教筛求一下和即可。</p>
+<div><div class="fold_hider"><div class="close hider_title">点击</div></div><div class="fold">
+<h5 id="具体怎么杜教筛-（老样子，会的跳过）"><a href="#具体怎么杜教筛-（老样子，会的跳过）" class="headerlink" title="具体怎么杜教筛 （老样子，会的跳过）"></a>具体怎么杜教筛 （老样子，会的跳过）</h5><p>设 $f(n)=n^2\varphi(n)$<br>关键就是要配一个好算的 $g$ ，使得 $f\times g$ 也是一个好算的函数 $h$。</p>
+<p>由狄利克雷卷积的定义，<br>$h(n)=\sum\limits_{d|n} f(d)g(\dfrac{n}{d})$<br>$=\sum\limits_{d|n} d^2\varphi(i)g(\dfrac{n}{d})$<br>我们发现，令 $g(n)=n^2$，就能消掉一个 $d^2$，原式继续变成：<br>$=\sum\limits_{d|n} n^2\varphi(i)$ （注意 $g(\dfrac{n}{d})$ 头顶上还有一个 $n$，乘出来变成 $n^2$）<br>=$n^2\sum\limits_{d|n} varphi(d)=n^3$</p>
+<p>所以说， $h(n)=f\times (g(n)=n^2)=(n^3)$</p>
+<p>然后用杜教筛的传统艺能就行了。</p>
+
+</div></div>
+<p>总复杂度非常恐怖，但是的确能通过 $n=10^10$ 的数据。一定注意处处取膜</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div><div class="fold_hider"><div class="close hider_title">点击</div></div><div class="fold">
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N   20000007ll</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> mod 1000000007ll</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> i6  166666668ll</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> i2  500000004ll</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> int long long</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),v=G.To(i);~i;i=G.Next(i),v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">I</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        <span class="keyword">return</span> (x=(f==<span class="number">1</span>)?x:-x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        va_list args; va_start(args,cnt);</span><br><span class="line">        F(i,<span class="number">1</span>,cnt) &#123;<span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);(*x)=I();&#125;</span><br><span class="line">        va_end(args);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">bitset</span>&lt;N&gt; notp; <span class="keyword">int</span> primes[N/<span class="number">5</span>];</span><br><span class="line">    <span class="keyword">int</span> phi[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Init</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n=<span class="number">2e7</span>;</span><br><span class="line">        notp[<span class="number">1</span>]=<span class="number">1</span>; phi[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> &amp;cnt=primes[<span class="number">0</span>];</span><br><span class="line">        F(i,<span class="number">2</span>,n)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (!notp[i]) &#123;primes[++cnt]=i; phi[i]=i<span class="number">-1</span>;&#125;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=cnt <span class="keyword">and</span> i*primes[j]&lt;=n;++j)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">int</span> u=primes[j];</span><br><span class="line">                notp[i*u]=<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">if</span> (i%u==<span class="number">0</span>)&#123;phi[i*u]=phi[i]*u; <span class="keyword">break</span>;&#125;</span><br><span class="line">                <span class="keyword">else</span> phi[i*u]=phi[i]*phi[u];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        F(i,<span class="number">1</span>,n) phi[i]=(phi[i<span class="number">-1</span>]+<span class="number">1l</span>l*phi[i]*i%mod*i%mod)%mod;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        n=I();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; rec; </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">S1</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;n%=mod; <span class="keyword">return</span> <span class="number">1l</span>l*n%mod*(n+<span class="number">1</span>)%mod*i2%mod;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">S2</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;n%=mod; <span class="keyword">return</span> <span class="number">1l</span>l*n%mod*(n+<span class="number">1</span>)%mod*(<span class="number">2l</span>l*n+<span class="number">1</span>)%mod*i6%mod;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">S3</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;n%=mod; <span class="keyword">return</span> <span class="number">1l</span>l*S1(n)*S1(n)%mod;&#125; <span class="comment">// 我就是这里没取膜，调了两小时</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> n)</span> <span class="comment">//杜教筛求 f(n)=n^2*phi(n) 的前缀和</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (n&lt;=<span class="number">2e7</span>) <span class="keyword">return</span> phi[n];</span><br><span class="line">        <span class="keyword">if</span> (rec[n]) <span class="keyword">return</span> rec[n];</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> l=<span class="number">2</span>,r;l&lt;=n;l=r+<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            r=n/(n/l);</span><br><span class="line">            ans=(ans+f(n/l)*(S2(r)-S2(l<span class="number">-1</span>)))%mod;</span><br><span class="line">        &#125; </span><br><span class="line">        n%=mod;</span><br><span class="line">        <span class="keyword">return</span> rec[n]=(S1(n)*S1(n)-ans)%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> l=<span class="number">2</span>,r;l&lt;=n;l=r+<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            r=n/(n/l);</span><br><span class="line">            ans=(ans+S1(n/l)*(f(r)-f(l<span class="number">-1</span>))%mod*i2%mod)%mod;</span><br><span class="line">        &#125;<span class="comment">// 整除分块+杜教筛</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,((<span class="number">2l</span>l*ans+S1(n))%mod+mod)%mod);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Init();</span><br><span class="line">        Input();</span><br><span class="line">        Soviet();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">undef</span> int <span class="comment">//long long</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
+
       
     </div>
 
@@ -604,9 +622,11 @@ $(window).load(function(){
       
         <div class="post-tags">
           
-            <a href="/tags/思维/" rel="tag"># 思维</a>
+            <a href="/tags/莫比乌斯反演/" rel="tag"># 莫比乌斯反演</a>
           
-            <a href="/tags/贪心/" rel="tag"># 贪心</a>
+            <a href="/tags/数论函数/" rel="tag"># 数论函数</a>
+          
+            <a href="/tags/毒瘤/" rel="tag"># 毒瘤</a>
           
         </div>
       
@@ -639,8 +659,8 @@ $(window).load(function(){
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/16/noi-ac-34-洛谷-4656-libreoj-2484-CEOI2017-Palindromic-Partitions-题解/" rel="next" title="noi.ac 34 洛谷 4656 libreoj 2484 [CEOI2017]Palindromic Partitions 题解">
-                <i class="fa fa-chevron-left"></i> noi.ac 34 洛谷 4656 libreoj 2484 [CEOI2017]Palindromic Partitions 题解
+              <a href="/2020/03/15/libreoj-137-最小瓶颈路-加强版-题解/" rel="next" title="libreoj 137 最小瓶颈路 加强版 题解">
+                <i class="fa fa-chevron-left"></i> libreoj 137 最小瓶颈路 加强版 题解
               </a>
             
           </div>
@@ -648,10 +668,6 @@ $(window).load(function(){
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/16/bzoj-4373-洛谷-5728-算术天才⑨与等差数列-题解/" rel="prev" title="bzoj 4373 洛谷 5728 算术天才⑨与等差数列 题解">
-                bzoj 4373 洛谷 5728 算术天才⑨与等差数列 题解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1046,7 +1062,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路框架"><span class="nav-number">2.</span> <span class="nav-text">思路框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体思路"><span class="nav-number">3.</span> <span class="nav-text">具体思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如何得到这个算法的"><span class="nav-number">3.1.</span> <span class="nav-text">如何得到这个算法的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#算法的解释-amp-正确性"><span class="nav-number">3.2.</span> <span class="nav-text">算法的解释&amp;正确性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变形"><span class="nav-number">2.1.</span> <span class="nav-text">变形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开始硬♂上"><span class="nav-number">2.2.</span> <span class="nav-text">开始硬♂上</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#如何求-i-以内和-i-互质的数的和（会的跳过）"><span class="nav-number">2.2.1.</span> <span class="nav-text">如何求 i 以内和 i 互质的数的和（会的跳过）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#具体怎么杜教筛-（老样子，会的跳过）"><span class="nav-number">2.2.2.</span> <span class="nav-text">具体怎么杜教筛 （老样子，会的跳过）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
@@ -1234,7 +1250,7 @@ show_date_time();
   
     <script>
       window.livereOptions = {
-        refer: '2020/02/16/Codeforces-1304C-Air-Conditioner-题解/'
+        refer: '2020/03/17/51nod-1238-最小公倍数之和-V3-题解/'
       };
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];

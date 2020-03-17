@@ -117,13 +117,36 @@ AC_list
 	https://www.luogu.com.cn/problem/P4065
 	https://loj.ac/problem/2129
 	https://loj.ac/problem/2095
-	https://loj.ac/problem/2161 (blog!!!)
-	* https://www.luogu.com.cn/problem/P2183
-	2020-03-15 9
+	https://loj.ac/problem/2161 
+	https://www.luogu.com.cn/problem/P2183 (blog: exLucas)
+	2020-03-15 10
 	https://www.luogu.com.cn/problem/P2619
-
 	https://loj.ac/problem/10228
 	http://poj.org/problem?id=2891
 	https://loj.ac/problem/10213
 	https://loj.ac/problem/10212
-	https://www.luogu.com.cn/problem/P1495
+	https://www.luogu.com.cn/problem/P1495 
+	https://www.luogu.com.cn/problem/P3179 (blog!!!)
+	https://loj.ac/problem/2126
+	https://loj.ac/problem/2546
+	https://www.luogu.com.cn/problem/P4516
+	2020-03-16 7
+	https://loj.ac/problem/2037 (blog!!!)
+	https://www.luogu.com.cn/problem/P4344
+	https://loj.ac/problem/2028
+	https://www.luogu.com.cn/problem/P4340
+	https://loj.ac/problem/6270 (blog!!!)
+	https://loj.ac/problem/2130
+	https://loj.ac/problem/2093
+	2020-03-17 9
+	https://vjudge.net/problem/CodeForces-899C
+	https://vjudge.net/problem/CodeForces-1325D
+	https://vjudge.net/problem/CodeForces-1325E (debug) (blog!!!)
+	http://www.51nod.com/Challenge/Problem.html#problemId=1238 (blog!!!)
+	http://www.51nod.com/Challenge/Problem.html#problemId=1222
+	https://www.luogu.com.cn/problem/P5325
+	https://loj.ac/problem/6202
+	https://loj.ac/problem/2193
+	https://www.luogu.com.cn/problem/P3312
+	
+
