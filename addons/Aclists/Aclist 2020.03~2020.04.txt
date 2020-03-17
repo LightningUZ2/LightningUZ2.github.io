@@ -131,7 +131,7 @@ AC_list
 	https://loj.ac/problem/2546
 	https://www.luogu.com.cn/problem/P4516
 	2020-03-16 7
-	https://loj.ac/problem/2037 (blog!!!)
+	https://loj.ac/problem/2037 
 	https://www.luogu.com.cn/problem/P4344
 	https://loj.ac/problem/2028
 	https://www.luogu.com.cn/problem/P4340
@@ -141,8 +141,8 @@ AC_list
 	2020-03-17 9
 	https://vjudge.net/problem/CodeForces-899C
 	https://vjudge.net/problem/CodeForces-1325D
-	https://vjudge.net/problem/CodeForces-1325E (debug) (blog!!!)
-	http://www.51nod.com/Challenge/Problem.html#problemId=1238 (blog!!!)
+	https://vjudge.net/problem/CodeForces-1325E (debug)
+	http://www.51nod.com/Challenge/Problem.html#problemId=1238 
 	http://www.51nod.com/Challenge/Problem.html#problemId=1222
 	https://www.luogu.com.cn/problem/P5325
 	https://loj.ac/problem/6202
