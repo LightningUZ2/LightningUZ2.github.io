@@ -109,18 +109,18 @@
 
 
 
-  <meta name="description" content="题意简述$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1$。 思路新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。 对于">
+  <meta name="description" content="题意简述$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1​$。 思路新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。 对">
 <meta name="keywords" content="思维,建图">
 <meta property="og:type" content="article">
 <meta property="og:title" content="洛谷 3831 [SHOI2012]回家的路 题解">
 <meta property="og:url" content="https://lightninguz2.github.io/2020/03/21/洛谷-3831-[SHOI2012]回家的路-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
-<meta property="og:description" content="题意简述$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1$。 思路新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。 对于">
+<meta property="og:description" content="题意简述$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1​$。 思路新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。 对">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-21T15:22:21.368Z">
+<meta property="og:updated_time" content="2020-03-21T15:28:27.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷 3831 [SHOI2012]回家的路 题解">
-<meta name="twitter:description" content="题意简述$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1$。 思路新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。 对于">
+<meta name="twitter:description" content="题意简述$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1​$。 思路新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。 对">
 
 
 
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-03-21 11:08:00 / 修改时间：23:22:21" itemprop="dateCreated datePublished" datetime="2020-03-21T11:08:00+08:00">2020-03-21</time>
+              <time title="创建时间：2020-03-21 11:08:00 / 修改时间：23:28:27" itemprop="dateCreated datePublished" datetime="2020-03-21T11:08:00+08:00">2020-03-21</time>
             
 
             
@@ -567,7 +567,7 @@ $(window).load(function(){
       
 
       
-        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1$。</p>
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>$n$ 行 $n$ 列的矩阵上，只有 $m$ 个“关键点”处（在第 $x$ 行 $y$ 列）才能拐弯。从格子到上下左右四个相邻格子花费 $2$，转弯花费 $1$。 求从某个位置走到另一个位置的最小花费。无解输出 $-1​$。</p>
 <h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>新建两个点 $S$ 和 $T$ 表示起点。 然后把所有点 $A$（包括关键点和 $S,T$） 拆成两个点 $A_1$ 和 $A_2$，分别表示横向跑和纵向跑。</p>
 <p>对于所有关键点 $K$ （不包括 $S,T$），$K_1$ 到 $K_2$ 连一条边权为 $1$ 的无向边，表示换乘。</p>
 <p>然后对于所有同一行 （$x$ 相同）的点，按照列号 $y$ 排序。对于相邻的 $A,B$，连边 $(A_1,B_1,2\times dis)$，其中 $dis$ 为 $A,B$ 两点 $y$ 值的距离。为啥乘二，是因为相邻格子要花费 $2$。 同一列同理（同一列连的是 $A_2$ 和 $B_2$）。</p>
