@@ -118,7 +118,7 @@
 <meta property="og:description" content="题意简述一个字符串是“优秀”的，定义为：存在两个非空的字符串 $A,B$，满足这个字符串 $S=AABB$，那么这个 $S$ 就是优秀的。 给定一个串，计算它有多少子串是“优秀”的。相同的子串出现在不同的位置也被算两次。 长度 $\le 3e4$ 思路对于每个位置，我们维护 $pre[i]$ 表示以 $i$ 结尾的 $AA$ 形式的串有多少个，$suf[i]$ 同理。 然后答案就是 $\prod\">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://lightninguz2.github.io/blogimages/LG1117-1.jpg">
-<meta property="og:updated_time" content="2020-03-17T13:40:00.439Z">
+<meta property="og:updated_time" content="2020-03-17T13:51:50.535Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷 1117 libreoj 2083 优秀的拆分 题解">
 <meta name="twitter:description" content="题意简述一个字符串是“优秀”的，定义为：存在两个非空的字符串 $A,B$，满足这个字符串 $S=AABB$，那么这个 $S$ 就是优秀的。 给定一个串，计算它有多少子串是“优秀”的。相同的子串出现在不同的位置也被算两次。 长度 $\le 3e4$ 思路对于每个位置，我们维护 $pre[i]$ 表示以 $i$ 结尾的 $AA$ 形式的串有多少个，$suf[i]$ 同理。 然后答案就是 $\prod\">
@@ -496,7 +496,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-03-17 21:39:23 / 修改时间：21:40:00" itemprop="dateCreated datePublished" datetime="2020-03-17T21:39:23+08:00">2020-03-17</time>
+              <time title="创建时间：2020-03-17 21:39:23 / 修改时间：21:51:50" itemprop="dateCreated datePublished" datetime="2020-03-17T21:39:23+08:00">2020-03-17</time>
             
 
             
@@ -575,9 +575,9 @@ $(window).load(function(){
 <h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>对于每个位置，我们维护 $pre[i]$ 表示以 $i$ 结尾的 $AA$ 形式的串有多少个，$suf[i]$ 同理。</p>
 <p>然后答案就是 $\prod\limits_{i=1}^{n-1}pre[i]\times suf[i+1]$ </p>
 <p>然后考虑怎么求 $pre$。（$suf$ 的话，就把串反过来求一遍 $pre$ 即可）</p>
-<h4 id="如何求-pre"><a href="#如何求-pre" class="headerlink" title="如何求 pre"></a>如何求 pre</h4><p>不会吧？不会就对了，黑题是这么容易做出来的嘛。 我们继续降低要求，我们求特定长度的 $pre[i]$，比如 $A$ 的长度为 $k$，也就是 $AA$ 串的长度为 $2k$ 。 这个好判断，哈希就行了。 对于位置 $i$，如果 $[i-k+1,i]$ 区间的哈希值等于区间 $[i-2k+1,i-k]$ 的哈希值，那么 $pre[i]$ 就可以 $+1$，因为长度 $k$ 满足条件。</p>
+<h4 id="如何求-pre"><a href="#如何求-pre" class="headerlink" title="如何求 pre"></a>如何求 pre</h4><p>不会吧？不会就对了，黑题是这么容易做出来的嘛。 我们继续降低要求，我们求特定长度的 $pre[i]$。我们设 $A$ 的长度为 $k$，也就是 $AA$ 串的长度为 $2k$ 。 这个好判断，哈希就行了。 对于位置 $i$，如果 $[i-k+1,i]$ 区间的哈希值等于区间 $[i-2k+1,i-k]$ 的哈希值，那么 $pre[i]$ 就可以 $+1$，因为长度 $k$ 满足条件。</p>
 <p>但是这样是 $O(n^2)$ 的呀，怎么更快速的求呢。</p>
-<p>假如现在我们枚举 $k$，能很快的求出 $1~n$ 的答案，那多好啊。</p>
+<p>假如现在我们枚举 $k$，能很快的求出 $[1,n]$ 的答案，那多好啊。</p>
 <p>那有了这样一个巧妙的做法（看题解前我也不会）：对于长度 $k$，我们在 $k,2k,3k…k\times (n/k)$ 的位置都打上一个标记。显然，标记的总数是 $(n/1)+(n/2)+(n/3)…+(n/n)=n\ln n$。</p>
 <p>而且还有一个特性，一个长度为 $2k$ 的 $AA$ 串，把它分成等长度并且相同的两半，肯定各自覆盖到一个标记。<br><img src="https://lightninguz2.github.io/blogimages/LG1117-1.jpg" alt></p>
 <p>如这个图所示，蓝色是整个大串 $S$，黄色+绿色是一个串 $A$，黄色+绿色+黄色+绿色是一个 $AA$ 串。红色的是两个标记。</p>

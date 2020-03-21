@@ -92,15 +92,15 @@ AC_list
 	https://loj.ac/problem/10094
 	https://loj.ac/problem/2081
 	https://www.luogu.com.cn/problem/P5771
-	(*blog)
 	2020-03-12 7
 	https://vjudge.net/problem/CodeForces-858D
 	https://vjudge.net/problem/CodeForces-1200D
 	https://loj.ac/problem/6170
 	https://www.luogu.com.cn/problem/P6114
 	https://loj.ac/problem/129
-	https://www.luogu.com.cn/problem/P1117 (blog!!!)
+	https://www.luogu.com.cn/problem/P1117
 	https://loj.ac/problem/2083
+	(*blog)
 	2020-03-13 7
 	https://loj.ac/problem/2014
 	https://www.luogu.com.cn/problem/P3295
@@ -148,5 +148,37 @@ AC_list
 	https://loj.ac/problem/6202
 	https://loj.ac/problem/2193
 	https://www.luogu.com.cn/problem/P3312
-	
-
+	2020-03-18 6
+	https://vjudge.net/problem/CodeForces-1017C
+	https://vjudge.net/problem/CodeForces-1322B
+	https://vjudge.net/problem/CodeForces-1323D
+	https://loj.ac/problem/114
+	https://www.luogu.com.cn/problem/P4310
+	https://www.luogu.com.cn/problem/P5670 (debug)
+	2020-03-19 8
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4869
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3529
+	https://www.luogu.com.cn/problem/P2319
+	http://www.lydsy.com/JudgeOnline/problem.php?id=1191
+	https://www.luogu.com.cn/problem/P4370
+	https://www.luogu.com.cn/problem/P3822
+	https://loj.ac/problem/2302 (blog!!!)
+	https://vjudge.net/problem/CodeForces-985B
+	2020-03-20 7
+	https://loj.ac/problem/6182
+	https://www.luogu.com.cn/problem/P5112 (blog!!! 神仙题)
+	https://vjudge.net/problem/CodeForces-1326A
+	https://vjudge.net/problem/CodeForces-1326B
+	https://vjudge.net/problem/CodeForces-1326C
+	https://vjudge.net/problem/CodeForces-1326D1
+	https://vjudge.net/problem/CodeForces-1326D2
+	2020-03-21 9
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4591
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4592
+	https://www.luogu.com.cn/problem/P5295 (blog!!!)
+	https://www.luogu.com.cn/problem/P3831
+	https://www.luogu.com.cn/problem/P2829
+	https://loj.ac/problem/10067 (short blog)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4514
+	https://www.luogu.com.cn/problem/P4068
+	https://loj.ac/problem/2031

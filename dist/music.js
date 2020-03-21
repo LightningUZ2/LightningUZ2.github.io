@@ -68,7 +68,13 @@ const ap = new APlayer({
         artist: '八乙女葦菜',
         url: 'http://music.163.com/song/media/outer/url?id=1955459944.mp3',
         cover: 'http://p1.music.126.net/Li-XsFdYi7D00meK_2YCXQ==/5798824325014681.jpg',
-      }
+      },
+      {
+        name: 'Pneumatic Tokyo',
+        artist: 'EnV',
+        url: 'http://music.163.com/song/media/outer/url?id=33937527.mp3',
+        cover: 'http://p2.music.126.net/k8kONmsvnxJIeuvEE7eR0Q==/109951163694694330.jpg',
+      },
     ]
 });
 
