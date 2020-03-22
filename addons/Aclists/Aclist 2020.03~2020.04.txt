@@ -182,3 +182,13 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4514
 	https://www.luogu.com.cn/problem/P4068
 	https://loj.ac/problem/2031
+	2020-03-22 9
+	https://www.luogu.com.cn/problem/P1383
+	https://www.luogu.com.cn/problem/P2617
+	https://www.luogu.com.cn/problem/P3963
+	https://www.luogu.com.cn/problem/P5290
+	https://loj.ac/problem/3052
+	https://loj.ac/problem/6491
+	https://vjudge.net/problem/CodeForces-191C
+	https://vjudge.net/problem/CodeForces-343D
+	(blog: 主席树)
