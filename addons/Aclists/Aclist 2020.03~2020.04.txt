@@ -192,3 +192,22 @@ AC_list
 	https://vjudge.net/problem/CodeForces-191C
 	https://vjudge.net/problem/CodeForces-343D
 	(blog: 主席树)
+	2020-03-23 7
+	https://loj.ac/problem/2472
+	https://www.luogu.com.cn/problem/P4364
+	http://www.lydsy.com/JudgeOnline/problem.php?id=5249
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3932
+	https://loj.ac/problem/2097
+	https://www.luogu.com.cn/problem/P3168
+	https://vjudge.net/problem/CodeForces-914D
+	2020-03-24 9
+	https://vjudge.net/problem/CodeForces-1327B
+	https://vjudge.net/problem/CodeForces-1327C
+	https://vjudge.net/problem/CodeForces-1327E
+	https://loj.ac/problem/3096
+	https://loj.ac/problem/2034
+	https://www.luogu.com.cn/problem/P4071
+	https://loj.ac/problem/2526
+	https://www.luogu.com.cn/problem/P4492 (blog!!!)
+	https://vjudge.net/problem/CodeForces-1207D
+
