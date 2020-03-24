@@ -191,7 +191,6 @@ AC_list
 	https://loj.ac/problem/6491
 	https://vjudge.net/problem/CodeForces-191C
 	https://vjudge.net/problem/CodeForces-343D
-	(blog: 主席树)
 	2020-03-23 7
 	https://loj.ac/problem/2472
 	https://www.luogu.com.cn/problem/P4364
