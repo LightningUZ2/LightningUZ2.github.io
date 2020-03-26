@@ -209,4 +209,20 @@ AC_list
 	https://loj.ac/problem/2526
 	https://www.luogu.com.cn/problem/P4492 (blog!!!)
 	https://vjudge.net/problem/CodeForces-1207D
-
+	2020-03-25 6
+	https://vjudge.net/problem/CodeForces-1152C
+	https://vjudge.net/problem/CodeForces-1101D
+	https://www.luogu.com.cn/problem/P3084
+	https://www.luogu.com.cn/problem/P2966
+	https://www.luogu.com.cn/problem/P4247 (blog!!!)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2962
+	2020-03-26 8
+	https://loj.ac/problem/2246
+	https://www.luogu.com.cn/problem/P3809
+	https://loj.ac/problem/111
+	https://www.luogu.com.cn/problem/P2408
+	http://poj.org/problem?id=2774
+	http://acm.hdu.edu.cn/showproblem.php?pid=1403
+	https://www.luogu.com.cn/problem/P5460 (blog!!!)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4628
+	

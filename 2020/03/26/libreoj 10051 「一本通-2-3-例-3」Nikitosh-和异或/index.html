@@ -109,13 +109,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Flandre Scarlet 的小屋">
-<meta property="og:url" content="https://lightninguz2.github.io/archives/2020/page/4/index.html">
+  <meta name="description" content="题意简述给一个长度为 $n$ 的序列 $a_1,a_2…a_n$，求两个区间 $[l_1,r_1],[l_2,r_2]$，使得两端区间不相交，且两端区间的异或和加起来最大。 $n\le 10^5$，每个 $a_i\le 10^9$。 思路设 $s_i$ 为前缀 $i$ 个的异或和。那么 $[l,r]$ 的异或和相当于 $s_r\oplus s_{l-1}$（$\oplus$ 表示异或）。 设 $p">
+<meta name="keywords" content="思维,TRIE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「一本通 2.3 例 3」Nikitosh 和异或 ">
+<meta property="og:url" content="https://lightninguz2.github.io/2020/03/26/libreoj 10051 「一本通-2-3-例-3」Nikitosh-和异或/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
+<meta property="og:description" content="题意简述给一个长度为 $n$ 的序列 $a_1,a_2…a_n$，求两个区间 $[l_1,r_1],[l_2,r_2]$，使得两端区间不相交，且两端区间的异或和加起来最大。 $n\le 10^5$，每个 $a_i\le 10^9$。 思路设 $s_i$ 为前缀 $i$ 个的异或和。那么 $[l,r]$ 的异或和相当于 $s_r\oplus s_{l-1}$（$\oplus$ 表示异或）。 设 $p">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-03-26T14:02:48.798Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Flandre Scarlet 的小屋">
+<meta name="twitter:title" content="「一本通 2.3 例 3」Nikitosh 和异或 ">
+<meta name="twitter:description" content="题意简述给一个长度为 $n$ 的序列 $a_1,a_2…a_n$，求两个区间 $[l_1,r_1],[l_2,r_2]$，使得两端区间不相交，且两端区间的异或和加起来最大。 $n\le 10^5$，每个 $a_i\le 10^9$。 思路设 $s_i$ 为前缀 $i$ 个的异或和。那么 $[l,r]$ 的异或和相当于 $s_r\oplus s_{l-1}$（$\oplus$ 表示异或）。 设 $p">
 
 
 
@@ -124,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://lightninguz2.github.io/archives/2020/page/4/">
+  <link rel="canonical" href="https://lightninguz2.github.io/2020/03/26/libreoj 10051 「一本通-2-3-例-3」Nikitosh-和异或/">
 
 
 
@@ -134,7 +139,7 @@
   };
 </script>
 
-  <title>归档 | Flandre Scarlet 的小屋</title>
+  <title>「一本通 2.3 例 3」Nikitosh 和异或  | Flandre Scarlet 的小屋</title>
   
 
 
@@ -210,7 +215,7 @@ $(window).load(function(){
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -321,7 +326,7 @@ $(window).load(function(){
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -426,428 +431,247 @@ $(window).load(function(){
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/03/26/libreoj 10051 「一本通-2-3-例-3」Nikitosh-和异或/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LightningUZ">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Flandre Scarlet 的小屋">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
-         
+          <h1 class="post-title" itemprop="name headline">「一本通 2.3 例 3」Nikitosh 和异或 
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-03-26 20:28:22 / 修改时间：22:02:48" itemprop="dateCreated datePublished" datetime="2020-03-26T20:28:22+08:00">2020-03-26</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
           
-        很好! 目前共计 126 篇日志。 继续努力。
-      </span>
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数： 904 字</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长  &asymp; 4 分钟</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
       
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给一个长度为 $n$ 的序列 $a_1,a_2…a_n$，求两个区间 $[l_1,r_1],[l_2,r_2]$，使得两端区间不相交，且两端区间的异或和加起来最大。</p>
+<p>$n\le 10^5$，每个 $a_i\le 10^9$。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>设 $s_i$ 为前缀 $i$ 个的异或和。那么 $[l,r]$ 的异或和相当于 $s_r\oplus s_{l-1}$（$\oplus$ 表示异或）。</p>
+<p>设 $pre[i]$ 表示在 $[1,i]$ 中区间的异或和的最大值。$suf[i]$ 表示 $[i,n]$ 中区间的异或和的最大值。那么答案就是 $max\{pre[i]+suf[i+1]\},1\le i\le n-1$。</p>
+<p>然后 $pre$ 和 $suf$ 求法基本相同，如果会求 $pre$，只要反过来求一遍就能求出 $suf$ 了。</p>
+<p>然后我们可以用 <code>01-TRIE</code> 求出必须以 $i$ 为右端点的最大区间异或和。然后求一个前缀最大值，就能得到 $pre$ 数组了。</p>
+<h4 id="如何求（会的跳过）"><a href="#如何求（会的跳过）" class="headerlink" title="如何求（会的跳过）"></a>如何求（会的跳过）</h4><div><div class="fold_hider"><div class="close hider_title">点击</div></div><div class="fold">
+<p>假设我们当前有一些数。我们把它二进制拆分成 $32$ 位，然后从高到低插入 <code>TRIE</code> 树中。</p>
+<p>现在我们要查询，这些数中哪个和 $x$ 异或起来最大。</p>
+<p>我们把 $x$ 也拆开，对于当前这一位 $x[i]$（其值为 $0/1$），如果有一个儿子编号和 $x[i]$ 不同，尽量往不同的这里走，并且答案加上 $2^i$。否则就只能走相同的那一条边了，因为相同的异或起来为 $0$，所以这时对答案没有贡献。</p>
+<p>我们把 $s[0,1,2\cdots i-1]$ 都插入到 <code>TRIE</code> 树中，然后查询必须选 $s[i]$ 的答案，就能得到以 $i$ 为右端点的最大区间异或和。然后求一遍前缀最大值，就能得到 $pre$ 数组。</p>
 
+</div></div>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> N 10000007</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),v=G.To(i);~i;i=G.Next(i),v=G.To(i))</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">	    x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">	    <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">	    <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">	    x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">	    va_list args;</span><br><span class="line">	    va_start(args,cnt);</span><br><span class="line">	    F(i,<span class="number">1</span>,cnt) </span><br><span class="line">	    &#123;</span><br><span class="line">	        <span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);R1(*x);</span><br><span class="line">	    &#125;</span><br><span class="line">	    va_end(args);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="class"><span class="keyword">class</span> <span class="title">Trie</span></span></span><br><span class="line"><span class="class">	&#123;</span></span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">		<span class="keyword">int</span> ch[N][<span class="number">2</span>]; <span class="comment">//01-TRIE 树，儿子编号开 0/1 即可</span></span><br><span class="line">		<span class="keyword">int</span> tot;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">Init</span><span class="params">()</span></span>&#123;FK(ch); tot=<span class="number">0</span>;&#125;</span><br><span class="line">		<span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">			<span class="keyword">int</span> cur=<span class="number">0</span>;</span><br><span class="line">			D(i,<span class="number">30</span>,<span class="number">0</span>) </span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">int</span> id=((x&gt;&gt;i)&amp;<span class="number">1</span>);</span><br><span class="line">				<span class="keyword">if</span> (!ch[cur][id]) ch[cur][id]=++tot;</span><br><span class="line">				cur=ch[cur][id];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">int</span>  <span class="title">Query</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function">		</span>&#123;</span><br><span class="line">			<span class="keyword">int</span> cur=<span class="number">0</span>;<span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">			D(i,<span class="number">30</span>,<span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">int</span> id=((x&gt;&gt;i)&amp;<span class="number">1</span>);</span><br><span class="line">				<span class="keyword">if</span> (ch[cur][id^<span class="number">1</span>]) cur=ch[cur][id^<span class="number">1</span>],ans|=(<span class="number">1</span>&lt;&lt;i);</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (ch[cur][id]) cur=ch[cur][id];</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;T;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> n,a[N];</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		R1(n); F(i,<span class="number">1</span>,n) R1(a[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> L[N],R[N];</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		T.Init();</span><br><span class="line">		F(i,<span class="number">1</span>,n) </span><br><span class="line">		&#123;</span><br><span class="line">			L[i]=max(L[i<span class="number">-1</span>],T.Query(a[i])); <span class="comment">// 一边求答案，一边求了前缀最大值</span></span><br><span class="line">			T.Insert(a[i]);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		T.Init(); <span class="comment">//注意每次都要把树清空一下</span></span><br><span class="line">		D(i,n,<span class="number">1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			R[i]=max(R[i+<span class="number">1</span>],T.Query(a[i]));</span><br><span class="line">			T.Insert(a[i]);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">long</span> <span class="keyword">long</span> ans=<span class="number">0</span>;</span><br><span class="line">		F(i,<span class="number">1</span>,n) ans=max(ans,<span class="number">1l</span>l*L[i]+<span class="number">1l</span>l*R[i+<span class="number">1</span>]);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">	<span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		Input();</span><br><span class="line">		Soviet();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Flandre_Scarlet::IsMyWife();</span><br><span class="line">	getchar();getchar();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/思维/" rel="tag"># 思维</a>
+          
+            <a href="/tags/TRIE/" rel="tag"># TRIE</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
-        
+
         
 
         
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/16/noi-ac-34-洛谷-4656-libreoj-2484-CEOI2017-Palindromic-Partitions-题解/" itemprop="url">
-            
-              <span itemprop="name">noi.ac 34 洛谷 4656 libreoj 2484 [CEOI2017]Palindromic Partitions 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-16T13:40:06+08:00" content="2020-02-16">
-          02-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/15/noi-ac-36-列队-题解/" itemprop="url">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span itemprop="name">noi.ac 36 列队 题解</span>
+              <a href="/2020/03/23/主席树-笔记/" rel="next" title="主席树 笔记">
+                <i class="fa fa-chevron-left"></i> 主席树 笔记
+              </a>
             
-          </a>
-        
-      </h2>
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-15T20:50:06+08:00" content="2020-02-15">
-          02-15
-        </time>
-      </div>
+          <span class="post-nav-divider"></span>
 
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/15/noi-ac-782-【CSP2019模拟-Day-2】a-题解/" itemprop="url">
-            
-              <span itemprop="name">noi.ac 782 【CSP2019模拟 Day 2】a 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-15T20:24:38+08:00" content="2020-02-15">
-          02-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/13/Codeforces-1294E-Obtain-a-Permutation-题解/" itemprop="url">
-            
-              <span itemprop="name">Codeforces 1294E Obtain a Permutation 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-13T21:24:37+08:00" content="2020-02-13">
-          02-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/13/noi-ac-73-道路重建-题解/" itemprop="url">
-            
-              <span itemprop="name">noi.ac 73 道路重建 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-13T21:11:42+08:00" content="2020-02-13">
-          02-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/13/51nod-1105-第k大的数-题解/" itemprop="url">
-            
-              <span itemprop="name">51nod 1105 第k大的数 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-13T20:28:00+08:00" content="2020-02-13">
-          02-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/10/洛谷-6070-RC-02-GCD-题解/" itemprop="url">
-            
-              <span itemprop="name">洛谷 6070 [RC-02]GCD 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:33+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/10/洛谷-5947-POI2003-Trinomial-题解/" itemprop="url">
-            
-              <span itemprop="name">洛谷 5947 [POI2003]Trinomial 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:33+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/10/洛谷-5826-【模板】子序列自动机-题解/" itemprop="url">
-            
-              <span itemprop="name">洛谷 5826 【模板】子序列自动机 题解</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:33+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2020/02/10/洛谷-5631-最小mex生成树/" itemprop="url">
-            
-              <span itemprop="name">洛谷 5631 最小mex生成树</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:33+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-    </div>
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2020/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2020/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/archives/2020/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/page/13/">13</a><a class="extend next" rel="next" href="/archives/2020/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+  </article>
 
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -868,8 +692,17 @@ $(window).load(function(){
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1204,6 +1037,23 @@ show_date_time();
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如何求（会的跳过）"><span class="nav-number">2.1.</span> <span class="nav-text">如何求（会的跳过）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1366,6 +1216,10 @@ show_date_time();
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -1817,7 +1671,7 @@ show_date_time();
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 
