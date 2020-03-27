@@ -100,15 +100,15 @@ AC_list
 	https://loj.ac/problem/129
 	https://www.luogu.com.cn/problem/P1117
 	https://loj.ac/problem/2083
-	(*blog)
 	2020-03-13 7
 	https://loj.ac/problem/2014
 	https://www.luogu.com.cn/problem/P3295
 	https://loj.ac/problem/10056
 	http://poj.org/problem?id=3764
 	https://www.luogu.com.cn/problem/P4983 
-	https://loj.ac/problem/10051 (blog!!!)
+	https://loj.ac/problem/10051 
 	https://loj.ac/problem/528
+	(*blog)
 	2020-03-14 9
 	https://vjudge.net/problem/CodeForces-289B
 	https://vjudge.net/problem/CodeForces-85D 
@@ -225,4 +225,6 @@ AC_list
 	http://acm.hdu.edu.cn/showproblem.php?pid=1403
 	https://www.luogu.com.cn/problem/P5460 (blog!!!)
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4628
-	
+	2020-03-27 2 (备战少预,减少做题)
+	https://www.luogu.com.cn/problem/P4704
+	https://loj.ac/problem/10007
