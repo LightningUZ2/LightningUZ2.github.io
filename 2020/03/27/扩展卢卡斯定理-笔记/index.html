@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
 <meta property="og:description" content="先问一个简单的问题，求：  C_{n}^{m}\pmod {q}不保证 $q$ 是质数。$1\le q\le 10^6,1\le m\le n\le 10^{18}$。 （原题：洛谷上的板子） 这很毒瘤了！我们平常熟知的几个方法，预处理阶乘和阶乘逆元，或者是 Lucas 定理，都需要 $q$ 为质数才能这么干。现在 $q$ 连质数都不是，可咋整呢… 正片开始主题思路  我们用公式 $C_n^m=\">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-27T03:50:40.728Z">
+<meta property="og:updated_time" content="2020-03-27T04:41:10.376Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="扩展卢卡斯定理 笔记">
 <meta name="twitter:description" content="先问一个简单的问题，求：  C_{n}^{m}\pmod {q}不保证 $q$ 是质数。$1\le q\le 10^6,1\le m\le n\le 10^{18}$。 （原题：洛谷上的板子） 这很毒瘤了！我们平常熟知的几个方法，预处理阶乘和阶乘逆元，或者是 Lucas 定理，都需要 $q$ 为质数才能这么干。现在 $q$ 连质数都不是，可咋整呢… 正片开始主题思路  我们用公式 $C_n^m=\">
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-03-27 10:14:20 / 修改时间：11:50:40" itemprop="dateCreated datePublished" datetime="2020-03-27T10:14:20+08:00">2020-03-27</time>
+              <time title="创建时间：2020-03-27 10:14:20 / 修改时间：12:41:10" itemprop="dateCreated datePublished" datetime="2020-03-27T10:14:20+08:00">2020-03-27</time>
             
 
             
@@ -584,6 +584,7 @@ C_{n}^{m}\pmod {q}</script><p><strong>不保证</strong> $q$ <strong>是质数</
 <p>首先，得确定先会扩展欧几里得算法和扩展中国剩余定理。至于卢卡斯定理，那并不重要。</p>
 <p>—— <a href="https://www.luogu.com.cn/user/7035" target="_blank" rel="noopener">Great_Influence 神仙</a></p>
 </blockquote>
+<p>（扩展卢卡斯定理和卢卡斯定理并没有任何关系2333）</p>
 <h4 id="对每个质因数求答案"><a href="#对每个质因数求答案" class="headerlink" title="对每个质因数求答案"></a>对每个质因数求答案</h4><p>我们发现，$n$ 的范围比 $q$ 要大很多。也就是说，分子分母两个阶乘很可能都是 $0$。</p>
 <p>那么就出现了一个想法：我们把分子分母中的含 $p$ 的因子都<strong>单独拿出来</strong>。</p>
 <p>设 $n!$ 中最多包含 $a$ 个 $p$ 因子，$m!$ 和 $(n-m)!$  中分别包含 $b,c$ 个。设 $f(x)$ 表示把 $x!$ 中的 $p$  因子都去掉后的值，于是答案等于</p>
