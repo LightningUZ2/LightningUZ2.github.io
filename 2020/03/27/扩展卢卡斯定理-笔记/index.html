@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
 <meta property="og:description" content="先问一个简单的问题，求：  C_{n}^{m}\pmod {q}不保证 $q$ 是质数。$1\le q\le 10^6,1\le m\le n\le 10^{18}$。 （原题：洛谷上的板子） 这很毒瘤了！我们平常熟知的几个方法，预处理阶乘和阶乘逆元，或者是 Lucas 定理，都需要 $q$ 为质数才能这么干。现在 $q$ 连质数都不是，可咋整呢… 正片开始主题思路  我们用公式 $C_n^m=\">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-27T03:44:35.468Z">
+<meta property="og:updated_time" content="2020-03-27T03:50:40.728Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="扩展卢卡斯定理 笔记">
 <meta name="twitter:description" content="先问一个简单的问题，求：  C_{n}^{m}\pmod {q}不保证 $q$ 是质数。$1\le q\le 10^6,1\le m\le n\le 10^{18}$。 （原题：洛谷上的板子） 这很毒瘤了！我们平常熟知的几个方法，预处理阶乘和阶乘逆元，或者是 Lucas 定理，都需要 $q$ 为质数才能这么干。现在 $q$ 连质数都不是，可咋整呢… 正片开始主题思路  我们用公式 $C_n^m=\">
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-03-27 10:14:20 / 修改时间：11:44:35" itemprop="dateCreated datePublished" datetime="2020-03-27T10:14:20+08:00">2020-03-27</time>
+              <time title="创建时间：2020-03-27 10:14:20 / 修改时间：11:50:40" itemprop="dateCreated datePublished" datetime="2020-03-27T10:14:20+08:00">2020-03-27</time>
             
 
             
@@ -607,7 +607,7 @@ C_{n}^{m}\pmod {q}</script><p><strong>不保证</strong> $q$ <strong>是质数</
 <p>我们设“一节”的积为 $S$，那它就等于第 $1$ 组，第 $2$ 组,…第 $p^{k-1}$ 组中的所有数的乘积。</p>
 <p>显然，$x!$ 一共能分出 $\dfrac{x}{p^k}$ 个 $S$。</p>
 <p>当然，还有 $x \bmod {p^k}$ 个不完整的“一节”，设为 $R$。暴力计算即可。</p>
-<p>这一部分的答案（设为 $A$）就等于 $S^{\dfrac{x}{p^k}} \times R$</p>
+<p>这一部分的答案（设为 $A$）就等于 $(S)^{\frac{x}{p^k}} \times R$</p>
 <p>那么求 $S$ 和求最后几个不完整的块，就都是 $O(p^k)$ 的了。因为 $q\le 10^6$，所以不会有问题。</p>
 <h5 id="第二部分：只考虑-p-的倍数"><a href="#第二部分：只考虑-p-的倍数" class="headerlink" title="第二部分：只考虑 p 的倍数"></a>第二部分：只考虑 p 的倍数</h5><p>那这一部分就等于</p>
 <p>$p\times 2p \times 3p \times …\times (n/p)p$</p>
