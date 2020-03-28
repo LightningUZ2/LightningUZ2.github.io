@@ -228,3 +228,10 @@ AC_list
 	2020-03-27 2 (备战少预,减少做题)
 	https://www.luogu.com.cn/problem/P4704
 	https://loj.ac/problem/10007
+	2020-03-28 8
+	https://vjudge.net/problem/UVALive-6264
+	https://loj.ac/problem/6192
+	http://www.51nod.com/Challenge/Problem.html#problemId=1389
+	https://www.luogu.com.cn/problem/P2597
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2815
+	https://www.luogu.com.cn/problem/AT2306
