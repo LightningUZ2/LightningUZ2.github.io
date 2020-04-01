@@ -229,9 +229,32 @@ AC_list
 	https://www.luogu.com.cn/problem/P4704
 	https://loj.ac/problem/10007
 	2020-03-28 8
+	https://www.luogu.com.cn/problem/P5176
+	https://vjudge.net/problem/CodeForces-519E
 	https://vjudge.net/problem/UVALive-6264
-	https://loj.ac/problem/6192
+	https://loj.ac/problem/6192 (blog!!!)
 	http://www.51nod.com/Challenge/Problem.html#problemId=1389
 	https://www.luogu.com.cn/problem/P2597
 	http://www.lydsy.com/JudgeOnline/problem.php?id=2815
-	https://www.luogu.com.cn/problem/AT2306
+	https://vjudge.net/problem/AtCoder-2306
+	2020-03-29 8 (7+WYXkk)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3672
+	https://www.luogu.com.cn/problem/P2305
+	https://loj.ac/problem/2249
+	https://loj.ac/problem/10050
+	https://loj.ac/problem/10047
+	https://www.luogu.com.cn/problem/P5043
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4337
+	2020-03-30 4
+	http://www.51nod.com/Challenge/Problem.html#problemId=1601 (blog!!!)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3574
+	https://www.luogu.com.cn/problem/P3234
+	https://www.luogu.com.cn/problem/P2767
+	2020-03-31 6
+	https://vjudge.net/problem/CodeForces-900D
+	https://vjudge.net/problem/CodeForces-1225D
+	https://vjudge.net/problem/CodeForces-409F
+	https://loj.ac/problem/6229
+	https://vjudge.net/problem/CodeForces-864D
+	https://www.luogu.com.cn/problem/P5655 (blog!!!)
+	(blog: 莫比乌斯容斥)
