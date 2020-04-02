@@ -265,6 +265,6 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1332D
 	https://vjudge.net/problem/CodeForces-1332E
 	2020-04-02 3
-	http://www.lydsy.com/JudgeOnline/problem.php?id=4962
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4962 (blog!!!)
 	https://www.luogu.com.cn/problem/P4323
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4754
