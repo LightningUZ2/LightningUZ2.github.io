@@ -162,7 +162,7 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=1191
 	https://www.luogu.com.cn/problem/P4370
 	https://www.luogu.com.cn/problem/P3822
-	https://loj.ac/problem/2302 (blog!!!)
+	https://loj.ac/problem/2302 
 	https://vjudge.net/problem/CodeForces-985B
 	2020-03-20 7
 	https://loj.ac/problem/6182
