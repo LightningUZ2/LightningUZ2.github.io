@@ -109,13 +109,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Flandre Scarlet 的小屋">
-<meta property="og:url" content="https://lightninguz2.github.io/tags/线段树/page/2/index.html">
+  <meta name="description" content="题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用">
+<meta name="keywords" content="优先队列,贪心,思维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bzoj 5102 [POI2018]Prawnicy 题解">
+<meta property="og:url" content="https://lightninguz2.github.io/2020/04/06/bzoj-5102-POI2018-Prawnicy-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
+<meta property="og:description" content="题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-04-06T01:09:23.174Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Flandre Scarlet 的小屋">
+<meta name="twitter:title" content="bzoj 5102 [POI2018]Prawnicy 题解">
+<meta name="twitter:description" content="题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用">
 
 
 
@@ -124,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://lightninguz2.github.io/tags/线段树/page/2/">
+  <link rel="canonical" href="https://lightninguz2.github.io/2020/04/06/bzoj-5102-POI2018-Prawnicy-题解/">
 
 
 
@@ -134,7 +139,7 @@
   };
 </script>
 
-  <title>标签: 线段树 | Flandre Scarlet 的小屋</title>
+  <title>bzoj 5102 [POI2018]Prawnicy 题解 | Flandre Scarlet 的小屋</title>
   
 
 
@@ -210,7 +215,7 @@ $(window).load(function(){
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -304,7 +309,7 @@ $(window).load(function(){
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -426,92 +431,256 @@ $(window).load(function(){
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>线段树
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/04/06/bzoj-5102-POI2018-Prawnicy-题解/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LightningUZ">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/zps-avatar-new.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Flandre Scarlet 的小屋">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2020/02/10/Codeforces 833B 题解/" itemprop="url">
-            
-              <span itemprop="name">Codeforces 833B 题解</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">bzoj 5102 [POI2018]Prawnicy 题解
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-10T00:32:32+08:00" content="2020-02-10">
-          02-10
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-04-06 08:53:40 / 修改时间：09:09:23" itemprop="dateCreated datePublished" datetime="2020-04-06T08:53:40+08:00">2020-04-06</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数： 996 字</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长  &asymp; 4 分钟</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给你 $n$ 个区间 $[l_i,r_i]$，选出 <strong>恰好</strong> $k$ 个，使得交集最大。输出最长的长度和方案。</p>
+<p>注：区间 $[l,r]$ 的长度被定义为 $r-l$。</p>
+<p> $1\le k\le n\le 10^5$。 </p>
+<h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。</p>
+<p>然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用 $i$ 之前的区间。那么所有的左端点就都 $\le l_i$ 了。</p>
+<p>然后这个时候我们怎么选最大值呢？</p>
+<ol>
+<li>我们只能在 $1\sim i$  中选</li>
+<li>选择 $k$ 个使得最小值最大</li>
+</ol>
+<p>怎么选择 $k$ 个使得最小值最大呢？那肯定是从大到小排序之后选前 $k$ 个啊！然后这时候最大的最小值，就是从大到小之后排第 $k$ 位的数。那么我们现在就是要支持动态插入（无删除）的第 $k$ 大。可以用对顶堆做。</p>
+<div><div class="fold_hider"><div class="close hider_title">点击</div></div><div class="fold">
+<h4 id="对顶堆如何做"><a href="#对顶堆如何做" class="headerlink" title="对顶堆如何做"></a>对顶堆如何做</h4><p>维护一个小根堆（堆顶是最小值），和一个大根堆（堆顶是最大值）。我们默认把数字插入到小根堆中，如果小根堆中的数字个数 $&gt;k$，那么我们把小根堆中的 <strong>最小值</strong> 放到大根堆里。</p>
+<p>那么有一个显然易证的性质：大根堆中的所有数，任何时候都 $\le$ 小根堆中的所有数。也就是，大根堆的堆顶 $\le$ 小根堆的堆顶。</p>
+<p>而且我们还保证了小根堆中只有 $k$ 个数。那么这 $k$ 个数 $\ge$ 当前的其它所有数，显然，这 $k$ 个数字就是前 $k$ 大。求出这 $k$ 个数中的最小值（小根堆顶），就是当前的第 $k$ 大。</p>
+<p>这个办法也可以用于求中位数 （也就是 $k$ 不一定静态，单调递增的情况也可以求）</p>
+
+</div></div>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div><div class="fold_hider"><div class="close hider_title">点击</div></div><div class="fold">
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N 1666666</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),v=G.To(i);~i;i=G.Next(i),v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> all(a) a.begin(),a.end()</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">I</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        <span class="keyword">return</span> (x=(f==<span class="number">1</span>)?x:-x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        va_list args; va_start(args,cnt);</span><br><span class="line">        F(i,<span class="number">1</span>,cnt) &#123;<span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);(*x)=I();&#125;</span><br><span class="line">        va_end(args);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span><span class="keyword">int</span> l,r,id;&#125; a[N];</span><br><span class="line">    <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(node a,node b)&#123;<span class="keyword">return</span> a.l&lt;b.l;&#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">int</span> n,k;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Rd(<span class="number">2</span>,&amp;n,&amp;k);</span><br><span class="line">        F(i,<span class="number">1</span>,n) a[i]=(node)&#123;I(),I(),i&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    priority_queue&lt;<span class="keyword">int</span>,<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;,greater&lt;<span class="keyword">int</span>&gt; &gt; Q1; <span class="comment">// 小根堆</span></span><br><span class="line">    priority_queue&lt;<span class="keyword">int</span>&gt; Q2; <span class="comment">// 大根堆</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        sort(a+<span class="number">1</span>,a+n+<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> Max=<span class="number">-0x3f3f3f3f</span>,l,r;</span><br><span class="line">        F(i,<span class="number">1</span>,n)</span><br><span class="line">        &#123;</span><br><span class="line">            Q1.push(a[i].r);</span><br><span class="line">            <span class="keyword">if</span> (sz(Q1)&gt;k) </span><br><span class="line">            <span class="comment">// 其实这里理论上应该是个 while 循环</span></span><br><span class="line">            <span class="comment">// 然而实际上我们每次只会新加入一个数，那么 sz(Q1) 顶多等于 k+1，弹一次即可</span></span><br><span class="line">            <span class="comment">// 写中位数的话，这里要改成 while !</span></span><br><span class="line">            &#123;</span><br><span class="line">                Q2.push(Q1.top()); Q1.pop();</span><br><span class="line">            &#125;</span><br><span class="line">             </span><br><span class="line">            <span class="keyword">if</span> (i&gt;=k) <span class="comment">// 这里注意判一下 i&gt;=k，很重要，会出错！ （我就挂在这的QaQ</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">int</span> rr=Q1.top(),ll=a[i].l;</span><br><span class="line">                <span class="keyword">if</span> (rr-ll&gt;Max)</span><br><span class="line">                &#123;</span><br><span class="line">                    Max=rr-ll; l=ll; r=rr;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,Max);</span><br><span class="line">        <span class="keyword">int</span> cnt=<span class="number">0</span>;</span><br><span class="line">        F(i,<span class="number">1</span>,n) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i].l&lt;=l <span class="keyword">and</span> r&lt;=a[i].r) </span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d "</span>,a[i].id);</span><br><span class="line">                ++cnt;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (cnt==k) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Input();</span><br><span class="line">        Soviet();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/优先队列/" rel="tag"># 优先队列</a>
+          
+            <a href="/tags/贪心/" rel="tag"># 贪心</a>
+          
+            <a href="/tags/思维/" rel="tag"># 思维</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/04/01/libreoj-2037-洛谷-4344-SHOI2015-脑洞治疗仪-题解/" rel="next" title="libreoj 2037 洛谷 4344 [SHOI2015]脑洞治疗仪 题解">
+                <i class="fa fa-chevron-left"></i> libreoj 2037 洛谷 4344 [SHOI2015]脑洞治疗仪 题解
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/tags/线段树/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/tags/线段树/">1</a><span class="page-number current">2</span>
-  </nav>
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -532,8 +701,17 @@ $(window).load(function(){
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -868,6 +1046,23 @@ show_date_time();
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路框架"><span class="nav-number">2.</span> <span class="nav-text">思路框架</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对顶堆如何做"><span class="nav-number">2.1.</span> <span class="nav-text">对顶堆如何做</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1030,6 +1225,10 @@ show_date_time();
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -1481,7 +1680,7 @@ show_date_time();
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 

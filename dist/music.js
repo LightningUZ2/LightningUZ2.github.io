@@ -75,6 +75,12 @@ const ap = new APlayer({
         url: 'http://music.163.com/song/media/outer/url?id=33937527.mp3',
         cover: 'http://p2.music.126.net/k8kONmsvnxJIeuvEE7eR0Q==/109951163694694330.jpg',
       },
+      {
+        name: '摘星座的女孩',
+        artist: 'Rainbowets',
+        url: 'http://music.163.com/song/media/outer/url?id=1399391180.mp3',
+        cover: 'http://p1.music.126.net/uEebH95-DOWNogkdZ5rCwA==/109951164451165870.jpg',
+      },
     ]
 });
 
