@@ -109,18 +109,18 @@
 
 
 
-  <meta name="description" content="题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用">
+  <meta name="description" content="[toc] 题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$">
 <meta name="keywords" content="优先队列,贪心,思维">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bzoj 5102 [POI2018]Prawnicy 题解">
 <meta property="og:url" content="https://lightninguz2.github.io/2020/04/06/bzoj-5102-POI2018-Prawnicy-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
-<meta property="og:description" content="题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用">
+<meta property="og:description" content="[toc] 题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-06T01:09:23.174Z">
+<meta property="og:updated_time" content="2020-04-06T01:11:55.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bzoj 5102 [POI2018]Prawnicy 题解">
-<meta name="twitter:description" content="题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$ 表示只能用">
+<meta name="twitter:description" content="[toc] 题意简述给你 $n$ 个区间 $[l_i,r_i]$，选出 恰好 $k$ 个，使得交集最大。输出最长的长度和方案。 注：区间 $[l,r]$ 的长度被定义为 $r-l$。  $1\le k\le n\le 10^5$。  思路框架若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。 然后我们枚举左端点的最大值。怎么枚举呢？按左端点从小到大排序，枚举到 $i$">
 
 
 
@@ -494,7 +494,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-04-06 08:53:40 / 修改时间：09:09:23" itemprop="dateCreated datePublished" datetime="2020-04-06T08:53:40+08:00">2020-04-06</time>
+              <time title="创建时间：2020-04-06 08:53:40 / 修改时间：09:11:55" itemprop="dateCreated datePublished" datetime="2020-04-06T08:53:40+08:00">2020-04-06</time>
             
 
             
@@ -531,7 +531,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 996 字</span>
+                  <span class="post-meta-item-text">本文字数： 997 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -567,7 +567,8 @@ $(window).load(function(){
       
 
       
-        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给你 $n$ 个区间 $[l_i,r_i]$，选出 <strong>恰好</strong> $k$ 个，使得交集最大。输出最长的长度和方案。</p>
+        <p>[toc]</p>
+<h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给你 $n$ 个区间 $[l_i,r_i]$，选出 <strong>恰好</strong> $k$ 个，使得交集最大。输出最长的长度和方案。</p>
 <p>注：区间 $[l,r]$ 的长度被定义为 $r-l$。</p>
 <p> $1\le k\le n\le 10^5$。 </p>
 <h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>若干的区间的交集，显然，左端点是所有左端点的最大值，右端点是所有右端点的最小值。</p>
@@ -658,6 +659,10 @@ $(window).load(function(){
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020/04/06/libreoj-6270-数据结构板子题-题解/" rel="prev" title="libreoj 6270 数据结构板子题 题解">
+                libreoj 6270 数据结构板子题 题解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -728,7 +733,7 @@ $(window).load(function(){
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">129</span>
+                    <span class="site-state-item-count">130</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

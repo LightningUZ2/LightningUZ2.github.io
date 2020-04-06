@@ -118,7 +118,6 @@ AC_list
 	https://loj.ac/problem/2095
 	https://loj.ac/problem/2161 
 	https://www.luogu.com.cn/problem/P2183
-	(*blog)
 	2020-03-15 10
 	https://www.luogu.com.cn/problem/P2619
 	https://loj.ac/problem/10228
@@ -126,7 +125,7 @@ AC_list
 	https://loj.ac/problem/10213
 	https://loj.ac/problem/10212
 	https://www.luogu.com.cn/problem/P1495 
-	https://www.luogu.com.cn/problem/P3179 (blog!!!)
+	https://www.luogu.com.cn/problem/P3179
 	https://loj.ac/problem/2126
 	https://loj.ac/problem/2546
 	https://www.luogu.com.cn/problem/P4516
@@ -135,7 +134,7 @@ AC_list
 	https://www.luogu.com.cn/problem/P4344
 	https://loj.ac/problem/2028
 	https://www.luogu.com.cn/problem/P4340
-	https://loj.ac/problem/6270 (blog!!!)
+	https://loj.ac/problem/6270
 	https://loj.ac/problem/2130
 	https://loj.ac/problem/2093
 	2020-03-17 9
@@ -155,6 +154,7 @@ AC_list
 	https://loj.ac/problem/114
 	https://www.luogu.com.cn/problem/P4310
 	https://www.luogu.com.cn/problem/P5670 (debug)
+	(*blog)
 	2020-03-19 8
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4869
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3529
@@ -283,7 +283,7 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4946 
 	2020-04-05 8
 	http://www.lydsy.com/JudgeOnline/problem.php?id=2666
-	https://www.luogu.com.cn/problem/P3162 (blog!!!)
+	https://www.luogu.com.cn/problem/P3162 
 	http://www.lydsy.com/JudgeOnline/problem.php?id=1029
 	https://www.luogu.com.cn/problem/P4053
 	http://www.lydsy.com/JudgeOnline/problem.php?id=5102
