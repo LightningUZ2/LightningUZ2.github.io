@@ -154,7 +154,6 @@ AC_list
 	https://loj.ac/problem/114
 	https://www.luogu.com.cn/problem/P4310
 	https://www.luogu.com.cn/problem/P5670 (debug)
-	(*blog)
 	2020-03-19 8
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4869
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3529
@@ -166,7 +165,7 @@ AC_list
 	https://vjudge.net/problem/CodeForces-985B
 	2020-03-20 7
 	https://loj.ac/problem/6182
-	https://www.luogu.com.cn/problem/P5112 (blog!!! 神仙题)
+	https://www.luogu.com.cn/problem/P5112
 	https://vjudge.net/problem/CodeForces-1326A
 	https://vjudge.net/problem/CodeForces-1326B
 	https://vjudge.net/problem/CodeForces-1326C
@@ -175,10 +174,10 @@ AC_list
 	2020-03-21 9
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4591
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4592
-	https://www.luogu.com.cn/problem/P5295 (blog!!!)
+	https://www.luogu.com.cn/problem/P5295
 	https://www.luogu.com.cn/problem/P3831
 	https://www.luogu.com.cn/problem/P2829
-	https://loj.ac/problem/10067 (short blog)
+	https://loj.ac/problem/10067
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4514
 	https://www.luogu.com.cn/problem/P4068
 	https://loj.ac/problem/2031
@@ -199,6 +198,7 @@ AC_list
 	https://loj.ac/problem/2097
 	https://www.luogu.com.cn/problem/P3168
 	https://vjudge.net/problem/CodeForces-914D
+	(*blog)
 	2020-03-24 9
 	https://vjudge.net/problem/CodeForces-1327B
 	https://vjudge.net/problem/CodeForces-1327C
