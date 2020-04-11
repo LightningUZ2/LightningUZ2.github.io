@@ -1950,7 +1950,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff1f;
+  background: #adff5b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3280,7 +3280,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background-image: url("https://images.cnblogs.com/cnblogs_com/LightningUZ/1694727/o_20041012145531.jpg");
+  background-image: url("https://cdn.luogu.com.cn/upload/image_hosting/hlcg7dy9.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
