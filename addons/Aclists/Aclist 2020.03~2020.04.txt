@@ -258,12 +258,8 @@ AC_list
 	https://vjudge.net/problem/CodeForces-864D
 	https://www.luogu.com.cn/problem/P5655 (blog!!!)
 	(blog: 莫比乌斯容斥)
-	2020-04-01 5 (April Fool's Day!) (codeforces Round #630)
-	https://vjudge.net/problem/CodeForces-1332A
-	https://vjudge.net/problem/CodeForces-1332B
-	https://vjudge.net/problem/CodeForces-1332C
-	https://vjudge.net/problem/CodeForces-1332D
-	https://vjudge.net/problem/CodeForces-1332E
+	2020-04-01 5 (April Fool's Day!) 
+	CF Round #630(1332*): ABCDE
 	2020-04-02 3
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4962 (blog!!!)
 	https://www.luogu.com.cn/problem/P4323
@@ -291,7 +287,24 @@ AC_list
 	http://acm.hdu.edu.cn/showproblem.php?pid=6299
 	2020-04-06 4
 	http://codeforces.com/problemset/problem/1267/L
+	https://www.luogu.com.cn/problem/P6216
 	https://www.luogu.com.cn/problem/P3566
 	http://www.lydsy.com/JudgeOnline/problem.php?id=1112
-	https://www.luogu.com.cn/problem/P6216
-
+	2020-04-07 0 (准备开学)
+	2020-04-08 4
+	CF Round #632(1333*): ABCF
+	2020-04-09 4
+	https://www.luogu.com.cn/problem/P4525
+	https://www.luogu.com.cn/problem/P4526
+	https://vjudge.net/problem/CodeForces-1316C
+	https://vjudge.net/problem/CodeForces-1278E
+	2020-04-10 4
+	https://www.luogu.com.cn/problem/P2587
+	http://www.lydsy.com/JudgeOnline/problem.php?id=1034
+	https://www.luogu.com.cn/problem/P4109
+	http://www.lydsy.com/JudgeOnline/problem.php?id=4029
+	2020-04-11 8
+	CF Edu Round 85(1334*): ABCDE
+	https://www.luogu.com.cn/problem/P1254
+	https://www.luogu.com.cn/problem/P4998
+	http://acm.hdu.edu.cn/showproblem.php?pid=4004
