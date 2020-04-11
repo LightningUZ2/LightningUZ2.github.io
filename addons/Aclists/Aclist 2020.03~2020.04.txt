@@ -198,7 +198,6 @@ AC_list
 	https://loj.ac/problem/2097
 	https://www.luogu.com.cn/problem/P3168
 	https://vjudge.net/problem/CodeForces-914D
-	(*blog)
 	2020-03-24 9
 	https://vjudge.net/problem/CodeForces-1327B
 	https://vjudge.net/problem/CodeForces-1327C
@@ -207,14 +206,15 @@ AC_list
 	https://loj.ac/problem/2034
 	https://www.luogu.com.cn/problem/P4071
 	https://loj.ac/problem/2526
-	https://www.luogu.com.cn/problem/P4492 (blog!!!)
+	https://www.luogu.com.cn/problem/P4492
 	https://vjudge.net/problem/CodeForces-1207D
+	(*blog)
 	2020-03-25 6
 	https://vjudge.net/problem/CodeForces-1152C
 	https://vjudge.net/problem/CodeForces-1101D
 	https://www.luogu.com.cn/problem/P3084
 	https://www.luogu.com.cn/problem/P2966
-	https://www.luogu.com.cn/problem/P4247 (blog!!!)
+	https://www.luogu.com.cn/problem/P4247 (blog!!!!!!)
 	http://www.lydsy.com/JudgeOnline/problem.php?id=2962
 	2020-03-26 8
 	https://loj.ac/problem/2246
