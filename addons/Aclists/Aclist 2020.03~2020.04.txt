@@ -208,13 +208,12 @@ AC_list
 	https://loj.ac/problem/2526
 	https://www.luogu.com.cn/problem/P4492
 	https://vjudge.net/problem/CodeForces-1207D
-	(*blog)
 	2020-03-25 6
 	https://vjudge.net/problem/CodeForces-1152C
 	https://vjudge.net/problem/CodeForces-1101D
 	https://www.luogu.com.cn/problem/P3084
 	https://www.luogu.com.cn/problem/P2966
-	https://www.luogu.com.cn/problem/P4247 (blog!!!!!!)
+	https://www.luogu.com.cn/problem/P4247
 	http://www.lydsy.com/JudgeOnline/problem.php?id=2962
 	2020-03-26 8
 	https://loj.ac/problem/2246
@@ -223,11 +222,12 @@ AC_list
 	https://www.luogu.com.cn/problem/P2408
 	http://poj.org/problem?id=2774
 	http://acm.hdu.edu.cn/showproblem.php?pid=1403
-	https://www.luogu.com.cn/problem/P5460 (blog!!!)
+	https://www.luogu.com.cn/problem/P5460
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4628
 	2020-03-27 2 (备战少预,减少做题)
 	https://www.luogu.com.cn/problem/P4704
 	https://loj.ac/problem/10007
+	(*blog)
 	2020-03-28 8
 	https://www.luogu.com.cn/problem/P5176
 	https://vjudge.net/problem/CodeForces-519E
@@ -308,3 +308,22 @@ AC_list
 	https://www.luogu.com.cn/problem/P1254
 	https://www.luogu.com.cn/problem/P4998
 	http://acm.hdu.edu.cn/showproblem.php?pid=4004
+	2020-04-12 8
+	https://vjudge.net/problem/CodeForces-805B
+	https://vjudge.net/problem/CodeForces-439E
+	https://vjudge.net/problem/CodeForces-1036F
+	http://acm.hdu.edu.cn/showproblem.php?pid=6053
+	http://acm.hdu.edu.cn/showproblem.php?pid=5072
+	https://vjudge.net/problem/CodeForces-1009D
+	https://loj.ac/problem/2255 (blog!!!)
+	https://www.luogu.com.cn/problem/P5025
+	2020-04-13 4
+	https://vjudge.net/problem/CodeForces-920F
+	https://vjudge.net/problem/CodeForces-1328E
+	https://vjudge.net/problem/%E8%AE%A1%E8%92%9C%E5%AE%A2-A1607
+	https://vjudge.net/problem/CodeForces-316E3 (blog!!! 神仙题)
+	2020-04-14 4
+	https://loj.ac/problem/2109
+	https://www.luogu.com.cn/problem/P3266
+	https://loj.ac/problem/2145
+	https://www.luogu.com.cn/problem/P3750
