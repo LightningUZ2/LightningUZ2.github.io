@@ -257,7 +257,6 @@ AC_list
 	https://loj.ac/problem/6229
 	https://vjudge.net/problem/CodeForces-864D
 	https://www.luogu.com.cn/problem/P5655 (blog!!!)
-	(blog: 莫比乌斯容斥)
 	2020-04-01 5 (April Fool's Day!) 
 	CF Round #630(1332*): ABCDE
 	2020-04-02 3
@@ -351,4 +350,12 @@ AC_list
 	https://vjudge.net/problem/CodeForces-1045A
 	http://www.lydsy.com/JudgeOnline/problem.php?id=1924
 	https://www.luogu.com.cn/problem/P2403
-
+	2020-04-19 8
+	https://www.luogu.com.cn/problem/P3810
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3262
+	http://www.lydsy.com/JudgeOnline/problem.php?id=1935
+	https://www.luogu.com.cn/problem/P2163
+	https://www.luogu.com.cn/problem/P3157
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3295
+	https://vjudge.net/problem/CodeForces-546E
+	http://www.51nod.com/Challenge/Problem.html#problemId=1442
