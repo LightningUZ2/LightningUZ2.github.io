@@ -118,7 +118,7 @@
 <meta property="og:description" content="算法讲解（本篇文章假设您学过莫比乌斯反演 (〃’▽’〃)  我们知道莫比乌斯函数有一个性质： $\sum\limits_{d|n} \mu(d)=[n=1]$ 根据这条性质，我们写出一个类似筛的东西：一个数组，初始都是 $0$。 第 $i$ 轮，将 $i$ 的倍数都加上 $\mu(i)$。  $n$ 轮之后，显然只有第一个位置还剩一个 $1$，其它都变成了 $0$。好好理解下这个表，然后往下看。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.loli.net/2020/04/18/gksPoOy6wfMBClE.jpg">
-<meta property="og:updated_time" content="2020-04-18T14:23:06.547Z">
+<meta property="og:updated_time" content="2020-04-18T14:33:57.769Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="莫比乌斯容斥 笔记">
 <meta name="twitter:description" content="算法讲解（本篇文章假设您学过莫比乌斯反演 (〃’▽’〃)  我们知道莫比乌斯函数有一个性质： $\sum\limits_{d|n} \mu(d)=[n=1]$ 根据这条性质，我们写出一个类似筛的东西：一个数组，初始都是 $0$。 第 $i$ 轮，将 $i$ 的倍数都加上 $\mu(i)$。  $n$ 轮之后，显然只有第一个位置还剩一个 $1$，其它都变成了 $0$。好好理解下这个表，然后往下看。">
@@ -496,7 +496,7 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-04-18 20:28:58 / 修改时间：22:23:06" itemprop="dateCreated datePublished" datetime="2020-04-18T20:28:58+08:00">2020-04-18</time>
+              <time title="创建时间：2020-04-18 20:28:58 / 修改时间：22:33:57" itemprop="dateCreated datePublished" datetime="2020-04-18T20:28:58+08:00">2020-04-18</time>
             
 
             
@@ -574,7 +574,8 @@ $(window).load(function(){
 <p>根据这条性质，我们写出一个类似筛的东西：一个数组，初始都是 $0$。 第 $i$ 轮，将 $i$ 的倍数都加上 $\mu(i)$。</p>
 <p><img src="https://i.loli.net/2020/04/18/gksPoOy6wfMBClE.jpg" alt="blog1.jpg"></p>
 <p>$n$ 轮之后，显然只有第一个位置还剩一个 $1$，其它都变成了 $0$。好好理解下这个表，然后往下看。</p>
-<p>那么，假设现在我们要求 $n=1$ 时的答案，但是我们方便求的只有 $n$ 的倍数的答案和，如何转化？我们设 $f(x)$ 表示 $n$ 恰好为 $x$ 的答案，$F(x)$ 表示 $n$ 为 $x$ 的倍数的答案和，即 $\sum\limits_{d|n} f(n)$。</p>
+<p>那么，假设现在我们要求 $n=1$ 时的答案，但是我们方便求的只有 $n$ 的倍数的答案和，如何转化捏 （⊙.⊙）</p>
+<p>我们设 $f(x)$ 表示 $n$ 恰好为 $x$ 的答案，$F(x)$ 表示 $n$ 为 $x$ 的倍数的答案和，即 $\sum\limits_{d|n} f(n)$。</p>
 <p>考虑 $\sum\limits_{i=1}^{n} \mu(i)F(i)$，</p>
 <p>它 $=\sum\limits_{i=1}^{n}\sum\limits_{i|j} \mu(i)f(j)$</p>
 <p>考虑每个 $f(i)$ 被算了多少次，变为：</p>
