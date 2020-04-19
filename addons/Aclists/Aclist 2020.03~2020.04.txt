@@ -249,7 +249,6 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3574
 	https://www.luogu.com.cn/problem/P3234
 	https://www.luogu.com.cn/problem/P2767
-	(*blog)
 	2020-03-31 6
 	https://vjudge.net/problem/CodeForces-900D
 	https://vjudge.net/problem/CodeForces-1225D
@@ -268,7 +267,7 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=1052
 	https://www.luogu.com.cn/problem/P2218
 	2020-04-04 8 逝者安息
-	https://vjudge.net/problem/CodeForces-1304D (blog!!!)
+	https://vjudge.net/problem/CodeForces-1304D
 	https://vjudge.net/problem/CodeForces-1268B
 	https://vjudge.net/problem/CodeForces-1269D 
 	https://vjudge.net/problem/CodeForces-1286B
@@ -307,6 +306,7 @@ AC_list
 	https://www.luogu.com.cn/problem/P1254
 	https://www.luogu.com.cn/problem/P4998
 	http://acm.hdu.edu.cn/showproblem.php?pid=4004
+	(*blog)
 	2020-04-12 8
 	https://vjudge.net/problem/CodeForces-805B
 	https://vjudge.net/problem/CodeForces-439E
