@@ -227,12 +227,11 @@ AC_list
 	2020-03-27 2 (备战少预,减少做题)
 	https://www.luogu.com.cn/problem/P4704
 	https://loj.ac/problem/10007
-	(*blog)
 	2020-03-28 8
 	https://www.luogu.com.cn/problem/P5176
 	https://vjudge.net/problem/CodeForces-519E
 	https://vjudge.net/problem/UVALive-6264
-	https://loj.ac/problem/6192 (blog!!!)
+	https://loj.ac/problem/6192 
 	http://www.51nod.com/Challenge/Problem.html#problemId=1389
 	https://www.luogu.com.cn/problem/P2597
 	http://www.lydsy.com/JudgeOnline/problem.php?id=2815
@@ -246,17 +245,18 @@ AC_list
 	https://www.luogu.com.cn/problem/P5043
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4337
 	2020-03-30 4
-	http://www.51nod.com/Challenge/Problem.html#problemId=1601 (blog!!!)
+	http://www.51nod.com/Challenge/Problem.html#problemId=1601
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3574
 	https://www.luogu.com.cn/problem/P3234
 	https://www.luogu.com.cn/problem/P2767
+	(*blog)
 	2020-03-31 6
 	https://vjudge.net/problem/CodeForces-900D
 	https://vjudge.net/problem/CodeForces-1225D
 	https://vjudge.net/problem/CodeForces-409F
 	https://loj.ac/problem/6229
 	https://vjudge.net/problem/CodeForces-864D
-	https://www.luogu.com.cn/problem/P5655 (blog!!!)
+	https://www.luogu.com.cn/problem/P5655 
 	2020-04-01 5 (April Fool's Day!) 
 	CF Round #630(1332*): ABCDE
 	2020-04-02 3
@@ -353,9 +353,9 @@ AC_list
 	2020-04-19 8
 	https://www.luogu.com.cn/problem/P3810
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3262
-	http://www.lydsy.com/JudgeOnline/problem.php?id=1935
 	https://www.luogu.com.cn/problem/P2163
+	http://www.lydsy.com/JudgeOnline/problem.php?id=1935
 	https://www.luogu.com.cn/problem/P3157
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3295
-	https://vjudge.net/problem/CodeForces-546E
-	http://www.51nod.com/Challenge/Problem.html#problemId=1442
+	http://noi.ac/contest/333/problem/1787
+	http://noi.ac/contest/333/problem/1789
