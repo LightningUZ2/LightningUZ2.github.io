@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lightninguz2.github.io/"/>
-  <updated>2020-05-02T14:59:05.676Z</updated>
+  <updated>2020-05-02T15:03:08.345Z</updated>
   <id>https://lightninguz2.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lightninguz2.github.io/2020/05/02/%E4%BA%94%E8%BE%B9%E5%BD%A2%E6%95%B0-%E7%AC%94%E8%AE%B0/"/>
     <id>https://lightninguz2.github.io/2020/05/02/五边形数-笔记/</id>
     <published>2020-05-02T14:10:24.000Z</published>
-    <updated>2020-05-02T14:59:05.676Z</updated>
+    <updated>2020-05-02T15:03:08.345Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>近日，一国外小哥学习了这个定理，竟然能预处理出整数划分的方案数！快跟小编来看看吧</del></p><p>这个小哥学习的定理，就是小编（我）接下来要讲的五边形数定理</p><p><del>好的，让我们一起来看看这个定理吧</del></p><h3 id="五边形数是啥"><a href="#五边形数是啥" class="headerlink" title="五边形数是啥"></a>五边形数是啥</h3><p><a href="https://baike.baidu.com/item/%E4%BA%94%E8%BE%B9%E5%BD%A2%E6%95%B0/9459853" target="_blank" rel="noopener">百度百科</a></p><p>用图来讲，就是若干个点，排成若干个五边形，需要多少个点。</p><p>百度百科上有一个很清楚的图：</p><p><img src="https://bkimg.cdn.bcebos.com/pic/faf2b2119313b07ecf28339b07d7912396dd8c8f?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt></p><p>它的通项公式为 $a_n=\dfrac{n(3n-1)}{2}$，前面几项是 $0, 1, 5, 12, 22, 35, 51, 70, 92, 117, 145, 176, 210…$。你可以在 OEIS 上找到它，是序列 <a href="http://oeis.org/A000326" target="_blank" rel="noopener">A000326</a></p><p>我们要研究的是 <strong>广义五边形数</strong>，是这样一个数列：$p=a_0,a_{1},a_{-1},a_{2},a_{-2}…$</p><p>其中，如果 $p$ 的下标是负数，照样代入到上面的通项公式里算即可。容易证明，当 $n&lt;0$ 时，$p_n$ 也是正的。前面几项是 $0, 1, 2, 5, 7, 12, 15, 22, 26, 35, 40, 51, 57, 70, 77, 92, 100, 117…$，同样可以在 OEIS 上找到它是 <a href="http://oeis.org/A001318" target="_blank" rel="noopener">A001318</a></p><h3 id="它能干啥"><a href="#它能干啥" class="headerlink" title="它能干啥"></a>它能干啥</h3><h4 id="欧拉函数（五边形数）"><a href="#欧拉函数（五边形数）" class="headerlink" title="欧拉函数（五边形数）"></a>欧拉函数（五边形数）</h4><p>（为了和欧拉数论函数区别开来，这里给它起名叫欧拉函数-五边形数(*/ω＼*)</p><p>是这样一个函数：$\varphi(x)=(1-x)(1-x^2)(1-x^3)(1-x^4)…(1-x^inf)=\prod\limits_{i=1}^{inf} (1-x^i)$</p><p>这东西有一个很神奇的性质。如果你闲的没事，可以暴力拆开它，发现它等于</p><p>$x^0-x^1-x^2+x^5+x^7-x^{12}-x^{15}+x^{22}+x^{26}…=\sum\limits_{i=1}^{inf} (-1)^{(i+1)/2} x^{p_i}$</p><p>系数：一个正，两个负，两个正，两个负，两个正，两个负…</p><p>指数：广义五边形数</p><h4 id="与整数划分问题的联系"><a href="#与整数划分问题的联系" class="headerlink" title="与整数划分问题的联系"></a>与整数划分问题的联系</h4><p>然后我们可以来解决整数划分问题。设 $P(n)$ 表示将 $n$ 分成若干个整数的无序方案（即，$a+b$ 和 $b+a$ 只算一次），同一个数可以用很多次。</p><p>比如，$P(4)=5$，因为 $4$</p><p>$=1+1+1+1$</p><p>$=1+1+2$</p><p>$=1+3$</p><p>$=2+2$</p><p>$=4$</p><p>特殊地，$P(0)=1$</p><p>我们求出 $P(n)$ 的生成函数 $f(x)=\sum\limits_{n=0}^{inf} P(n)x^n$</p><p>给它换个定义：我们要选出若干个（可以是 $0$ 个） $1$，若干个 $2$，若干个 $3$…使得选出来的所有数和为 $n$。</p><p>这样就好考虑了。看这个式子：</p><p>$(1+x+x^2+x^3…)(1+x^2+(x^2)^2+(x^2)^3…)(1+x^3+(x^3)^2+(x^3)^3…)…$</p><p>第一个因式表示我们能随便选择用多少个 $x^1$</p><p>第二个因式表示我们能随便选择用多少个 $x^2$</p><p>…</p><p>乘起来之后，考虑 $x^n$ 的系数，你会发现它就是 $P(n)$！是不是特别巧妙φ(&gt;ω&lt;*) </p><p>于是 $f(x)=(1+x+x^2+x^3…)(1+x^2+(x^2)^2+(x^2)^3…)(1+x^3+(x^3)^2+(x^3)^3…)…=\prod\limits_{n=1}^{inf} \sum\limits_{i=0}^{inf} (x^n)^i$</p><p>然后我们用等比数列求和公式化一下，得到：</p><p>$f(x)=\prod\limits_{n=1}^{inf} \dfrac{1}{1-x^n}$</p><p>我们发现它就是欧拉函数-五边形数的倒数(/≧▽≦/)！</p><p>即</p><p>$\varphi(x)f(x)=1$</p><p>也就是</p><p>$(1-x-x^2+x^5+x^7-x^{12}-x^{15}…)(\sum\limits_{n=0}^{inf} P(n)x^n)=1$</p><p>观察其中 $x^n$ 项的系数（分别考虑左边和右边的括号出的是几次项），容易发现这个系数应该是 $P(n)-P(n-1)-P(n-2)+P(n-5)+P(n-7)…$</p><p>$n=0$ 时，这个式子显然为 $1$。那么 $n&gt;0$ 时， $x^n$ 乘以它的系数的和就得是 $0$ 了。</p><p>然后我们发现等式右边是 $1$。并且原式为恒等式，所以 $x$ 取任何值都成立。为了让 $x$ 取任何值时等式都成立，对于 $n&gt;0$ 时，$P(n)-P(n-1)-P(n-2)$ 这个可怜的等式只好取 $0$ 了。</p><p>然后就得到了：</p><p>$P(n)-P(n-1)-P(n-2)+P(n-5)+P(n-7)-P(n-12)-P(n-15)…=0$</p><p>于是 $P(n)=P(n-1)+P(n-2)-P(n-5)-P(n-7)+P(n-12)+P(n-15)…$</p><p>然后 $\le n$ 的五边形数是 $\sqrt{n}$ 级别的（注意到五边形数的通项公式是二次的）</p><p>于是我们可以递推出 $P(n)$，是 $O(n\sqrt{n})$ 的，是不是很厉害呢(✪ω✪)</p><p><del>好了，以上就是这个定理的全部内容了，喜欢记得收藏起来哟</del></p>]]></content>
     
@@ -343,11 +343,11 @@
     </summary>
     
     
+      <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
       <category term="优先队列" scheme="https://lightninguz2.github.io/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/"/>
     
       <category term="贪心" scheme="https://lightninguz2.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-      <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
   </entry>
   
@@ -522,9 +522,9 @@
     
       <category term="思维" scheme="https://lightninguz2.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
-      <category term="字符串" scheme="https://lightninguz2.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
       <category term="毒瘤" scheme="https://lightninguz2.github.io/tags/%E6%AF%92%E7%98%A4/"/>
+    
+      <category term="字符串" scheme="https://lightninguz2.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="哈希" scheme="https://lightninguz2.github.io/tags/%E5%93%88%E5%B8%8C/"/>
     
