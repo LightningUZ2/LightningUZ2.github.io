@@ -358,7 +358,6 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3295
 	http://noi.ac/contest/333/problem/1787
 	http://noi.ac/contest/333/problem/1789
-	(blog: cdq分治)
 	2020-04-20 4
 	https://www.luogu.com.cn/problem/P3149
 	https://www.luogu.com.cn/problem/P3101
