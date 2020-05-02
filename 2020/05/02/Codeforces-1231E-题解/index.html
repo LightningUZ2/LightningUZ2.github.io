@@ -109,20 +109,18 @@
 
 
 
-  <meta name="description" content="题意简述给定两个数列a,b，长度均为n(">
-<meta name="keywords" content="思维,数学">
+  <meta name="description" content="题意简述（$q$ 组数据）你有两个串，$s$ 和 $t$，长度都是 $n$。现在你可以对 $s$ 做若干次操作：选择某一个字符，把它移到最前面或者最后面（二选一）。 你现在要把 $s$ 变成 $t$，请问最少需要多少步操作。不行输出 $-1$。 $1\le q,n\le100$。 思路先放结论：求出最长的串 $a$ 使得 $a$ 是 $s$ 的子序列（不一定连续），并且是 $t$ 的子串（必须连续">
+<meta name="keywords" content="思维">
 <meta property="og:type" content="article">
-<meta property="og:title" content="洛谷 1966 libreoj 2069 火柴排队 题解">
-<meta property="og:url" content="https://lightninguz2.github.io/2020/02/10/洛谷-1966-loj-2069-火柴排队-题解/index.html">
+<meta property="og:title" content="Codeforces 1231E 题解">
+<meta property="og:url" content="https://lightninguz2.github.io/2020/05/02/Codeforces-1231E-题解/index.html">
 <meta property="og:site_name" content="Flandre Scarlet 的小屋">
-<meta property="og:description" content="题意简述给定两个数列a,b，长度均为n(">
+<meta property="og:description" content="题意简述（$q$ 组数据）你有两个串，$s$ 和 $t$，长度都是 $n$。现在你可以对 $s$ 做若干次操作：选择某一个字符，把它移到最前面或者最后面（二选一）。 你现在要把 $s$ 变成 $t$，请问最少需要多少步操作。不行输出 $-1$。 $1\le q,n\le100$。 思路先放结论：求出最长的串 $a$ 使得 $a$ 是 $s$ 的子序列（不一定连续），并且是 $t$ 的子串（必须连续">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img.langlangago.xyz/2019/10/18/5da9d77514c61.jpg">
-<meta property="og:updated_time" content="2020-02-16T05:31:29.017Z">
+<meta property="og:updated_time" content="2020-05-02T12:16:51.845Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="洛谷 1966 libreoj 2069 火柴排队 题解">
-<meta name="twitter:description" content="题意简述给定两个数列a,b，长度均为n(">
-<meta name="twitter:image" content="https://img.langlangago.xyz/2019/10/18/5da9d77514c61.jpg">
+<meta name="twitter:title" content="Codeforces 1231E 题解">
+<meta name="twitter:description" content="题意简述（$q$ 组数据）你有两个串，$s$ 和 $t$，长度都是 $n$。现在你可以对 $s$ 做若干次操作：选择某一个字符，把它移到最前面或者最后面（二选一）。 你现在要把 $s$ 变成 $t$，请问最少需要多少步操作。不行输出 $-1$。 $1\le q,n\le100$。 思路先放结论：求出最长的串 $a$ 使得 $a$ 是 $s$ 的子序列（不一定连续），并且是 $t$ 的子串（必须连续">
 
 
 
@@ -131,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://lightninguz2.github.io/2020/02/10/洛谷-1966-loj-2069-火柴排队-题解/">
+  <link rel="canonical" href="https://lightninguz2.github.io/2020/05/02/Codeforces-1231E-题解/">
 
 
 
@@ -141,7 +139,7 @@
   };
 </script>
 
-  <title>洛谷 1966 libreoj 2069 火柴排队 题解 | Flandre Scarlet 的小屋</title>
+  <title>Codeforces 1231E 题解 | Flandre Scarlet 的小屋</title>
   
 
 
@@ -453,7 +451,7 @@ $(window).load(function(){
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/02/10/洛谷-1966-loj-2069-火柴排队-题解/">
+    <link itemprop="mainEntityOfPage" href="https://lightninguz2.github.io/2020/05/02/Codeforces-1231E-题解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LightningUZ">
@@ -470,7 +468,7 @@ $(window).load(function(){
 
         
         
-          <h1 class="post-title" itemprop="name headline">洛谷 1966 libreoj 2069 火柴排队 题解
+          <h1 class="post-title" itemprop="name headline">Codeforces 1231E 题解
 
               
             
@@ -496,24 +494,12 @@ $(window).load(function(){
                 
               
 
-              <time title="创建时间：2020-02-10 00:32:33" itemprop="dateCreated datePublished" datetime="2020-02-10T00:32:33+08:00">2020-02-10</time>
+              <time title="创建时间：2020-05-02 20:16:24 / 修改时间：20:16:51" itemprop="dateCreated datePublished" datetime="2020-05-02T20:16:24+08:00">2020-05-02</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-02-16 13:31:29" itemprop="dateModified" datetime="2020-02-16T13:31:29+08:00">2020-02-16</time>
               
             
           </span>
@@ -545,7 +531,7 @@ $(window).load(function(){
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">本文字数： 17 字</span>
+                  <span class="post-meta-item-text">本文字数： 1k 字</span>
                 
                 <span title="本文字数"></span>
               
@@ -559,7 +545,7 @@ $(window).load(function(){
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长  &asymp; 1 分钟</span>
+                  <span class="post-meta-item-text">阅读时长  &asymp; 4 分钟</span>
                 
                 <span title="阅读时长"></span>
               
@@ -581,26 +567,20 @@ $(window).load(function(){
       
 
       
-        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>给定两个数列<script type="math/tex">a,b</script>，长度均为<script type="math/tex">n(<=100000)</script>，<script type="math/tex">a,b</script>中的数都互不相同。最小化每个数差的平方的和，形式化地，最小化:<br><img src="https://img.langlangago.xyz/2019/10/18/5da9d77514c61.jpg" alt><br>然后输出交换次数对<script type="math/tex">99999997</script>取膜的结果。</p>
-<h3 id="思路框架"><a href="#思路框架" class="headerlink" title="思路框架"></a>思路框架</h3><p>显然，最优的时候就是<script type="math/tex">a,b</script>都排好序的时候，那么我们把<script type="math/tex">a,b</script>离散化，都看成<script type="math/tex">1,n</script>的排列，然后算<script type="math/tex">b</script>需要多少步到<script type="math/tex">a</script>。是一个类似逆序对的问题，用树状数组维护即珂。</p>
-<h3 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h3><p>先化简一下那个式子。把平方拆开，会发现变成三个部分：</p>
-<ol>
-<li><script type="math/tex">a_i^2</script>的和</li>
-<li><script type="math/tex">b_i^2</script>的和</li>
-<li><script type="math/tex">-2a_ib_i</script>的和</li>
-</ol>
-<p>要让原式最小，那就要让<script type="math/tex">a_ib_i</script>的和最大。如何最大呢？那肯定是要排序之后一一对应。</p>
-<h1 id="but…Why"><a href="#but…Why" class="headerlink" title="but…Why?"></a>but…Why?</h1><p>只考虑<script type="math/tex">n=2</script>的情况。设有四个数，<script type="math/tex">a,b,c,d</script>，满足<script type="math/tex">a<b</script>且<script type="math/tex">c<d</script>。然后我们看看是<script type="math/tex">ac+bd</script>大还是<script type="math/tex">ad+bc</script>大，就珂以证出来上面那个排序了。</p>
-<p>作差，得<script type="math/tex">(ac+bd)-(ad+bc)=d(b-a)+c(a-b)=(a-b)(c-d)</script>。由于两个都是负的，所以这个数大于<script type="math/tex">0</script>。所以<script type="math/tex">ac+bd</script>比<script type="math/tex">ad+bc</script>大。证毕。</p>
-<p>然后我们要求的问题就是，我们要让<script type="math/tex">b</script>和<script type="math/tex">a</script>一一对应，也就是<script type="math/tex">b</script>的第一小对应<script type="math/tex">a</script>的第一小，<script type="math/tex">b</script>的第二小对应<script type="math/tex">a</script>的第二小…<script type="math/tex">b</script>的最大值对应<script type="math/tex">a</script>的最大值。</p>
-<p>（要解决这个问题，显然要先离散化</p>
-<p>我们来分析一下我们的目的是啥。比如<script type="math/tex">a={4,1,2,3,5},b={1,2,3,4,5}</script>。然后我们要让<script type="math/tex">b</script>中的<script type="math/tex">4</script>排在第一个，<script type="math/tex">b</script>中的<script type="math/tex">1</script>排在第二个…<script type="math/tex">b</script>中的<script type="math/tex">5</script>排在第<script type="math/tex">5</script>个。然后我们先处理出<script type="math/tex">a</script>的反排列，设为<script type="math/tex">M</script>，那么对于所有<script type="math/tex">i</script>，<script type="math/tex">M[a[i]]=i</script>。然后对于每个<script type="math/tex">i</script>，我们令<script type="math/tex">b[i]=M[b[i]]</script>。这样，我们就把<script type="math/tex">b</script>中的第<script type="math/tex">i</script>个位置变成了这个位置在最优情况下应该在哪。</p>
-<p>现在，我们的目的就变成了变换后的<script type="math/tex">b</script>排列变成<script type="math/tex">{1,2,3...n}</script>的最小交换次数。这就是变换后的<script type="math/tex">b</script>排列的逆序对数量。树状数组维护即珂。</p>
-<p>（上面说这么多，代码其实不长）</p>
-<h3 id="实现注意"><a href="#实现注意" class="headerlink" title="实现注意"></a>实现注意</h3><ol>
-<li>交换次数要<script type="math/tex">longlong</script></li>
-</ol>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">namespace</span> Flandre_Scarlet</span><br><span class="line">&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> N 155555</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> mod 99999997</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> int long long </span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),__v=G.To(i);~i;i=G.Next(i),__v=G.To(i))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">int</span> a[N],b[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">R1</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        x=<span class="number">0</span>;<span class="keyword">char</span> c=getchar();<span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(c&lt;<span class="string">'0'</span> <span class="keyword">or</span> c&gt;<span class="string">'9'</span>) f=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(c^<span class="number">48</span>),c=getchar();</span><br><span class="line">        x=(f==<span class="number">1</span>)?x:-x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        R1(n);</span><br><span class="line">        F(i,<span class="number">1</span>,n) R1(a[i]);</span><br><span class="line">        F(i,<span class="number">1</span>,n) R1(b[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lba</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;<span class="keyword">return</span> lower_bound(a+<span class="number">1</span>,a+n+<span class="number">1</span>,x)-a;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lbb</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;<span class="keyword">return</span> lower_bound(b+<span class="number">1</span>,b+n+<span class="number">1</span>,x)-b;&#125;</span><br><span class="line">    <span class="keyword">int</span> aa[N],bb[N];</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">BIT</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">        <span class="keyword">public</span>:</span><br><span class="line">            <span class="keyword">int</span> tree[N];</span><br><span class="line">            <span class="keyword">int</span> len;</span><br><span class="line">            <span class="function"><span class="keyword">void</span> <span class="title">BuildTree</span><span class="params">(<span class="keyword">int</span> _len)</span></span></span><br><span class="line"><span class="function">            </span>&#123;</span><br><span class="line">                len=_len;</span><br><span class="line">                FK(tree);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="function"><span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> pos,<span class="keyword">int</span> val=<span class="number">1</span>)</span></span></span><br><span class="line"><span class="function">            </span>&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> i=pos;i&lt;=len;i+=(i&amp;(-i)))</span><br><span class="line">                &#123;</span><br><span class="line">                    tree[i]+=val;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="function"><span class="keyword">int</span> <span class="title">Query</span><span class="params">(<span class="keyword">int</span> pos)</span></span></span><br><span class="line"><span class="function">            </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> i=pos;i&gt;<span class="number">0</span>;i-=(i&amp;(-i)))</span><br><span class="line">                &#123;</span><br><span class="line">                    ans+=tree[i];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ans;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;T;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> Map[N];</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        F(i,<span class="number">1</span>,n) aa[i]=a[i],bb[i]=b[i];</span><br><span class="line">        sort(a+<span class="number">1</span>,a+n+<span class="number">1</span>);</span><br><span class="line">        sort(b+<span class="number">1</span>,b+n+<span class="number">1</span>);</span><br><span class="line">        F(i,<span class="number">1</span>,n) aa[i]=lower_bound(a+<span class="number">1</span>,a+n+<span class="number">1</span>,aa[i])-a,bb[i]=lower_bound(b+<span class="number">1</span>,b+n+<span class="number">1</span>,bb[i])-b;<span class="comment">//到此为止是离散化</span></span><br><span class="line"></span><br><span class="line">        F(i,<span class="number">1</span>,n) Map[aa[i]]=i;<span class="comment">//Map: 反排列</span></span><br><span class="line">        F(i,<span class="number">1</span>,n) bb[i]=Map[bb[i]];<span class="comment">//这之后，b[i]就变成了原本的b[i]应该出现在哪个位置才能和a对上</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//这往后，求一下bb的逆序对数量即珂。</span></span><br><span class="line">        T.BuildTree(n);</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        F(i,<span class="number">1</span>,n)</span><br><span class="line">        &#123;</span><br><span class="line">            ans+=T.Query(n)-T.Query(bb[i]);<span class="comment">//维护逆序对</span></span><br><span class="line">            ans%=mod;</span><br><span class="line">            T.Add(bb[i],<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#<span class="meta-keyword">define</span> Flan void</span></span><br><span class="line">    <span class="function">Flan <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Input();</span><br><span class="line">        Soviet();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">undef</span> int <span class="comment">//long long </span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Flandre_Scarlet::IsMyWife();</span><br><span class="line">    getchar();getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h3><p>（$q$ 组数据）你有两个串，$s$ 和 $t$，长度都是 $n$。现在你可以对 $s$ 做若干次操作：选择某一个字符，把它移到最前面或者最后面（二选一）。</p>
+<p>你现在要把 $s$ 变成 $t$，请问最少需要多少步操作。不行输出 $-1$。</p>
+<p>$1\le q,n\le100$。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>先放结论：求出最长的串 $a$ 使得 $a$ 是 $s$ 的子序列（不一定连续），并且是 $t$ 的子串（必须连续），答案是 $n-|a|$，$|a|$ 表示 $a$ 的长度</p>
+<h4 id="怎么想到的"><a href="#怎么想到的" class="headerlink" title="怎么想到的"></a>怎么想到的</h4><p>首先我们发现能任意从中间取字符放到首尾，根据某些直觉，我们发现：把不同的往两边放，把相同的留在中间对齐。</p>
+<p>那么留在中间的“相同的”部分，想一想，应该是某一段公共子序列。</p>
+<p>这一段公共子序列一定是最长公共子序列吗？不一定，发现我们 <strong>只能</strong> 对 $s$ 操作，不能动 $t$，所以这段公共子序列在 $t$  中必须是连续的，不能有断开的。</p>
+<p>就比如说样例第一个里面的第三组数据，$s=\texttt{“tste”}$，$t=\texttt{“test”}$，最长公共子序列应该是 $\texttt{“tst”}$，长度为 $3$。可是剩下的那一个字符 $\texttt{e}$ 并不能直接归位，因为要让它归位必须去动 $t$，但是我们只能动 $s$。最优策略应该是把 $\texttt{“st”}$ 放在中间，然后把 $\texttt{t}$ 和 $\texttt{e}$ 动两次归位。</p>
+<p>然后现在还有一个问题：移动次数一定是 $n-|a|$ 吗？也就是说，剩下的 $n-|a|$ 个不同的恰好一定能在 $n-|a|$ 步之内归位？</p>
+<p>分两步证，先证一定不小于这个数，然后证可以做到 $n-|a|$ 步，又因为我们要步数最小，就只能恰好是这个答案了。</p>
+<p>一定不小于：如果能小于，那么我们的最长公共子序列 $a$ 就能变的更长了。所以一定不会小于这个数。</p>
+<p>一定能取到：在 $t$ 中，由于 $a$ 是一个子串，于是 $t$ 中和 $s$ 不匹配的地方，就是 $t$ 中抠掉 $a$ 剩下的部分，一定是一段前缀加一点后缀。先从右到左遍历剩下的前缀，在 $s$ 中找一个相等的，放到最前面来。再从左到右遍历剩下的后缀，在 $s$ 中找一个相等的，放到最后面来。然后这个步数显然可以做到 $n-|a|$ 步。（附：关于这个从左到右还是从右到左，可以简单的概括为：<strong>从里到外</strong>）（为啥是从里到外，可以自己手玩一下）</p>
+<h4 id="怎么求"><a href="#怎么求" class="headerlink" title="怎么求"></a>怎么求</h4><p>枚举这一段公共子序列在 $t$ 中的起点，然后写两个指针，匹配一下即可。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 122</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> F(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> D(i,r,l) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Fs(i,l,r,c) for(int i=l;i&lt;=r;c)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Ds(i,r,l,c) for(int i=r;i&gt;=l;c)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MEM(x,a) memset(x,a,sizeof(x))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> FK(x) MEM(x,0)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Tra(i,u) for(int i=G.Start(u),v=G.To(i);~i;i=G.Next(i),v=G.To(i))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> p_b push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> sz(a) ((int)a.size())</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> all(a) a.begin(),a.end()</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> iter(a,p) (a.begin()+p)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Flandre_Scarlet int</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> IsMyWife main</span></span><br><span class="line"><span class="keyword">char</span> _c;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">I</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>; <span class="keyword">int</span> f=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(_c&lt;<span class="string">'0'</span> <span class="keyword">or</span> _c&gt;<span class="string">'9'</span>) f=(_c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>,_c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(_c&gt;=<span class="string">'0'</span> <span class="keyword">and</span> _c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+(_c^<span class="number">48</span>),_c=getchar();</span><br><span class="line">    <span class="keyword">return</span> (x=(f==<span class="number">1</span>)?x:-x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Rd</span><span class="params">(<span class="keyword">int</span> cnt,...)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    va_list args; va_start(args,cnt);</span><br><span class="line">    F(i,<span class="number">1</span>,cnt) &#123;<span class="keyword">int</span>* x=va_arg(args,<span class="keyword">int</span>*);(*x)=I();&#125;</span><br><span class="line">    va_end(args);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="built_in">string</span> a,b;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Input</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	n=I();</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Soviet</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ans=<span class="number">1e9</span>;</span><br><span class="line">	F(i,<span class="number">0</span>,n<span class="number">-1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> pos=i;</span><br><span class="line">		F(j,<span class="number">0</span>,n<span class="number">-1</span>) <span class="keyword">if</span> (pos&lt;n <span class="keyword">and</span> b[pos]==a[j]) ++pos;</span><br><span class="line">        <span class="comment">// pos 表示在 t 中的位置，j 表示在 s 中的位置</span></span><br><span class="line">        <span class="comment">// pos-i 就是求出来的长度</span></span><br><span class="line">		ans=min(ans,n-(pos-i));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	sort(all(a)); sort(all(b)); <span class="keyword">if</span> (a!=b)&#123;<span class="built_in">puts</span>(<span class="string">"-1"</span>);<span class="keyword">return</span>;&#125; <span class="comment">// 判一下无解</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">Flandre_Scarlet <span class="title">IsMyWife</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> t=I();</span><br><span class="line">	F(i,<span class="number">1</span>,t)</span><br><span class="line">	&#123;</span><br><span class="line">		Input();</span><br><span class="line">		Soviet();</span><br><span class="line">	&#125;</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -625,8 +605,6 @@ $(window).load(function(){
         <div class="post-tags">
           
             <a href="/tags/思维/" rel="tag"># 思维</a>
-          
-            <a href="/tags/数学/" rel="tag"># 数学</a>
           
         </div>
       
@@ -659,8 +637,8 @@ $(window).load(function(){
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/10/洛谷-1841-JSOI2007-重要的城市/" rel="next" title="洛谷 1841 [JSOI2007]重要的城市">
-                <i class="fa fa-chevron-left"></i> 洛谷 1841 [JSOI2007]重要的城市
+              <a href="/2020/05/02/cdq分治-笔记/" rel="next" title="cdq分治 笔记">
+                <i class="fa fa-chevron-left"></i> cdq分治 笔记
               </a>
             
           </div>
@@ -668,10 +646,6 @@ $(window).load(function(){
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/10/洛谷-2278-bzoj-1276-HNOI2003-操作系统-题解/" rel="prev" title="洛谷 2278 bzoj 1276 [HNOI2003]操作系统 题解">
-                洛谷 2278 bzoj 1276 [HNOI2003]操作系统 题解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1083,7 +1057,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路框架"><span class="nav-number">2.</span> <span class="nav-text">思路框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体思路"><span class="nav-number">3.</span> <span class="nav-text">具体思路</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#but…Why"><span class="nav-number"></span> <span class="nav-text">but…Why?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现注意"><span class="nav-number">1.</span> <span class="nav-text">实现注意</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意简述"><span class="nav-number">1.</span> <span class="nav-text">题意简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#怎么想到的"><span class="nav-number">2.1.</span> <span class="nav-text">怎么想到的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#怎么求"><span class="nav-number">2.2.</span> <span class="nav-text">怎么求</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
