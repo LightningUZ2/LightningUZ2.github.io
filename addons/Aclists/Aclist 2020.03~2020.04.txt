@@ -306,7 +306,6 @@ AC_list
 	https://www.luogu.com.cn/problem/P1254
 	https://www.luogu.com.cn/problem/P4998
 	http://acm.hdu.edu.cn/showproblem.php?pid=4004
-	(*blog)
 	2020-04-12 8
 	https://vjudge.net/problem/CodeForces-805B
 	https://vjudge.net/problem/CodeForces-439E
@@ -314,20 +313,20 @@ AC_list
 	http://acm.hdu.edu.cn/showproblem.php?pid=6053
 	http://acm.hdu.edu.cn/showproblem.php?pid=5072
 	https://vjudge.net/problem/CodeForces-1009D
-	https://loj.ac/problem/2255 (blog!!!)
+	https://loj.ac/problem/2255
 	https://www.luogu.com.cn/problem/P5025
 	2020-04-13 4
 	https://vjudge.net/problem/CodeForces-920F
 	https://vjudge.net/problem/CodeForces-1328E
 	https://vjudge.net/problem/%E8%AE%A1%E8%92%9C%E5%AE%A2-A1607
-	https://vjudge.net/problem/CodeForces-316E3 (blog!!! 神仙题)
+	https://vjudge.net/problem/CodeForces-316E3
 	2020-04-14 4
 	https://loj.ac/problem/2109
-	https://www.luogu.com.cn/problem/P3266 (blog!!!)
+	https://www.luogu.com.cn/problem/P3266
 	https://loj.ac/problem/2145
-	https://www.luogu.com.cn/problem/P3750 (blog!!!)
+	https://www.luogu.com.cn/problem/P3750
 	2020-04-15 4
-	http://www.lydsy.com/JudgeOnline/problem.php?id=1431 (blog!!!)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=1431
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4236
 	https://vjudge.net/problem/CodeForces-845G
 	http://poj.org/problem?id=1426
@@ -344,7 +343,7 @@ AC_list
 	2020-04-18 8
 	https://vjudge.net/problem/CodeForces-1102F 
 	https://vjudge.net/problem/CodeForces-976D
-	http://www.lydsy.com/JudgeOnline/problem.php?id=2039 (blog!!!)
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2039
 	https://www.luogu.com.cn/problem/P1791
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4289
 	https://vjudge.net/problem/CodeForces-1045A
@@ -359,3 +358,60 @@ AC_list
 	http://www.lydsy.com/JudgeOnline/problem.php?id=3295
 	http://noi.ac/contest/333/problem/1787
 	http://noi.ac/contest/333/problem/1789
+	(blog: cdq分治)
+	2020-04-20 4
+	https://www.luogu.com.cn/problem/P3149
+	https://www.luogu.com.cn/problem/P3101
+	https://www.luogu.com.cn/problem/P4140
+	https://www.luogu.com.cn/problem/P4169
+	2020-04-21 4
+	https://vjudge.net/problem/CodeForces-383E
+	https://vjudge.net/problem/CodeForces-594D
+	https://www.luogu.com.cn/problem/P5857
+	https://www.luogu.com.cn/problem/P4948
+	http://www.51nod.com/Challenge/Problem.html#problemId=1229
+	2020-04-22 4
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3211
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2671
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2561
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2654
+	2020-04-23 0 (准备班会)
+	2020-04-24 4
+	https://www.luogu.com.cn/problem/P1641
+	http://www.lydsy.com/JudgeOnline/problem.php?id=1856
+	https://www.luogu.com.cn/problem/P4643
+	2020-04-25 8
+	https://www.luogu.com.cn/problem/P6187
+	https://www.luogu.com.cn/problem/P6186
+	https://www.luogu.com.cn/problem/P6185
+	https://www.luogu.com.cn/problem/P6189
+	http://acm.hdu.edu.cn/showproblem.php?pid=4651
+	http://acm.hdu.edu.cn/showproblem.php?pid=1028
+	http://www.51nod.com/Challenge/Problem.html#problemId=1259
+	https://vjudge.net/problem/CodeForces-962F
+	(blog: 五边形数定理)
+	(*blog)
+	2020-04-26 4
+	CF Edu Round 86(1342*): ABCD
+	2020-04-27 4
+	https://loj.ac/problem/6157
+	https://vjudge.net/problem/CodeForces-384E
+	http://acm.hdu.edu.cn/showproblem.php?pid=4658 (blog!!!)
+	http://acm.hdu.edu.cn/showproblem.php?pid=5230
+	2020-04-28 5
+	https://loj.ac/problem/6487
+	https://www.luogu.com.cn/problem/P6091
+	https://www.luogu.com.cn/problem/P3321
+	http://www.lydsy.com/JudgeOnline/problem.php?id=3992
+	https://loj.ac/problem/2183
+	2020-04-29 3
+	https://vjudge.net/problem/CodeForces-924C
+	https://vjudge.net/problem/CodeForces-923B
+	http://acm.hdu.edu.cn/showproblem.php?pid=4923
+	2020-04-30 4
+	https://vjudge.net/problem/CodeForces-514C
+	http://www.lydsy.com/JudgeOnline/problem.php?id=2795
+	https://www.luogu.com.cn/problem/P3538
+	http://www.51nod.com/Challenge/Problem.html#problemId=1304
+	https://www.luogu.com.cn/problemnew/solution/P5410
+	(blog: exKMP)
