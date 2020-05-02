@@ -388,7 +388,6 @@ AC_list
 	http://acm.hdu.edu.cn/showproblem.php?pid=1028
 	http://www.51nod.com/Challenge/Problem.html#problemId=1259
 	https://vjudge.net/problem/CodeForces-962F
-	(blog: 五边形数定理)
 	(*blog)
 	2020-04-26 4
 	CF Edu Round 86(1342*): ABCD
