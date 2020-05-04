@@ -259,7 +259,7 @@ AC_list
 	2020-04-01 5 (April Fool's Day!) 
 	CF Round #630(1332*): ABCDE
 	2020-04-02 3
-	3 (blog!!!)
+	https://loj.ac/problem/2072
 	https://www.luogu.com.cn/problem/P4323
 	http://www.lydsy.com/JudgeOnline/problem.php?id=4754
 	2020-04-03 3
@@ -388,13 +388,12 @@ AC_list
 	http://acm.hdu.edu.cn/showproblem.php?pid=1028
 	http://www.51nod.com/Challenge/Problem.html#problemId=1259
 	https://vjudge.net/problem/CodeForces-962F
-	(*blog)
 	2020-04-26 4
 	CF Edu Round 86(1342*): ABCD
 	2020-04-27 4
 	https://loj.ac/problem/6157
 	https://vjudge.net/problem/CodeForces-384E
-	http://acm.hdu.edu.cn/showproblem.php?pid=4658 (blog!!!)
+	http://acm.hdu.edu.cn/showproblem.php?pid=4658
 	http://acm.hdu.edu.cn/showproblem.php?pid=5230
 	2020-04-28 5
 	https://loj.ac/problem/6487
@@ -412,4 +411,3 @@ AC_list
 	https://www.luogu.com.cn/problem/P3538
 	http://www.51nod.com/Challenge/Problem.html#problemId=1304
 	https://www.luogu.com.cn/problemnew/solution/P5410
-	(blog: exKMP)
